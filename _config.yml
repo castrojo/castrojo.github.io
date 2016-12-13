@@ -1,5 +1,5 @@
 excerpt_separator: ""
-pygments: true
+highlighter: rogue
 markdown: kramdown
 url: http://castrojo.github.io
 title: Jorge's Stompbox
