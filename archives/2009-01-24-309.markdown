@@ -1,0 +1,165 @@
+<div class="container">
+
+<div class="left-col">
+
+<div class="intrude-less">
+
+<div class="profilepic">
+
+</div>
+
+[Jorge's Stompbox](/)
+=====================
+
+Plug in, crank it to Eleven.
+----------------------------
+
+-   [About Jorge](http://about.me/jorge.castro)
+-   [Bio](http://www.jorgecastro.org/about.html)
+-   [Blog](/)
+-   [Archives](/blog/archives)
+-   [Public Key](https://keybase.io/castrojo/key.asc)
+-   [My Wife, Jill](http://drjillcastro.org/)
+-   [My beagle, Oscar](http://packdog.com/oscar-castro)
+-   -   [My bagel, Luna](http://packdog.com/luna-330)
+-   
+
+\
+### Projects I work on
+
+-   [Ubuntu Server](http://ubuntu.com/server)
+-   [Juju](http://jujucharms.com)
+-   [Juju Charms](http://jujucharms.com/store)
+-   [Ask Ubuntu](http://askubuntu.com/users/235/jorge-castro)
+
+\
+### Projects that inspire me
+
+-   [OpenStack](http://openstack.org)
+-   [Discourse](http://discourse.org)
+-   [FIRST Robotics Competition](http://usfirst.org)
+-   [Little Kids Rock](http://www.littlekidsrock.org)
+
+<div class="section aboutme">
+
+I work on the Juju Ecosystem Team at Canonical Ltd. on Ubuntu Cloud and
+Server, find me at jorge at ubuntu dot com.
+
+</div>
+
+<div class="social">
+
+[Google+](https://plus.google.com/116015965439782966698 "Google+"){.google}
+[Twitter](http://twitter.com/castrojo "Twitter"){.twitter}
+[GitHub](https://github.com/castrojo "GitHub"){.github}
+[](http://askubuntu.com/users/235/jorge-castro "Ask Ubuntu"){.stackoverflow}
+[RSS](/atom.xml "RSS"){.rss}
+
+</div>
+
+</div>
+
+</div>
+
+<div class="mid-col">
+
+<div id="banner" class="inner">
+
+<div class="container">
+
+</div>
+
+[castrojo](http://twitter.com/castrojo) @ [Twitter](http://twitter.com)
+<div class="loading">
+
+Loading...
+
+</div>
+
+</div>
+
+<div class="mid-col-container">
+
+<div id="content" class="inner">
+
+<div class="entry-content" itemprop="articleBody">
+
+[Rockstar](http://theironlion.net/blog/) has been throwing up some posts
+about how to work more effectively with bzr and launchpad. I would like
+to throw up some tips that I have learned while working with PPAs.
+
+I have set up two PPAs (that I can remember, heh). The PPA for
+[Gwibber](https://edge.launchpad.net/~gwibber-team/+archive/ppa), which
+is a slick GUI for microblogging services like Twitter, identi.ca,
+Facebook, etc. I also set one up for
+[Tasque](https://edge.launchpad.net/~tasque-packagers/+archive/ppa), a
+slick TODO-list program that can sync with Remember the Milk.
+
+Here are things I have personally learned from using PPAs (Your mileage
+may of course vary):
+
+-   If you’re going to package something, make a *team*, and then set
+    the team to run the PPA. For example for Tasque I didn’t want to
+    commit to packaging every single version, really I was interested in
+    packaging the version that fixed my bug. This way, when a new
+    version comes out and someone else wants to package it, they can
+    upload a new version. This prevents having tons of versions of
+    Tasque around there, you can just have one team package. As people
+    apply they usually send me a mail or ping me and I let them on
+    the team. Sometimes they ask if they can do an upload, which is ok
+    by me!
+
+-   Names I will make consistant in PPAs I work on from now on:
+    projectname-packagers for the PPA, projectname for users, so they
+    can have a list, and projectname-committers for developers, which is
+    part of the other two.
+
+-   I use my personal PPA as my “testing ground”. I upload a new gwibber
+    in there and usually ask some people on identi.ca to kick the tires.
+    This usually finds really obvious broken bugs. After I get enough
+    thumbs up that it doesn’t blow in anyone’s face I use the copy
+    features to copy the binaries into the official gwibber PPA.
+
+-   Early in the project the upstream developer, Ryan Paul, decided to
+    start using webkit to render the little bubbles in the window. I for
+    sure didn’t want to package my own webkit, but Hardy’s webkit was
+    too old so we needed something. So I decided to make the gwibber PPA
+    depend on stemp’s webkit PPA. This ended up being a mistake because
+    for Intrepid and on people didn’t need the webkit PPA but people
+    didn’t know that so they kept it in their sources.lists. Then one
+    day webkit changed and gwibber blew up in people’s faces. So while
+    bugs kept flowing in we had to figure out which version of webkit
+    people were using, wether they needed the webkit PPA, and a whole
+    bunch of other nonsense. The harder, more correct decision would
+    have been to just kept the older non-webkit version of gwibber for
+    hardy users and the newer ones for everyone else. Working always
+    beats sexy! To this day we still get people with broken Gwibbers. :(
+
+Any other tips you’d like to share about PPAs? Comment below!
+
+</div>
+
+<div class="share">
+
+<div class="addthis_toolbox addthis_default_style">
+
+[](){.addthis_button_tweet} [](){.addthis_button_google_plusone}
+[](){.addthis_counter .addthis_pill_style}
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+Copyright © 2016 - Jorge O. Castro - <span class="credit">Powered by
+[Octopress](http://octopress.org)</span>
+
+Design credit: [Shashank
+Mehta](http://shashankmehta.in/archive/2012/greyshade.html)
+
+</div>
+
+</div>

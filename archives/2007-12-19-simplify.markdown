@@ -1,0 +1,137 @@
+<div class="container">
+
+<div class="left-col">
+
+<div class="intrude-less">
+
+<div class="profilepic">
+
+</div>
+
+[Jorge's Stompbox](/)
+=====================
+
+Plug in, crank it to Eleven.
+----------------------------
+
+-   [About Jorge](http://about.me/jorge.castro)
+-   [Bio](http://www.jorgecastro.org/about.html)
+-   [Blog](/)
+-   [Archives](/blog/archives)
+-   [Public Key](https://keybase.io/castrojo/key.asc)
+-   [My Wife, Jill](http://drjillcastro.org/)
+-   [My beagle, Oscar](http://packdog.com/oscar-castro)
+-   -   [My bagel, Luna](http://packdog.com/luna-330)
+-   
+
+\
+### Projects I work on
+
+-   [Ubuntu Server](http://ubuntu.com/server)
+-   [Juju](http://jujucharms.com)
+-   [Juju Charms](http://jujucharms.com/store)
+-   [Ask Ubuntu](http://askubuntu.com/users/235/jorge-castro)
+
+\
+### Projects that inspire me
+
+-   [OpenStack](http://openstack.org)
+-   [Discourse](http://discourse.org)
+-   [FIRST Robotics Competition](http://usfirst.org)
+-   [Little Kids Rock](http://www.littlekidsrock.org)
+
+<div class="section aboutme">
+
+I work on the Juju Ecosystem Team at Canonical Ltd. on Ubuntu Cloud and
+Server, find me at jorge at ubuntu dot com.
+
+</div>
+
+<div class="social">
+
+[Google+](https://plus.google.com/116015965439782966698 "Google+"){.google}
+[Twitter](http://twitter.com/castrojo "Twitter"){.twitter}
+[GitHub](https://github.com/castrojo "GitHub"){.github}
+[](http://askubuntu.com/users/235/jorge-castro "Ask Ubuntu"){.stackoverflow}
+[RSS](/atom.xml "RSS"){.rss}
+
+</div>
+
+</div>
+
+</div>
+
+<div class="mid-col">
+
+<div id="banner" class="inner">
+
+<div class="container">
+
+</div>
+
+[castrojo](http://twitter.com/castrojo) @ [Twitter](http://twitter.com)
+<div class="loading">
+
+Loading...
+
+</div>
+
+</div>
+
+<div class="mid-col-container">
+
+<div id="content" class="inner">
+
+<div class="entry-content" itemprop="articleBody">
+
+[Aaron Lake](http://metallikop.com/) and I have been messing with this
+little tool called [Simplifymedia](http://simplifymedia.com/).
+Basically, you friend a bunch of people, and then Simplify presents
+their music to your player (Banshee and Rhythmbox are supported) with
+their music as a DAAP source.
+
+[](http://stompbox.typepad.com/.shared/image.html?/photos/uncategorized/2007/12/18/screenshotland_of_confusion_genesis.png)!\[Screenshotland\_of\_confusion\_genes*2\](http://stompbox.typepad.com/photos/uncategorized/2007/12/18/screenshotland\_of\_confusion\_genes*2.png)
+
+Aaron uses it so that he can listen to his music at home while he is at
+work, that way he doesn’t have to carry his ipod with him or other
+stuff, he can just share with himself over the internet. Aaron
+discovered it while looking for something for his iPhone, and let me
+know immediately that they were planning a Linux client, so we mailed in
+and asked to test it. Now the [linux
+client](http://www.simplifymedia.com/blog/?p=29) is available.
+
+It’s not perfect, currently the UI depends on Wine and the arial MS font
+- but one of the developers assures me that this is temporary. Hopefully
+it will be popular enough to justify the developer time to make a native
+UI. Of course, if it was open source then someone could do that work for
+them (like a native Banshee plugin), but that’s another conversation.
+
+There’s a [last.fm group](http://www.last.fm/group/SimplifyMedia)
+available too if you want to join. Enjoy!
+
+</div>
+
+<div class="share">
+
+<div class="addthis_toolbox addthis_default_style">
+
+[](){.addthis_button_tweet} [](){.addthis_button_google_plusone}
+[](){.addthis_counter .addthis_pill_style}
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+Copyright © 2016 - Jorge O. Castro - <span class="credit">Powered by
+[Octopress](http://octopress.org)</span>
+
+Design credit: [Shashank
+Mehta](http://shashankmehta.in/archive/2012/greyshade.html)
+
+</div>
+
+</div>

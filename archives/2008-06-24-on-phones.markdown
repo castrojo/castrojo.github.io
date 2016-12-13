@@ -1,0 +1,154 @@
+<div class="container">
+
+<div class="left-col">
+
+<div class="intrude-less">
+
+<div class="profilepic">
+
+</div>
+
+[Jorge's Stompbox](/)
+=====================
+
+Plug in, crank it to Eleven.
+----------------------------
+
+-   [About Jorge](http://about.me/jorge.castro)
+-   [Bio](http://www.jorgecastro.org/about.html)
+-   [Blog](/)
+-   [Archives](/blog/archives)
+-   [Public Key](https://keybase.io/castrojo/key.asc)
+-   [My Wife, Jill](http://drjillcastro.org/)
+-   [My beagle, Oscar](http://packdog.com/oscar-castro)
+-   -   [My bagel, Luna](http://packdog.com/luna-330)
+-   
+
+\
+### Projects I work on
+
+-   [Ubuntu Server](http://ubuntu.com/server)
+-   [Juju](http://jujucharms.com)
+-   [Juju Charms](http://jujucharms.com/store)
+-   [Ask Ubuntu](http://askubuntu.com/users/235/jorge-castro)
+
+\
+### Projects that inspire me
+
+-   [OpenStack](http://openstack.org)
+-   [Discourse](http://discourse.org)
+-   [FIRST Robotics Competition](http://usfirst.org)
+-   [Little Kids Rock](http://www.littlekidsrock.org)
+
+<div class="section aboutme">
+
+I work on the Juju Ecosystem Team at Canonical Ltd. on Ubuntu Cloud and
+Server, find me at jorge at ubuntu dot com.
+
+</div>
+
+<div class="social">
+
+[Google+](https://plus.google.com/116015965439782966698 "Google+"){.google}
+[Twitter](http://twitter.com/castrojo "Twitter"){.twitter}
+[GitHub](https://github.com/castrojo "GitHub"){.github}
+[](http://askubuntu.com/users/235/jorge-castro "Ask Ubuntu"){.stackoverflow}
+[RSS](/atom.xml "RSS"){.rss}
+
+</div>
+
+</div>
+
+</div>
+
+<div class="mid-col">
+
+<div id="banner" class="inner">
+
+<div class="container">
+
+</div>
+
+[castrojo](http://twitter.com/castrojo) @ [Twitter](http://twitter.com)
+<div class="loading">
+
+Loading...
+
+</div>
+
+</div>
+
+<div class="mid-col-container">
+
+<div id="content" class="inner">
+
+<div class="entry-content" itemprop="articleBody">
+
+It’s no secret that I hate phones. With a vengeance.
+
+I have a blackberry 8830. It’s supposed to be one of the world’s finest
+smartphones. I hate it. It’s slow, the apps suck, the UI sucks, and
+mostly everything about it sucks. I hate using it. It hates me. When I
+bought it apparently it was like the world’s best phone. Ok, fair
+enough, maybe I just don’t grok it. Or maybe it’s just a piece of crap.
+
+The best thing about having it is when I go out with friends and I pull
+it out; someone always asks “How do you like your phone?”
+
+I always say, “I hate it.” Then for some reason they get all emotional
+about it.
+
+“Well, have you tried the iphone?” they always say. First of all, in
+order to make the iphone useful, you have to jailbreak it. This is
+apparently ok, because if you don’t know, iphones are apparently ok, and
+blackberries to a certain extent, but not windows phones, they’re
+apparently more evil. Apprentley if you’re into OSS, then the iphone is
+[the place to
+be](https://www.blogger.com/comment.g?blogID=16130344&postID=8525929634559571300).
+
+So I live with my blackberry with the google features; mail, calendar,
+etc. “Exchange for the rest of us”.
+
+I am waiting to see what android brings to the table, and as of today
+what symbian brings to the game as well. I think RIM is in trouble
+because they suck at UI and making an easy-to-use phone. I think apple
+sucks for the obvious reasons, though I suspect they’ll get the typical
+get-out-of-jail free card that they seem to enjoy.
+
+But “Wait Jorge, I saw ‘David Garrett’ and ‘Matthew Zeuthen’ using
+iPhones at FOSSCamp, FOSDEM and other open source conferences, surely
+how dare you lecture us on fucking cellular phones!” I can’t speak for
+these mythological creatures, but I’m sure they’ll be at guadec trying
+to justify how they sold us out. :)
+
+What phone are you looking forward to? Is Android the long sought after
+solution to this problem? Will I finally get an easy to use phone that
+doesn’t suck? And even if it does suck, will it being open source make
+it suck less?
+
+</div>
+
+<div class="share">
+
+<div class="addthis_toolbox addthis_default_style">
+
+[](){.addthis_button_tweet} [](){.addthis_button_google_plusone}
+[](){.addthis_counter .addthis_pill_style}
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+Copyright © 2016 - Jorge O. Castro - <span class="credit">Powered by
+[Octopress](http://octopress.org)</span>
+
+Design credit: [Shashank
+Mehta](http://shashankmehta.in/archive/2012/greyshade.html)
+
+</div>
+
+</div>
