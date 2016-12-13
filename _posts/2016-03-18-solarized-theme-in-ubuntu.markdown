@@ -6,4 +6,4 @@ comments: true
 categories: [ubuntu]
 ---
 
-{% img http://www.jorgecastro.org/images/solarized.png %}
+[!terminal](http://www.jorgecastro.org/images/solarized.png)
