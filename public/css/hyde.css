@@ -32,16 +32,16 @@
  */
 
 html {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: Ubuntu, Helvetica, Arial, sans-serif;
 }
 @media (min-width: 48rem) {
   html {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media (min-width: 58rem) {
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -54,10 +54,10 @@ html {
  */
 
 .sidebar {
-  text-align: center;
+  text-align: left;
   padding: 2rem 1rem;
   color: rgba(255,255,255,.5);
-  background-color: #202020;
+  background-color: #2C001E;
 }
 @media (min-width: 48rem) {
   .sidebar {
@@ -76,10 +76,10 @@ html {
 }
 
 /* About section */
-.sidebar-about h1 {
+.sidebar-about h2 {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
+  font-family: "Ubuntu", serif;
   font-size: 3.25rem;
 }
 
