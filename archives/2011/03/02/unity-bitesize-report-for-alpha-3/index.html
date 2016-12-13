@@ -1,0 +1,348 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Unity Bitesize Report for Alpha 3 - Jorge's Stompbox</title>
+	<meta name="author" content="Jorge O. Castro">
+
+	
+	<meta name="description" content="Unity Bitesize Report for Alpha 3 (Original Post) Lots of updates today. First of all, by the time you read this or by the time your mirror updates &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Jorge's Stompbox" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://www.jorgecastro.org/2011/03/02/unity-bitesize-report-for-alpha-3/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("jorge@ubuntu.com") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+		});
+	</script>
+</div>
+<hgroup>
+  <h1><a href="/">Jorge's Stompbox</a></h1>
+  
+    <h2>Plug in, crank it to Eleven.</h2>
+  
+</hgroup>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29102971-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="http://about.me/jorge.castro">About Jorge</a></li>
+  <li><a href="http://www.jorgecastro.org/about.html">Bio</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="https://keybase.io/castrojo/key.asc">Public Key</a></li>
+  <li><a href="http://drjillcastro.org/">My Wife, Jill</a></li>
+  <li><a href="http://packdog.com/oscar-castro">My beagle, Oscar</a><li>
+  <li><a href="http://packdog.com/luna-330">My bagel, Luna</a><li>
+</ul>
+<br/>
+<h3>Projects I work on</h3>
+<ul class="main-navigation">
+  <li><a href="http://ubuntu.com/server">Ubuntu Server</a></li>
+  <li><a href="http://jujucharms.com">Juju</a></li>
+  <li><a href="http://jujucharms.com/store">Juju Charms</a></li>
+  <li><a href="http://askubuntu.com/users/235/jorge-castro">Ask Ubuntu</a></li>
+</ul>
+<br/>
+<h3>Projects that inspire me</h3>
+<ul class="main-navigation">
+<li><a href="http://openstack.org">OpenStack</a></li>
+<li><a href="http://discourse.org">Discourse</a></li>
+<li><a href="http://usfirst.org">FIRST Robotics Competition</a></li>
+<li><a href="http://www.littlekidsrock.org">Little Kids Rock</a></li>
+</ul>
+</br>
+
+
+<section class="aboutme">
+  <p>
+    I work on the Juju Ecosystem Team at Canonical Ltd. on Ubuntu Cloud and Server, find me at jorge at ubuntu dot com.
+  </p>
+</section>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		<a class="google" href="https://plus.google.com/116015965439782966698" rel="author" title="Google+">Google+</a>
+		
+		
+		<a class="twitter" href="http://twitter.com/castrojo" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/castrojo" title="GitHub">GitHub</a>
+		
+		
+		
+		  <a class="stackoverflow" href="http://askubuntu.com/users/235/jorge-castro" title="Ask Ubuntu"></a>
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://twitter.com/castrojo">castrojo</a> @ <a href="http://twitter.com">Twitter</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/twitter.js"></script>
+<script type="text/javascript">
+	(function($){
+		$('#banner').getTwitterFeed('castrojo', 4, false);
+	})(jQuery);
+</script>
+
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Unity Bitesize Report for Alpha 3</h1>
+	<div class="entry-content" itemprop="articleBody"><p>(<a href="http://www.omgubuntu.co.uk/2011/03/unity-alpha-3-dash-lands-and-bitesize-progress-extravaganza/">Original Post</a>)</p>
+
+<p>Lots of updates today. First of all, by the time you read this or by the time your mirror updates (or when you get Alpha 3 on Thursday) you’ll have the latest drop of the Unity Dash:</p>
+
+<p><a href="http://www.omgubuntu.co.uk/wp-content/uploads/2011/03/Screenshot-6.jpg"><img src="http://www.omgubuntu.co.uk/wp-content/uploads/2011/03/Screenshot-6_thumb.jpg" alt="Unity File Places" /></a></p>
+
+<p><a href="http://www.omgubuntu.co.uk/wp-content/uploads/2011/03/Screenshot-41.jpg"><img src="http://www.omgubuntu.co.uk/wp-content/uploads/2011/03/Screenshot-4_thumb1.jpg" alt="Unity 11.04 Dash" /></a><a href="http://www.omgubuntu.co.uk/wp-content/uploads/2011/03/Screenshot-31.jpg"><img src="http://www.omgubuntu.co.uk/wp-content/uploads/2011/03/Screenshot-3_thumb1.jpg" alt="Searching through the Dash in Ubuntu 11.04" /></a><a href="http://www.omgubuntu.co.uk/wp-content/uploads/2011/03/Screenshot-71.jpg"><img src="http://www.omgubuntu.co.uk/wp-content/uploads/2011/03/Screenshot-7_thumb1.jpg" alt="Quick lists land in Unity" /></a></p>
+
+<h3 id="other-contributors-this-week">Other Contributors this Week</h3>
+
+<ul>
+  <li>
+    <p>We have a new contributor this week, Marco Bisaro ﻿has fixed  Bug <a href="https://bugs.launchpad.net/ubuntu/+source/unity/+bug/713789">#713789</a> – Upper left Ubuntu logo has different background color than panel.</p>
+  </li>
+  <li>
+    <p>Olivier Sauder’s work on keybindings for the launcher has landed</p>
+  </li>
+  <li>
+    <p>Mathew Rasmus has made it so the launcher uses proper getter/setter for the Launcher’s member-var_launcher_action_state.</p>
+  </li>
+  <li>
+    <p>This could be you! See below!</p>
+  </li>
+</ul>
+
+<h3 id="general-unity-fixes-and-new-stuff">General Unity Fixes and New Stuff</h3>
+
+<p>What a crazy week! Double dose of unity (Thursday and Tuesday)! We also got a new compiz with a full stack rebuild/update. That totalize more than 23 updates within the week. As you can see, we got a lot of fixes and enhancements:<br />
+<a href="https://launchpad.net/unity/3.0/3.4.6">[https://launchpad.net/unity/3.0/3.4.6](https://launchpad.net/unity/3.0/3.4.6)<br />
+</a><a href="http://www.omgubuntu.co.uk/2011/03/unity-alpha-3-dash-lands-and-bitesize-progress-extravaganza/onclick=">[https://launchpad.net/unity/3.0/3.6](https://launchpad.net/unity/3.0/3.6)</a></p>
+
+<h3 id="other-highlights">Other Highlights</h3>
+
+<ul>
+  <li>
+    <p>Most of known common crashers for unity have been tackled</p>
+  </li>
+  <li>
+    <p>Lot of accessility improvments</p>
+  </li>
+  <li>
+    <p>Lot of launchers fix and most of “false show” positive or “launcher being crazy” on intellihide mode fixed</p>
+  </li>
+  <li>
+    <p>Drag and drop from the application and file places to the launcher is now functional (but still in beta Funny <img src="http://www.omgubuntu.co.uk/wp-includes/images/smilies/icon_smile.gif" alt=":)" /> )</p>
+  </li>
+  <li>
+    <p>New shortcuts with the Super key:</p>
+
+    <ul>
+      <li>
+        <p>tap super open the dash</p>
+      </li>
+      <li>
+        <p>Keeping super press will get some shortcuts showing: Super + to get active window of an application or show the places/ws switcher/trash</p>
+      </li>
+      <li>
+        <p>if you add Shift to the dance, it will open a new instance of an application instead of getting an existing one</p>
+      </li>
+      <li>
+        <p>Key navigation to all elements of the launcher now, and quicklist! Alt + F1 showing the launcher when hidden.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Rework fade effect animation when hovering the bfb (the ubuntu logo) Still some known crasher on the unity window decorator. It’s tracked and under debugging right now. Hope we can get a fix after alpha3 on upgrade.</p>
+  </li>
+</ul>
+
+<h2 id="how-to-get-involved">How to Get Involved</h2>
+
+<ol>
+  <li>Get the Code</li>
+</ol>
+
+<p>Follow the <a href="http://unity.ubuntu.com/getinvolved/">Step by Step Instructions</a> and <a href="https://wiki.ubuntu.com/Unity/Bitesize">Wiki Page</a>. This will get the code from Launchpad, set up your development environment, and getting you used to the Launchpad workflow.</p>
+
+<h3 id="pick-a-bug">2. Pick a bug</h3>
+
+<p>This week we want to focus on these bugs, pick one:</p>
+
+<ul>
+  <li>
+    <p><a href="https://bugs.launchpad.net/unity/+bug/718889">Bug 718889</a> -  Launcher does not hide/unhide on Expo</p>
+  </li>
+  <li>
+    <p><a href="https://bugs.launchpad.net/unity/+bug/660010">Bug 660010</a> – No ‘safely remove’ option is present in the unity menu when a usb disk is inserted</p>
+  </li>
+  <li>
+    <p><a href="https://bugs.launchpad.net/unity/+bug/718885">Bug 718885</a> – Launcher responds to click off from a quicklist</p>
+  </li>
+  <li>
+    <p><a href="https://bugs.launchpad.net/unity/+bug/721121">Bug 721121</a> – Icon in Launcher should be home folder icon</p>
+  </li>
+  <li>
+    <p><a href="https://bugs.launchpad.net/unity/+bug/718885">Bug 718885</a> –  (NEW!) Launcher responds to click off from a quicklist</p>
+  </li>
+  <li>
+    <p><a href="https://bugs.launchpad.net/unity/+bug/725529">Bug 725529</a> – (NEW!) ﻿Double-click on panel to unmaximize only works in right half</p>
+  </li>
+  <li>
+    <p><a href="https://bugs.launchpad.net/unity/+bug/724747">Bug 724727</a> – (NEW!) Super key shortcut overlay not with umlauts, greek/cyrillic letters</p>
+  </li>
+</ul>
+
+<p>Here’s the <a href="http://goo.gl/tiheb">full list</a> if you want to find more, feel free to just grab one, assign it to yourself, mark it in progress and get started. I’ll be picking a new selection for each blog post each week, but the list is always changing, so you can always just dive into the list and snag one.  </p>
+
+<h3 id="fix-your-bug-and-then-get-your-code-into-unity">3. Fix your bug and then get your code into Unity</h3>
+
+<p>Don’t worry we won’t leave you hanging, you can get a-hold of a Unity developer through many different ways:</p>
+
+<ul>
+  <li>
+    <h1 id="ayatana-on-freenode-irc-during-european-and-american-workdays-or-you-can-post-tothe-mailing-listhttpslaunchpadnetayatana-devif-you-have-a-question">ayatana on freenode IRC during European and American workdays. Or you can post to <a href="https://launchpad.net/~ayatana-dev">the mailing list</a> if you have a question.</h1>
+  </li>
+  <li>
+    <p>We also have weekly IRC Q+A for any developer who wants to dive in and ask a Unity developer. 7pm-8pm UTC (That’s 2pm EST) every Friday!</p>
+  </li>
+  <li>Mention session in developer week.</li>
+</ul>
+
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+
+</div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2016 - Jorge O. Castro -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			
+
+<script type="text/javascript">
+      var disqus_shortname = 'stompbox';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>

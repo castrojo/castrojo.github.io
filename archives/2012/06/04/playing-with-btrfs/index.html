@@ -1,0 +1,269 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Playing with btrfs - Jorge's Stompbox</title>
+	<meta name="author" content="Jorge O. Castro">
+
+	
+	<meta name="description" content="Playing With Btrfs I’ve been waiting to try btrfs for a while, mostly to see how it fairs with other people I know first before giving it a shot. &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Jorge's Stompbox" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://www.jorgecastro.org/2012/06/04/playing-with-btrfs/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("jorge@ubuntu.com") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+		});
+	</script>
+</div>
+<hgroup>
+  <h1><a href="/">Jorge's Stompbox</a></h1>
+  
+    <h2>Plug in, crank it to Eleven.</h2>
+  
+</hgroup>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29102971-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="http://about.me/jorge.castro">About Jorge</a></li>
+  <li><a href="http://www.jorgecastro.org/about.html">Bio</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="https://keybase.io/castrojo/key.asc">Public Key</a></li>
+  <li><a href="http://drjillcastro.org/">My Wife, Jill</a></li>
+  <li><a href="http://packdog.com/oscar-castro">My beagle, Oscar</a><li>
+  <li><a href="http://packdog.com/luna-330">My bagel, Luna</a><li>
+</ul>
+<br/>
+<h3>Projects I work on</h3>
+<ul class="main-navigation">
+  <li><a href="http://ubuntu.com/server">Ubuntu Server</a></li>
+  <li><a href="http://jujucharms.com">Juju</a></li>
+  <li><a href="http://jujucharms.com/store">Juju Charms</a></li>
+  <li><a href="http://askubuntu.com/users/235/jorge-castro">Ask Ubuntu</a></li>
+</ul>
+<br/>
+<h3>Projects that inspire me</h3>
+<ul class="main-navigation">
+<li><a href="http://openstack.org">OpenStack</a></li>
+<li><a href="http://discourse.org">Discourse</a></li>
+<li><a href="http://usfirst.org">FIRST Robotics Competition</a></li>
+<li><a href="http://www.littlekidsrock.org">Little Kids Rock</a></li>
+</ul>
+</br>
+
+
+<section class="aboutme">
+  <p>
+    I work on the Juju Ecosystem Team at Canonical Ltd. on Ubuntu Cloud and Server, find me at jorge at ubuntu dot com.
+  </p>
+</section>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		<a class="google" href="https://plus.google.com/116015965439782966698" rel="author" title="Google+">Google+</a>
+		
+		
+		<a class="twitter" href="http://twitter.com/castrojo" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/castrojo" title="GitHub">GitHub</a>
+		
+		
+		
+		  <a class="stackoverflow" href="http://askubuntu.com/users/235/jorge-castro" title="Ask Ubuntu"></a>
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://twitter.com/castrojo">castrojo</a> @ <a href="http://twitter.com">Twitter</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/twitter.js"></script>
+<script type="text/javascript">
+	(function($){
+		$('#banner').getTwitterFeed('castrojo', 4, false);
+	})(jQuery);
+</script>
+
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Playing With Btrfs</h1>
+	<div class="entry-content" itemprop="articleBody"><p>I’ve been waiting to try btrfs for a while, mostly to see how it fairs with other people I know first before giving it a shot. With the release of the 3.4 kernel I just happened to run into <a href="http://linuxfoundation.ubicast.tv/videos/btrfs-filesystem-status-and-new-features/">this video</a> from Chris Mason talking about the latest things that are going on in btrfs and I decided to give it a shot. I had also had enough of my current setup with mdadm and whatever <code>/dev/md1_127</code> (or whatever) is and other weird errors that I got sick of figuring out.  </p>
+
+<p>However I didn’t want to risk my existing stuff or try it as the root filesystem, my use case is more for my home NAS. I got some new drives for my <a href="http://www.jorgecastro.org/2012/04/10/maasing-and-jujuing-with-hp-proliant-micro-servers/">HP Microserver</a> and got to work. This involved running a pretty <a href="http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.4-precise/">new upstream kernel</a>, and building btrfs-tools from git (a straight forward make). </p>
+
+<p>The <a href="https://btrfs.wiki.kernel.org">btrfs wiki</a> had nearly everything I needed. I was able to set up a RAID1 of my 4x3TB drives in about … 5 minutes, then mount it. Well, that was boring. No weird devices or anything, you can just mount any one of the drives in <code>/etc/fstab</code> and it’ll figure out the rest. Nice. I then rsynced everything from my old system to the new one, which took about 2 full days. While this was happening it gave me some time to learn about btrfs and it’s commands and learn about it.  </p>
+
+<h3 id="things-i-like">Things I like</h3>
+
+<ul>
+  <li>I like the RAID/volume/whatever features built into the filesystem itself so I don’t have to care about that as a seperate thing. </li>
+  <li>I accidentally made my first cut a RAID10, which is not what I wanted. So I changed it RAID1. And it did so. Online. Watching this happen live I decided I’m not going back to anything else. :)</li>
+  <li>The commands are very straightforward and make logical sense, so I can actually remember them when I need them. This is a place where btrfs shines. The technical aspects are cool, but the simple attention to UI design is great to me.   </li>
+  <li>I have enough free space/drives left over so I can probably live migrate to RAID5 when it lands in btrfs in a few kernel releases. I am looking forward to seeing this work or blow up in my face. Quite interesting!</li>
+</ul>
+
+<h3 id="things-that-confuse-me-or-i-dont-like">Things that confuse me or I don’t like</h3>
+
+<ul>
+  <li>It’s apparently quite difficult to <a href="https://btrfs.wiki.kernel.org/index.php/FAQ#Why_is_free_space_so_complicated.3F">figure out free space</a>, so I’m using the “add up the drives, figure it out for RAID1, that should be close enough” method. At first I didn’t realize a normal <code>df</code> would lie to me.</li>
+  <li>Obviously no RAID5/6 yet but it’s coming; this is why I went with 3tb drives for now, despite the expense as I needed as much space as my old mdadm RAID5 set up but in RAID1. Prices still aren’t coming down to preflood prices so I figure either way I’m going to have to bite that bullet.</li>
+</ul>
+
+<h3 id="other-stuff">Other stuff</h3>
+
+<p>It also helps to have a btrfs buddy. I only chose to try this after Popey and Marco decided they were going to try it too, which is nice to have someone to ask all the dumb questions. The btrfs wiki is also quite good, it answered nearly 90% of my questions. At some point when I feel it’s stable enough for me I’ll repurpose the older drives in my mdadm array as additions to this filesystem (they are now my backups), which is quite trivial to do now. On a spare drive in my desktop I experimented with doing an <a href="https://btrfs.wiki.kernel.org/index.php/Conversion_from_Ext3">on the spot conversion</a>, which was quite cool. </p>
+
+<p>I didn’t really notice anything about performance one way or the other. A home NAS is network limited so I was exercising anything at the filesystem level as far as I could tell. While other people will be talking about it’s advanced features I am already a fan for its … simplicity(!) of usage when managing multiple disks. It also makes what I used to have to care about not important to me anymore. I’ve already cleared out all knowledge of mdadm and LVM from my brain and learned things I actually care about, like snapshots, which I haven’t played with enough yet. </p>
+
+<h3 id="so-should-you-try-it">So should you try it?</h3>
+
+<p>Like with all things if your existing set up is working, don’t mess with it. If you happen to be building something new then by all means, give it a shot, even if you end up not using it it’s fun to play with the commands and learn the new filesystem commands. </p>
+
+<p>There are some risks of course, like running a not-ubuntu-supported stock kernel; and our kernel team providing fresh upstream kernels means I can easily upgrade to the new upstream stable releases as btrfs improvements come out. How comfortable you are with that on your hardware is up to you. Like all filesystems keep good backups! </p>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+
+</div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2016 - Jorge O. Castro -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			
+
+<script type="text/javascript">
+      var disqus_shortname = 'stompbox';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.jorgecastro.org/2012/06/04/playing-with-btrfs/';
+        var disqus_url = 'http://www.jorgecastro.org/2012/06/04/playing-with-btrfs/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>

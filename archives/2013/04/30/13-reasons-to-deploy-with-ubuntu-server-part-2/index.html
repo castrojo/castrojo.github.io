@@ -1,0 +1,287 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>13 Reasons to Deploy With Ubuntu Server (Part 2) - Jorge's Stompbox</title>
+	<meta name="author" content="Jorge O. Castro">
+
+	
+	<meta name="description" content="13 Reasons to Deploy With Ubuntu Server (Part 2) I started off yesterday detailing the first four reasons why you’d want to consider deploying with &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Jorge's Stompbox" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://www.jorgecastro.org/2013/04/30/13-reasons-to-deploy-with-ubuntu-server-part-2/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("jorge@ubuntu.com") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+		});
+	</script>
+</div>
+<hgroup>
+  <h1><a href="/">Jorge's Stompbox</a></h1>
+  
+    <h2>Plug in, crank it to Eleven.</h2>
+  
+</hgroup>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29102971-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="http://about.me/jorge.castro">About Jorge</a></li>
+  <li><a href="http://www.jorgecastro.org/about.html">Bio</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="https://keybase.io/castrojo/key.asc">Public Key</a></li>
+  <li><a href="http://drjillcastro.org/">My Wife, Jill</a></li>
+  <li><a href="http://packdog.com/oscar-castro">My beagle, Oscar</a><li>
+  <li><a href="http://packdog.com/luna-330">My bagel, Luna</a><li>
+</ul>
+<br/>
+<h3>Projects I work on</h3>
+<ul class="main-navigation">
+  <li><a href="http://ubuntu.com/server">Ubuntu Server</a></li>
+  <li><a href="http://jujucharms.com">Juju</a></li>
+  <li><a href="http://jujucharms.com/store">Juju Charms</a></li>
+  <li><a href="http://askubuntu.com/users/235/jorge-castro">Ask Ubuntu</a></li>
+</ul>
+<br/>
+<h3>Projects that inspire me</h3>
+<ul class="main-navigation">
+<li><a href="http://openstack.org">OpenStack</a></li>
+<li><a href="http://discourse.org">Discourse</a></li>
+<li><a href="http://usfirst.org">FIRST Robotics Competition</a></li>
+<li><a href="http://www.littlekidsrock.org">Little Kids Rock</a></li>
+</ul>
+</br>
+
+
+<section class="aboutme">
+  <p>
+    I work on the Juju Ecosystem Team at Canonical Ltd. on Ubuntu Cloud and Server, find me at jorge at ubuntu dot com.
+  </p>
+</section>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		<a class="google" href="https://plus.google.com/116015965439782966698" rel="author" title="Google+">Google+</a>
+		
+		
+		<a class="twitter" href="http://twitter.com/castrojo" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/castrojo" title="GitHub">GitHub</a>
+		
+		
+		
+		  <a class="stackoverflow" href="http://askubuntu.com/users/235/jorge-castro" title="Ask Ubuntu"></a>
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://twitter.com/castrojo">castrojo</a> @ <a href="http://twitter.com">Twitter</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/twitter.js"></script>
+<script type="text/javascript">
+	(function($){
+		$('#banner').getTwitterFeed('castrojo', 4, false);
+	})(jQuery);
+</script>
+
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">13 Reasons to Deploy With Ubuntu Server (Part 2)</h1>
+	<div class="entry-content" itemprop="articleBody"><p>I started off yesterday detailing the <a href="http://www.jorgecastro.org/2013/04/29/13-reasons-to-deploy-with-ubuntu-server/">first four reasons</a> why you’d want to consider deploying with Ubuntu Server. Here are today’s four. </p>
+
+<h2 id="juju-and-its-charms">Juju and its charms</h2>
+
+<p><img src="http://www.jorgecastro.org/images/juju-logo.png" /></p>
+
+<p>And this is where it starts to comes together. You’ve got your OpenStack running with tons of nodes, exabytes of storage on Ceph, now what? No one builds a cloud for the sake of building one. You have <em>work to do</em>, and that’s what Juju is all about. </p>
+
+<iframe width="500" height="280" src="http://www.youtube.com/embed/1yoIdgdqzLk" frameborder="0" allowfullscreen=""></iframe>
+
+<p>Juju takes all this infrastructure you just set up and makes you… not care about it. Juju bucks the trend of thinking about machines and instances as a whole. We back you up and show you a higher level view of your deployment and get you to think about what’s really important to your business, deploying <em>services</em>. </p>
+
+<p><img src="http://www.jorgecastro.org/images/juju-gui/1.png" /></p>
+
+<p>So now you think of your deployment as environments, like Hadoop, Cassandra, MongoDB, or $your_application. You tell Juju how to model your deployment, and it uses all the things I just mentioned, MAAS, OpenStack, your public cloud provider, to make your environment. You manage things at the service level. Just assemble your blocks and the juju scripts (we call them charms) do the rest. </p>
+
+<p>So what’s that mean for you? Here’s an example of how you can deploy <a href="http://jujucharms.com/charms/precise/node-app">your node.js app</a> or <a href="http://jujucharms.com/charms/precise/rails">your rails app</a>. What you see there is our end goal for everyone who wants to deploy anything to the cloud - you should be able to do so with a few commands or a couple of mouse clicks. We’re well on our way with over <a href="http://jujucharms.com/charms/precise">120 services</a> available for you put together, and plenty more on the way. All of them are Free Software, ready to be improved upon and shared with the wider community. </p>
+
+<p>Here’s an example of setting up <a href="http://blog.xtremeghost.com/2012/11/lets-shard-something.html">sharding with MongoDB</a> if you really want to see how Juju takes the complexity out of service orchestration. </p>
+
+<h2 id="hardware-certification">Hardware Certification</h2>
+
+<p>We’re certified to run on hardware from the top names in servers. Dell, HP, Lenovo, IBM, and Acer are just some of <a href="http://www.ubuntu.com/certification/server/">our certification partners</a>. There’s not really much else to say. This bullet seems really boring, but it’s certainly not boring for the people in our hardware labs, this is just something most sysadmins will expect to work out of the box.  </p>
+
+<h2 id="arm">ARM</h2>
+
+<p>We’ve been building Ubuntu on ARM as a fully functional, well tested OS that can support multiple SoCs (Calxeda, TI, Marvell Armada XP, and anything Ubuntu Touch/Client uses) – and have been doing so for over 4 years. </p>
+
+<p>We’re working with Calxeda on their <a href="http://www.calxeda.com/technology/products/processors/ecx-1000-series/">ECX-1000 EnergyCore Products (Highbank)</a>. We are going to be using the ECX-1000 as our ARM server reference platform for 13.04.   </p>
+
+<p><img src="http://www.calxeda.com/wp-content/uploads/2012/05/Capture3847_large-300x199.jpg" /></p>
+
+<p>And we’ll be working with them on their “Midway” product refresh when that hits. </p>
+
+<h2 id="ubuntu-guest-on-public-clouds">Ubuntu Guest on Public Clouds</h2>
+
+<p><img class="right" src="http://www.jorgecastro.org/images/providers.png" /></p>
+
+<p>Whether it’s like Amazon Web Services, HP Cloud, Rackspace, Internap, or Microsoft Windows Azure, you’ll find official Ubuntu images, and you’ll find that the per-hour cost to you is $0.00.</p>
+
+<p>The nice thing we do in the public clouds is that we work closely with the cloud providers to give you a great experience. Our images are directly published into these clouds as part of the release process, they’re not made after-the-fact. And since it’s Ubuntu, it’s <em>the same</em> on every cloud, you won’t find different behavior from your local servers or from vendor to vendor, it’s important to us to provide you a consistent experience.</p>
+
+<p>On the certified public clouds you’ll not only find regularly refreshed and supported images, you’ll find other goodies, like built-in local mirrors so that your updates are LAN speed in your cloud deployments. And since we partner with these providers and continually work with them to improve on this experience you’ll always be getting the best available service.</p>
+
+<p>Check out the previous sections if you missed them:</p>
+
+<ul>
+  <li><a href="http://www.jorgecastro.org/2013/04/29/13-reasons-to-deploy-with-ubuntu-server/">13 Reasons to Deploy with Ubuntu Server Part 1</a></li>
+  <li><a href="http://www.jorgecastro.org/2013/04/30/13-reasons-to-deploy-with-ubuntu-server-part-2/">13 Reasons to Deploy with Ubuntu Server Part 2</a></li>
+  <li><a href="http://www.jorgecastro.org/2013/05/01/13-reasons-to-deploy-with-ubuntu-server-part-3/">13 Reasons to Deploy with Ubuntu Server Part 3</a></li>
+</ul>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+
+</div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2016 - Jorge O. Castro -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			
+
+<script type="text/javascript">
+      var disqus_shortname = 'stompbox';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.jorgecastro.org/2013/04/30/13-reasons-to-deploy-with-ubuntu-server-part-2/';
+        var disqus_url = 'http://www.jorgecastro.org/2013/04/30/13-reasons-to-deploy-with-ubuntu-server-part-2/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>

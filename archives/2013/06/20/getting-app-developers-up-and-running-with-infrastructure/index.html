@@ -1,0 +1,248 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Getting app developers up and running with infrastructure - Jorge's Stompbox</title>
+	<meta name="author" content="Jorge O. Castro">
+
+	
+	<meta name="description" content="Getting App Developers Up and Running With Infrastructure Jono blogged about making it easier for people to get up and running with Ubuntu Touch &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Jorge's Stompbox" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://www.jorgecastro.org/2013/06/20/getting-app-developers-up-and-running-with-infrastructure/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("jorge@ubuntu.com") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+		});
+	</script>
+</div>
+<hgroup>
+  <h1><a href="/">Jorge's Stompbox</a></h1>
+  
+    <h2>Plug in, crank it to Eleven.</h2>
+  
+</hgroup>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29102971-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="http://about.me/jorge.castro">About Jorge</a></li>
+  <li><a href="http://www.jorgecastro.org/about.html">Bio</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="https://keybase.io/castrojo/key.asc">Public Key</a></li>
+  <li><a href="http://drjillcastro.org/">My Wife, Jill</a></li>
+  <li><a href="http://packdog.com/oscar-castro">My beagle, Oscar</a><li>
+  <li><a href="http://packdog.com/luna-330">My bagel, Luna</a><li>
+</ul>
+<br/>
+<h3>Projects I work on</h3>
+<ul class="main-navigation">
+  <li><a href="http://ubuntu.com/server">Ubuntu Server</a></li>
+  <li><a href="http://jujucharms.com">Juju</a></li>
+  <li><a href="http://jujucharms.com/store">Juju Charms</a></li>
+  <li><a href="http://askubuntu.com/users/235/jorge-castro">Ask Ubuntu</a></li>
+</ul>
+<br/>
+<h3>Projects that inspire me</h3>
+<ul class="main-navigation">
+<li><a href="http://openstack.org">OpenStack</a></li>
+<li><a href="http://discourse.org">Discourse</a></li>
+<li><a href="http://usfirst.org">FIRST Robotics Competition</a></li>
+<li><a href="http://www.littlekidsrock.org">Little Kids Rock</a></li>
+</ul>
+</br>
+
+
+<section class="aboutme">
+  <p>
+    I work on the Juju Ecosystem Team at Canonical Ltd. on Ubuntu Cloud and Server, find me at jorge at ubuntu dot com.
+  </p>
+</section>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		<a class="google" href="https://plus.google.com/116015965439782966698" rel="author" title="Google+">Google+</a>
+		
+		
+		<a class="twitter" href="http://twitter.com/castrojo" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/castrojo" title="GitHub">GitHub</a>
+		
+		
+		
+		  <a class="stackoverflow" href="http://askubuntu.com/users/235/jorge-castro" title="Ask Ubuntu"></a>
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://twitter.com/castrojo">castrojo</a> @ <a href="http://twitter.com">Twitter</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/twitter.js"></script>
+<script type="text/javascript">
+	(function($){
+		$('#banner').getTwitterFeed('castrojo', 4, false);
+	})(jQuery);
+</script>
+
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Getting App Developers Up and Running With Infrastructure</h1>
+	<div class="entry-content" itemprop="articleBody"><p>Jono <a href="http://www.jonobacon.org/2013/06/17/simplifying-app-websites-with-juju/">blogged about</a> making it easier for people to get up and running with Ubuntu Touch development. One of the things people always need is infrastructure. </p>
+
+<p>So Marco and I got to work, and made the ubuntu-touch-website kit. The first in a series of tools that eventually become a stack of deployment scripts so app developers can get their infrastructure up and running. So the first easy step is your project’s website. We took heavy inspiration from <a href="http://slatekit.org/">SlateKit</a>. He just snagged some Bootstrap and tossed up a site. I’d love a little site like this for all the new Ubuntu Touch Apps people are making. </p>
+
+<p>Basically, pull a branch, modify a file, run something, and done.</p>
+
+<p>Snag the code from lp:ubuntu-touch-website then modify this config.yaml file to be about your application. Make sure <code>python-markdown</code> is installed. </p>
+
+<p><a href="http://bazaar.launchpad.net/~jorge/ubuntu-touch-website/trunk/view/head:/config.yaml">http://bazaar.launchpad.net/~jorge/ubuntu-touch-website/trunk/view/head:/config.yaml</a></p>
+
+<p>Now, let’s take that with a little <a href="http://bootswatch.com/united/">Bootstrap United</a> and generate the page:</p>
+
+<pre><code>./compile -c config.yaml &gt; index.html
+</code></pre>
+
+<p>And then open the file in your browser. Check it out, and then copy to your host or cloud bucket. We made it static so it’s easy to deploy. Read <a href="http://www.jonobacon.org/2013/06/17/simplifying-app-websites-with-juju/">Jono’s blog</a> for what we’d like to do, although currently this just spits out a web page  this is basically a protoype for a Juju Charm so app developers can deploy more complicated things.</p>
+
+<p>One thing I would like to do is run this by @nathan_osman and anyone else who is the kind of person who writes small little apps, what would you like to see in this kind of the thing? We want to make it quick and easy. Ideas? We need to add screenshots too. </p>
+
+<p>When you are done the generated page looks like this:</p>
+
+<p><img src="http://ubuntu-discourse.s3.amazonaws.com/904f1b7eb73cf5ab54091cbd2699ef966e5c2c7c40.png" width="690" height="810" /></p>
+
+<p>Some thoughts for ideas:</p>
+
+<ul>
+  <li>Put the S3 bucket info somewhere so it can just copy to the right place and simple serve, this will mean hosting bills in the pennies instead of 3 small instances for current Juju until containers and colocation land. </li>
+  <li>Is the markdown support really worth the extra dependency? Thoughts?</li>
+  <li>We need to make it so when people want to deploy a blog, a discourse forum, a mailing list, etc that this “front page” gets regenerated. </li>
+</ul>
+
+<p>Got any other ideas? </p>
+
+<p><a href="http://test.ubuntu-discourse.org/t/giving-app-developers-a-quick-start-to-their-infrastructure/405">JOIN THE DISCUSSION</a></p>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+
+</div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2016 - Jorge O. Castro -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>

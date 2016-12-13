@@ -1,0 +1,283 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>13 Reasons to deploy with Ubuntu Server - Jorge's Stompbox</title>
+	<meta name="author" content="Jorge O. Castro">
+
+	
+	<meta name="description" content="13 Reasons to Deploy With Ubuntu Server (Part 1 of 3) Sometimes people ask me why they should use Ubuntu Server. It’s an understandable question, &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Jorge's Stompbox" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://www.jorgecastro.org/2013/04/29/13-reasons-to-deploy-with-ubuntu-server/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("jorge@ubuntu.com") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+		});
+	</script>
+</div>
+<hgroup>
+  <h1><a href="/">Jorge's Stompbox</a></h1>
+  
+    <h2>Plug in, crank it to Eleven.</h2>
+  
+</hgroup>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29102971-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="http://about.me/jorge.castro">About Jorge</a></li>
+  <li><a href="http://www.jorgecastro.org/about.html">Bio</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="https://keybase.io/castrojo/key.asc">Public Key</a></li>
+  <li><a href="http://drjillcastro.org/">My Wife, Jill</a></li>
+  <li><a href="http://packdog.com/oscar-castro">My beagle, Oscar</a><li>
+  <li><a href="http://packdog.com/luna-330">My bagel, Luna</a><li>
+</ul>
+<br/>
+<h3>Projects I work on</h3>
+<ul class="main-navigation">
+  <li><a href="http://ubuntu.com/server">Ubuntu Server</a></li>
+  <li><a href="http://jujucharms.com">Juju</a></li>
+  <li><a href="http://jujucharms.com/store">Juju Charms</a></li>
+  <li><a href="http://askubuntu.com/users/235/jorge-castro">Ask Ubuntu</a></li>
+</ul>
+<br/>
+<h3>Projects that inspire me</h3>
+<ul class="main-navigation">
+<li><a href="http://openstack.org">OpenStack</a></li>
+<li><a href="http://discourse.org">Discourse</a></li>
+<li><a href="http://usfirst.org">FIRST Robotics Competition</a></li>
+<li><a href="http://www.littlekidsrock.org">Little Kids Rock</a></li>
+</ul>
+</br>
+
+
+<section class="aboutme">
+  <p>
+    I work on the Juju Ecosystem Team at Canonical Ltd. on Ubuntu Cloud and Server, find me at jorge at ubuntu dot com.
+  </p>
+</section>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		<a class="google" href="https://plus.google.com/116015965439782966698" rel="author" title="Google+">Google+</a>
+		
+		
+		<a class="twitter" href="http://twitter.com/castrojo" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/castrojo" title="GitHub">GitHub</a>
+		
+		
+		
+		  <a class="stackoverflow" href="http://askubuntu.com/users/235/jorge-castro" title="Ask Ubuntu"></a>
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://twitter.com/castrojo">castrojo</a> @ <a href="http://twitter.com">Twitter</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/twitter.js"></script>
+<script type="text/javascript">
+	(function($){
+		$('#banner').getTwitterFeed('castrojo', 4, false);
+	})(jQuery);
+</script>
+
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">13 Reasons to Deploy With Ubuntu Server</h1>
+	<div class="entry-content" itemprop="articleBody"><p>(Part 1 of 3)</p>
+
+<p>Sometimes people ask me why they should use Ubuntu Server. It’s an understandable question, after all, Ubuntu gets a bunch of attention on the desktop (and more recently mobile), but people tend to forget that Ubuntu is an excellent server distribution, quietly humming along helping to run some of the world’s coolest companies at scale. </p>
+
+<p>So I thought I’d document why you should choose Ubuntu for your organization. Paul Hammond from TypeKit <a href="http://www.paulhammond.org/2012/startup-infrastructure/startups.pdf">has said</a> “No startup has ever failed because they picked the wrong Linux distribution.” TypeKit’s Linux of choice? Ubuntu. Why is that? So I started to think of reasons why you would choose Ubuntu, and to celebrate the release of 13.04, I came up with 13 major reasons you would choose to go with us. Let’s get started, in no particular order! I’ll split this post over the next few days so you can digest it easier, and more importantly, go play with the things I talk about!</p>
+
+<h2 id="openstack-and-the-cloud-archive">OpenStack and the cloud archive</h2>
+
+<p>As I said a <a href="http://www.jorgecastro.org/2013/04/09/looking-to-deploy-openstack-ubuntu-has-you-covered/">few weeks ago</a>, shipping a well tested and robust OpenStack is one of our primary missions. We’ve been shipping OpenStack in Ubuntu for over 3 years now, and every cycle we get better at it. We do <em>daily</em> and <em>per commit</em> automated testing of OpenStack. Maybe that’s one of the reasons Ubuntu is the reference OS for OpenStack. </p>
+
+<p>We’re <a href="https://wiki.ubuntu.com/ServerTeam/CloudArchive">committed</a> to backporting the latest OpenStack releases to Ubuntu 12.04 LTS (Long Term Support). That means if you want the fresh upstream goodness of OpenStack but want a stable platform, you can get that with Ubuntu; no one else is doing anything like this. </p>
+
+<p>How ready is OpenStack and Ubuntu for production? It’s there, and we know that because we’re running <a href="http://www.youtube.com/watch?feature=player_embedded&amp;v=Gi2eoDU0xXM">OpenStack in production</a>. Moving from a traditional IT setup to “devops” using the cloud is tough, and we’re still in the process of doing it, we learned a bunch of best practices that we’ve shared with the community, see Robbie Williamson’s talk: <a href="http://www.youtube.com/watch?v=7GWyL-AzyO4">OpenStack in Production: the Good, the Bad &amp; the Ugly</a></p>
+
+<h2 id="ceph">Ceph</h2>
+
+<p><img src="http://www.jorgecastro.org/images/ceph.png" /></p>
+
+<p>Ceph is a <a href="http://en.wikipedia.org/wiki/Ceph_%28storage%29">massively scaleable distributed file system</a> that runs on commodity hardware. And it <a href="http://www.inktank.com/news-events/new/ceph-included-in-ubuntu-12-04-lts/">comes with Ubuntu</a> in main and is fully supported by Canonical and Inktank. Here is the <a href="https://blueprints.launchpad.net/ubuntu/+spec/servercloud-r-ceph">blueprint</a> of the usecases we are enabling out of the box. We’re also working on getting per-commit and daily automated testing of Ceph as well. </p>
+
+<p>I am doing Ceph a disservice by only mentioning it in one paragraph. The sheer capabilities of Ceph and it’s scalability can take up pages, so if you’re looking to get started with Ceph, check out this tutorial from Inktank on how they <a href="http://ceph.com/dev-notes/deploying-ceph-with-juju/">deploy Ceph with Juju</a> and check it out for yourself. </p>
+
+<h2 id="maas">MAAS</h2>
+
+<p><img src="http://www.jorgecastro.org/images/maas-logo.png" /></p>
+
+<p>On the local server front, we provide a provisioning tool called <a href="https://maas.ubuntu.com/">MAAS</a>, which stands for Metal-as-a-Service. MAAS not only provisions bare metal machines for you (on demand), but we like to say it “brings the language of the cloud to physical services”. Sometimes you just want the ability to horizontally scale as demand comes in, and have machines turn on, install the OS, and then get to work, all automatically. </p>
+
+<iframe width="500" height="280" src="http://youtube.com/embed/J1XH0SQARgo" frameborder="0" allowfullscreen=""></iframe>
+
+<p>We use MAAS to deploy OpenStack, or you can use MAAS to deploy whatever servers you need, e.g. Hadoop or Ceph, on whatever scale-out hardware you have, e.g. Intel, AMD, or ARM, all programatically. It’s a simple but powerful tool to deliver provisioned servers to you. </p>
+
+<h2 id="hardware-enablement-stack">Hardware Enablement Stack</h2>
+
+<p>Ubuntu provides what we call an <a href="https://wiki.ubuntu.com/Kernel/LTSEnablementStack">LTS Enablement Stack</a>. </p>
+
+<p>Simply stated, we provide newer kernels for the Long Term Support release, that means if you end up with newer hardware that needs newer hardware support you can still use an LTS release and have a stable userspace. The enablement kernels then provide you an upgrade path for the next LTS. </p>
+
+<p>For more tips on how to use these stacks, check out <a href="http://www.jorgecastro.org/2013/02/19/what-the-lts-enablement-stack-means-for-sysadmins/">this blog post</a>. </p>
+
+<p>Check out the previous sections if you missed them:</p>
+
+<ul>
+  <li><a href="http://www.jorgecastro.org/2013/04/29/13-reasons-to-deploy-with-ubuntu-server/">13 Reasons to Deploy with Ubuntu Server Part 1</a></li>
+  <li><a href="http://www.jorgecastro.org/2013/04/30/13-reasons-to-deploy-with-ubuntu-server-part-2/">13 Reasons to Deploy with Ubuntu Server Part 2</a></li>
+  <li><a href="http://www.jorgecastro.org/2013/05/01/13-reasons-to-deploy-with-ubuntu-server-part-3/">13 Reasons to Deploy with Ubuntu Server Part 3</a></li>
+</ul>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+
+</div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2016 - Jorge O. Castro -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			
+
+<script type="text/javascript">
+      var disqus_shortname = 'stompbox';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.jorgecastro.org/2013/04/29/13-reasons-to-deploy-with-ubuntu-server/';
+        var disqus_url = 'http://www.jorgecastro.org/2013/04/29/13-reasons-to-deploy-with-ubuntu-server/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>

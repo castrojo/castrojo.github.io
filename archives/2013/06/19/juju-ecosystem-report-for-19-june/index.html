@@ -1,0 +1,385 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Juju Ecosystem report for 19 June - Jorge's Stompbox</title>
+	<meta name="author" content="Jorge O. Castro">
+
+	
+	<meta name="description" content="Juju Ecosystem Report for 19 June Video recording Pad Status Board Juju.u.c Meeting Site Charm Tools Similar to last week, no real big changes, &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Jorge's Stompbox" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://www.jorgecastro.org/2013/06/19/juju-ecosystem-report-for-19-june/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("jorge@ubuntu.com") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+		});
+	</script>
+</div>
+<hgroup>
+  <h1><a href="/">Jorge's Stompbox</a></h1>
+  
+    <h2>Plug in, crank it to Eleven.</h2>
+  
+</hgroup>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29102971-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="http://about.me/jorge.castro">About Jorge</a></li>
+  <li><a href="http://www.jorgecastro.org/about.html">Bio</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="https://keybase.io/castrojo/key.asc">Public Key</a></li>
+  <li><a href="http://drjillcastro.org/">My Wife, Jill</a></li>
+  <li><a href="http://packdog.com/oscar-castro">My beagle, Oscar</a><li>
+  <li><a href="http://packdog.com/luna-330">My bagel, Luna</a><li>
+</ul>
+<br/>
+<h3>Projects I work on</h3>
+<ul class="main-navigation">
+  <li><a href="http://ubuntu.com/server">Ubuntu Server</a></li>
+  <li><a href="http://jujucharms.com">Juju</a></li>
+  <li><a href="http://jujucharms.com/store">Juju Charms</a></li>
+  <li><a href="http://askubuntu.com/users/235/jorge-castro">Ask Ubuntu</a></li>
+</ul>
+<br/>
+<h3>Projects that inspire me</h3>
+<ul class="main-navigation">
+<li><a href="http://openstack.org">OpenStack</a></li>
+<li><a href="http://discourse.org">Discourse</a></li>
+<li><a href="http://usfirst.org">FIRST Robotics Competition</a></li>
+<li><a href="http://www.littlekidsrock.org">Little Kids Rock</a></li>
+</ul>
+</br>
+
+
+<section class="aboutme">
+  <p>
+    I work on the Juju Ecosystem Team at Canonical Ltd. on Ubuntu Cloud and Server, find me at jorge at ubuntu dot com.
+  </p>
+</section>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		<a class="google" href="https://plus.google.com/116015965439782966698" rel="author" title="Google+">Google+</a>
+		
+		
+		<a class="twitter" href="http://twitter.com/castrojo" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/castrojo" title="GitHub">GitHub</a>
+		
+		
+		
+		  <a class="stackoverflow" href="http://askubuntu.com/users/235/jorge-castro" title="Ask Ubuntu"></a>
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://twitter.com/castrojo">castrojo</a> @ <a href="http://twitter.com">Twitter</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/twitter.js"></script>
+<script type="text/javascript">
+	(function($){
+		$('#banner').getTwitterFeed('castrojo', 4, false);
+	})(jQuery);
+</script>
+
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Juju Ecosystem Report for 19 June</h1>
+	<div class="entry-content" itemprop="articleBody"><ul>
+  <li><a href="http://youtu.be/RzEK10bC58w">Video recording</a></li>
+  <li><a href="http://pad.ubuntu.com/7mf2jvKXNa">Pad</a></li>
+  <li><a href="https://trello.com/board/charmers-board/4ec1696da3f94bd2ea5b2b01">Status Board</a></li>
+  <li><a href="https://juju.ubuntu.com/community/weekly-charm-meeting/">Juju.u.c Meeting Site</a></li>
+</ul>
+
+<h2 id="charm-tools">Charm Tools</h2>
+
+<ul>
+  <li>Similar to last week, no real big changes, Marco will hit these after he’s done with testing.</li>
+  <li>We need to update the review queue charm schools, the website queue  fixed the “time to first response”, but the CLI tool is behind. Mims to  bust it out. </li>
+</ul>
+
+<p>Ben’s charm-tools feedback. Just some ideas:</p>
+
+<ul>
+  <li>It would be nice for <code>charm create</code> to work more like <code>dh_make</code></li>
+  <li>It should ask for the license to use, and populate the copyright file</li>
+  <li>It would be nice for it read the DEBFULLNAME and DEBEMAIL and s/DEB/CHARM/ environment settings or even .bzr information to determine authorship</li>
+  <li>Category should be asked during the charm create</li>
+  <li>It should initialize the branch and accept <code>--git</code> or <code>--subversion</code></li>
+  <li>It should ask for standard requires, i.e. allow <code>--requires-db mysql</code> or <code>--requires-http varnish</code> or prompt</li>
+  <li>It should ask for what it provides, i.e. <code>--provides http</code></li>
+  <li>It should offer the option of a <code>--peer</code> for peer relationships</li>
+  <li>For the relationship hook, it would be great to have commented examples based on the <code>--requires-X</code></li>
+</ul>
+
+<h2 id="charm-helpers">Charm Helpers</h2>
+
+<ul>
+  <li>MPs coming in, progress looks great.</li>
+  <li>Wedgewood handling incoming work, activity happening, Marco will roll up a summary of work for next week. </li>
+  <li>Thanks Matthew for driving this!</li>
+</ul>
+
+<h2 id="testing">Testing</h2>
+
+<h3 id="minor-work">Minor work:</h3>
+
+<ul>
+  <li>charmtester updates to make it more flexible. This is the one that reports to jenkins on qa.ubuntu.com</li>
+  <li>juju test plugin, new features requested by the gui team
+    <ul>
+      <li>Can now run in an existing bootstrapped environment</li>
+      <li>You can now specify a config file in the test directory with options for the tests you want to run. There’s an example yaml template if you run <code>juju-test -h</code> if you wanna check it out, will be published EOD 2013-06-19</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="major-work">Major work:</h3>
+
+<ul>
+  <li>First release of the testing harness (lp:amulet) ready (ppa being prepped for folks to use). \o/
+    <ul>
+      <li>Wait command, just like <code>jitsu watch</code></li>
+      <li>Deployer command, describe an environment setting by running a bunch of manual commands, and then uses Kapil, Adam, Matthew, &amp; Co lp:juju-deployer tool to stand up an environment in a test. “Whoa”.
+        <ul>
+          <li>We’re using it to test openstack deployments and it’s designed to set up complex environments that are repeatable. </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="docs">Docs</h2>
+
+<ul>
+  <li>Translating old charm author docs to the new format.
+    <ul>
+      <li>DONE AS OF MONDAY. \o/ \o/ \o/</li>
+      <li>Just need to finish up the testing, and validation (just a port over of old docs to the new format, content still needs to be confirmed).</li>
+      <li>idea - have the new docs deployed as a sub off the apache2 charm. Have the charm do a cron to update from the bzr branch every 12 hours (need feedback).</li>
+      <li>Redirects are ready, for when docs go live</li>
+      <li>New doc branch @ lp:~charmers/juju-core/docs</li>
+      <li>any docs problems - <a href="https://bugs.launchpad.net/juju-core/docs">file a bug</a>!</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="charm-updates-from-the-store">Charm Updates from the Store</h2>
+
+<ul>
+  <li><a href="http://jujucharms.com/recently-changed">http://jujucharms.com/recently-changed</a></li>
+  <li>Jorge talking to MariaDB see if someone is interested in adding Maria Support to the MySQL charm, any help here appreciated, if you’re using MariaDB and Ubuntu we could use a hand here!</li>
+</ul>
+
+<h2 id="misc">Misc</h2>
+
+<ul>
+  <li>Merge proposal workflow. </li>
+</ul>
+
+<h2 id="events">Events</h2>
+
+<ul>
+  <li>OSCON - In progress, no issues. </li>
+</ul>
+
+<h2 id="framework-updates">FRAMEWORK UPDATES</h2>
+
+<ul>
+  <li>Rails - almost ready to begin</li>
+  <li>node.js - in progress. </li>
+  <li>Django and friends - in progress, no thanks to our messed up merge proposals. :)</li>
+</ul>
+
+<h2 id="blockers">Blockers</h2>
+
+<ul>
+  <li>Backports of juju-core to 12.04!!
+    <ul>
+      <li>Dependencies on go compiler, core team aware of it, trying to resolve.</li>
+      <li>charm tools and helpers backports blocking on this too. </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="goals-from-last-week">Goals from last week</h2>
+
+<ul>
+  <li>Mims: 0mq and storm</li>
+  <li>mims preping for Stanford talk</li>
+  <li>Do your docs videos!</li>
+</ul>
+
+<h2 id="goals-for-this-week">Goals for this week</h2>
+
+<ul>
+  <li>Mims to sync with Dave on juju-core pre-install hooks.</li>
+  <li>Mims: 0mq and storm</li>
+  <li>Mims preping for Stanford talk</li>
+  <li>Everyone: When you touch a charm, rate it, categorize it, see if you can give it an icon. </li>
+  <li>Do your docs videos!</li>
+  <li>People who did not do docs/videos this week and need to be embarrassed
+    <ul>
+      <li>Jorge Castro</li>
+      <li>Antonio Rosales</li>
+      <li>Mark Mims</li>
+      <li>Marco Ceppi</li>
+    </ul>
+  </li>
+  <li>arosales: get docs to a charm’ed up deployed stage</li>
+  <li>utlemming: on vacation</li>
+  <li>jorge: video and doc page</li>
+  <li>marco: vacation</li>
+  <li>mims: Storm and 0mq, talk prep</li>
+  <li>nick: 4 videos</li>
+</ul>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+
+</div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2016 - Jorge O. Castro -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			
+
+<script type="text/javascript">
+      var disqus_shortname = 'stompbox';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.jorgecastro.org/2013/06/19/juju-ecosystem-report-for-19-june/';
+        var disqus_url = 'http://www.jorgecastro.org/2013/06/19/juju-ecosystem-report-for-19-june/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>

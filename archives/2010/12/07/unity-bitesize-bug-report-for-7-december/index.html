@@ -1,0 +1,298 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Unity Bitesize Bug Report for 7 December - Jorge's Stompbox</title>
+	<meta name="author" content="Jorge O. Castro">
+
+	
+	<meta name="description" content="Unity Bitesize Bug Report for 7 December As I mentioned last week we’ve started a campaign for helping people get started on fixing bitesize bugs in &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Jorge's Stompbox" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://www.jorgecastro.org/2010/12/07/unity-bitesize-bug-report-for-7-december/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("jorge@ubuntu.com") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+		});
+	</script>
+</div>
+<hgroup>
+  <h1><a href="/">Jorge's Stompbox</a></h1>
+  
+    <h2>Plug in, crank it to Eleven.</h2>
+  
+</hgroup>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29102971-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="http://about.me/jorge.castro">About Jorge</a></li>
+  <li><a href="http://www.jorgecastro.org/about.html">Bio</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="https://keybase.io/castrojo/key.asc">Public Key</a></li>
+  <li><a href="http://drjillcastro.org/">My Wife, Jill</a></li>
+  <li><a href="http://packdog.com/oscar-castro">My beagle, Oscar</a><li>
+  <li><a href="http://packdog.com/luna-330">My bagel, Luna</a><li>
+</ul>
+<br/>
+<h3>Projects I work on</h3>
+<ul class="main-navigation">
+  <li><a href="http://ubuntu.com/server">Ubuntu Server</a></li>
+  <li><a href="http://jujucharms.com">Juju</a></li>
+  <li><a href="http://jujucharms.com/store">Juju Charms</a></li>
+  <li><a href="http://askubuntu.com/users/235/jorge-castro">Ask Ubuntu</a></li>
+</ul>
+<br/>
+<h3>Projects that inspire me</h3>
+<ul class="main-navigation">
+<li><a href="http://openstack.org">OpenStack</a></li>
+<li><a href="http://discourse.org">Discourse</a></li>
+<li><a href="http://usfirst.org">FIRST Robotics Competition</a></li>
+<li><a href="http://www.littlekidsrock.org">Little Kids Rock</a></li>
+</ul>
+</br>
+
+
+<section class="aboutme">
+  <p>
+    I work on the Juju Ecosystem Team at Canonical Ltd. on Ubuntu Cloud and Server, find me at jorge at ubuntu dot com.
+  </p>
+</section>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		<a class="google" href="https://plus.google.com/116015965439782966698" rel="author" title="Google+">Google+</a>
+		
+		
+		<a class="twitter" href="http://twitter.com/castrojo" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/castrojo" title="GitHub">GitHub</a>
+		
+		
+		
+		  <a class="stackoverflow" href="http://askubuntu.com/users/235/jorge-castro" title="Ask Ubuntu"></a>
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://twitter.com/castrojo">castrojo</a> @ <a href="http://twitter.com">Twitter</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/twitter.js"></script>
+<script type="text/javascript">
+	(function($){
+		$('#banner').getTwitterFeed('castrojo', 4, false);
+	})(jQuery);
+</script>
+
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Unity Bitesize Bug Report for 7 December</h1>
+	<div class="entry-content" itemprop="articleBody"><p>As I mentioned <a href="http://castrojo.tumblr.com/post/2084859426/getting-started-working-on-unity">last week</a> we’ve started a campaign for helping people get started on fixing bitesize bugs in Unity. Jono <a href="http://www.jonobacon.org/2010/12/06/get-started-hacking-on-unity-bitesize-bugs/">blogged</a> about this as well. As it turns up, we’ve got our first bitesize contributor today!</p>
+
+<p>Jamal Fanaian has fixed <a href="https://bugs.launchpad.net/unity/+bug/683241">Bug #683241: Recycle bin icon is empty when there are items in the bin</a>. Jamal is a developer working on Flickr. He passes along “I love Ubuntu and open source software, so my only real hobby has become working on open soruce. Other than that, I like playing with hardware, although recently I have found less time to do so.”</p>
+
+<p>Basically the trash icon showed up empty even if you had stuff in it. Jamal first grabbed the code, then fixed the bug, and <a href="https://code.launchpad.net/~jamalta/unity/683241-recyclebin-icon">then pushed it to launchpad</a>.</p>
+
+<p><img src="http://farm5.static.flickr.com/4009/4651051589_073cdd654a_m.jpg" alt="" /></p>
+
+<p>Photo by <a href="http://www.flickr.com/photos/sanguinetangox/">brittav</a>.</p>
+
+<p>From there he <a href="https://code.launchpad.net/~jamalta/unity/683241-recyclebin-icon/+merge/42917">submitted it for review</a> in Launchpad. In this specific example Alex Launi has started the review process. Now we’re cooking. So, how can you get started? First let’s have a look at <a href="https://bugs.launchpad.net/ubuntu/+source/unity/?field.omit_dupes=on&amp;field.tag=bitesize">the list</a> and look at the progress people have made this week.</p>
+
+<ul>
+  <li>
+    <strike>Bug 677577 - [Clicking on a launcher icon does not raise most recent window](https://bugs.launchpad.net/unity/+bug/677577)</strike>
+  </li>
+  <li>
+    <p>Fixed!</p>
+
+    <ul>
+      <li>
+        <p>Bug 646740 - <a href="https://bugs.launchpad.net/unity/+bug/646740">indicators are mis-aligned</a></p>
+      </li>
+      <li>
+        <strike>Bug 683241 - [Recycle bin icon is empty when there are items in the bin](https://bugs.launchpad.net/unity/+bug/683241)</strike>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Fixed!</p>
+
+    <ul>
+      <li>
+        <p>Bug 683466 - <a href="https://bugs.launchpad.net/unity/+bug/683466">There are 2 Quit menu options in Quicklist</a></p>
+      </li>
+      <li>
+        <p>Bug 599716 - <a href="https://bugs.launchpad.net/unity/+bug/599716">having “unity –replace” would be nice</a></p>
+      </li>
+      <li>
+        <p>Bug 681428 - <a href="https://bugs.launchpad.net/unity/+bug/681428">scrolling does not work on the sound menu</a> - Music lovers everywhere would appreciate a fix here.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>New bitesize bugs this week (they might be older bugs but new to bitesize):</p>
+
+<ul>
+  <li>
+    <p><a href="https://bugs.launchpad.net/ubuntu/+source/unity/+bug/686591">Bug 686591</a> - unity-panel-service should be autorestarted by unity when crashing - A fix for this one would be most welcome, as it’s annoying!</p>
+  </li>
+  <li>
+    <p><a href="https://bugs.launchpad.net/ubuntu/+source/unity/+bug/677594">Bug 677594</a> - Workspace switcher useless with one workspace</p>
+  </li>
+  <li>
+    <p>Armor Nick seems to be doing the initial investigation here.</p>
+
+    <ul>
+      <li>
+        <p><a href="https://bugs.launchpad.net/ubuntu/+source/unity/+bug/686182">Bug 686182</a> - Unity launchers run multiple copies of program if clicked multiple times before the program loads</p>
+      </li>
+      <li>
+        <p><a href="https://bugs.launchpad.net/ubuntu/+source/unity/+bug/599716">Bug 599716</a> - having an unity binary would be nice</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>Getting Involved:  Instructions for getting started are <a href="http://unity.ubuntu.com/getinvolved/%20">available here</a> </p>
+
+<p>For more information check out the wiki page: <a href="https://wiki.ubuntu.com/Unity/Bitesize">[https://wiki.ubuntu.com/Unity/Bitesize](https://wiki.ubuntu.com/Unity/Bitesize)</a></p>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+
+</div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2016 - Jorge O. Castro -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			
+
+<script type="text/javascript">
+      var disqus_shortname = 'stompbox';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>

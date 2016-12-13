@@ -1,0 +1,272 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Iterating deployment with juju - Jorge's Stompbox</title>
+	<meta name="author" content="Jorge O. Castro">
+
+	
+	<meta name="description" content="Iterating Deployment With Juju I recently blogged about how we redeployed OMG!Ubuntu onto AWS with juju and Ubuntu Server. But as I talk about in &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Jorge's Stompbox" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://www.jorgecastro.org/2012/03/22/iterating-deployment-with-juju/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("jorge@ubuntu.com") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+		});
+	</script>
+</div>
+<hgroup>
+  <h1><a href="/">Jorge's Stompbox</a></h1>
+  
+    <h2>Plug in, crank it to Eleven.</h2>
+  
+</hgroup>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29102971-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="http://about.me/jorge.castro">About Jorge</a></li>
+  <li><a href="http://www.jorgecastro.org/about.html">Bio</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="https://keybase.io/castrojo/key.asc">Public Key</a></li>
+  <li><a href="http://drjillcastro.org/">My Wife, Jill</a></li>
+  <li><a href="http://packdog.com/oscar-castro">My beagle, Oscar</a><li>
+  <li><a href="http://packdog.com/luna-330">My bagel, Luna</a><li>
+</ul>
+<br/>
+<h3>Projects I work on</h3>
+<ul class="main-navigation">
+  <li><a href="http://ubuntu.com/server">Ubuntu Server</a></li>
+  <li><a href="http://jujucharms.com">Juju</a></li>
+  <li><a href="http://jujucharms.com/store">Juju Charms</a></li>
+  <li><a href="http://askubuntu.com/users/235/jorge-castro">Ask Ubuntu</a></li>
+</ul>
+<br/>
+<h3>Projects that inspire me</h3>
+<ul class="main-navigation">
+<li><a href="http://openstack.org">OpenStack</a></li>
+<li><a href="http://discourse.org">Discourse</a></li>
+<li><a href="http://usfirst.org">FIRST Robotics Competition</a></li>
+<li><a href="http://www.littlekidsrock.org">Little Kids Rock</a></li>
+</ul>
+</br>
+
+
+<section class="aboutme">
+  <p>
+    I work on the Juju Ecosystem Team at Canonical Ltd. on Ubuntu Cloud and Server, find me at jorge at ubuntu dot com.
+  </p>
+</section>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		<a class="google" href="https://plus.google.com/116015965439782966698" rel="author" title="Google+">Google+</a>
+		
+		
+		<a class="twitter" href="http://twitter.com/castrojo" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/castrojo" title="GitHub">GitHub</a>
+		
+		
+		
+		  <a class="stackoverflow" href="http://askubuntu.com/users/235/jorge-castro" title="Ask Ubuntu"></a>
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://twitter.com/castrojo">castrojo</a> @ <a href="http://twitter.com">Twitter</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/twitter.js"></script>
+<script type="text/javascript">
+	(function($){
+		$('#banner').getTwitterFeed('castrojo', 4, false);
+	})(jQuery);
+</script>
+
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Iterating Deployment With Juju</h1>
+	<div class="entry-content" itemprop="articleBody"><p>I <a href="http://www.jorgecastro.org/2012/03/18/redeploying-omg-ubuntu-onto-the-cloud-with-juju/">recently blogged</a> about how we redeployed <a href="http://omgubuntu.co.uk">OMG!Ubuntu</a> onto AWS with juju and Ubuntu Server. </p>
+
+<p>But as I talk about in that post, I had made the mistake of “it’s not optimized, throw hardware at it!” and left the site up running on 4 extra large amazon instances. As Marco worked on the charm and Clint and I talked about how to move forward I kept kicking myself for going so overboard. Then Clint explained to me how the cloud lets you overcompensate, and then optimize, deploy, optimize, deploy, and so on. Each time cutting down on resources and saving money. </p>
+
+<p>Here’s how we did this part with juju.</p>
+
+<h2 id="capture-your-expertise">Capture your expertise</h2>
+
+<p>First things first. How did we fix the Wordpress charm? Well, Marco analyzed everything we needed, branched the old one, and <a href="http://charms.kapilt.com/~marcoceppi/oneiric/omgubuntu-wp">created this</a>. Click on all the hook links on that page to see what the charm does. I’m not going to go into every detail here, but the basics are, we pull Wordpress from upstream now to get the latest version, and the 2nd major thing is we implemented <a href="http://blog.brandonholtsclaw.com/">Brandon Holtsclaw’s</a> nginx configuration and heavy caching. It was important for us to capture every improvement, so we don’t have to do it again. This can be tough when firefighting, the temptation to just ssh into the node and fix it on the spot was a tempting carrot for most of this. But, determined not to do work over and over, we kept improving the charm.</p>
+
+<p>We are now running on 3 mediums for wordpress, all load balancing between themselves via nginx, and then one small for mysql and one small for juju’s bootstrap node. Ryan Kather asked why we weren’t using Amazon Elastic Load Balancing, but it turns out that ELB needs a DNS change and we don’t have access to DNS when Joey is asleep so we just decided to have nginx do the load balancing. Since nginx is doing that we don’t need ELB and we certainly don’t need an instance for haproxy. </p>
+
+<p>Now that the site is up (and still overkilled) we created a staging.omgubuntu.co.uk. And then (this is the cool part), Marco redeployed the charm again but on t1.micros. Now we have the exact deployment but on smaller machines so we can optimize. </p>
+
+<h2 id="and-then-iterate-again-and-again">And then iterate again and again</h2>
+
+<p>Each improvement gets pushed to the charm and redeployed. On the public cloud for a site the size of OMG! it takes 7 minutes to deploy. That means we can work on the charm and test it on staging quickly. If Clint wants to iterate even quicker he can just <a href="http://askubuntu.com/questions/65359/how-do-i-configure-juju-for-local-usage">deploy on his laptop</a> until he’s ready, and then push to AWS.</p>
+
+<p>This enables us to tweak staging and then when we’re ready either upgrade those micros or redeploy to something bigger. Right now the load on each medium instance is about .05, so we can now start to pare down the instance size to smalls so we can be more elastic in growth. Again, still overkill but since it’s so easy to test we can do this relatively quickly. I suspect our goal of getting down to 2-3 smalls is still easily attainable. </p>
+
+<h3 id="some-tools-and-other-lessons-weve-learned">Some tools and other lessons we’ve learned:</h3>
+
+<ul>
+  <li>siege (it’s in the archive), lets us load test on the deployments to see how they perform</li>
+  <li><a href="http://blitz.io/">blitz.io</a> is hosted siege that let’s you test from multiple locations. </li>
+  <li><a href="http://nginx.org/">nginx</a> in the hands of someone like Brandon is really epic. </li>
+  <li>We fired up a micro with byobu and then the team juju’ed in there, so we could collaborate in real time.</li>
+</ul>
+
+<h3 id="and-some-things-to-fix">And some things to fix</h3>
+
+<ul>
+  <li>We’re caching so hard if he posted right now it would take an hour for it to show up on the site, so we’re still figuring out how to have a post cache refresh happen when he posts.</li>
+  <li>Brandon wants to investigate <a href="http://www.cloudflare.com/">Cloudflare</a>. He’s used it in the past and likes it so we’re going to play with it.</li>
+  <li>We’ll need to branch and generalize and “backport” this set up to the Wordpress charm in the charm store. I am now convinced that this set up (and variations the community comes up with) should be the way we deploy Wordpress in Ubuntu, it will be exciting to see people deploying their blogs this way. </li>
+</ul>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+
+</div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2016 - Jorge O. Castro -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			
+
+<script type="text/javascript">
+      var disqus_shortname = 'stompbox';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.jorgecastro.org/2012/03/22/iterating-deployment-with-juju/';
+        var disqus_url = 'http://www.jorgecastro.org/2012/03/22/iterating-deployment-with-juju/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,324 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Redeploying OMG!Ubuntu onto the cloud with juju - Jorge's Stompbox</title>
+	<meta name="author" content="Jorge O. Castro">
+
+	
+	<meta name="description" content="Redeploying OMG!Ubuntu Onto the Cloud With Juju On St. Patrick’s day Marco Ceppi and I were chatting about SPDY. I was wondering if we could make an &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Jorge's Stompbox" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://www.jorgecastro.org/2012/03/18/redeploying-omg-ubuntu-onto-the-cloud-with-juju/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("jorge@ubuntu.com") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+		});
+	</script>
+</div>
+<hgroup>
+  <h1><a href="/">Jorge's Stompbox</a></h1>
+  
+    <h2>Plug in, crank it to Eleven.</h2>
+  
+</hgroup>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29102971-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="http://about.me/jorge.castro">About Jorge</a></li>
+  <li><a href="http://www.jorgecastro.org/about.html">Bio</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="https://keybase.io/castrojo/key.asc">Public Key</a></li>
+  <li><a href="http://drjillcastro.org/">My Wife, Jill</a></li>
+  <li><a href="http://packdog.com/oscar-castro">My beagle, Oscar</a><li>
+  <li><a href="http://packdog.com/luna-330">My bagel, Luna</a><li>
+</ul>
+<br/>
+<h3>Projects I work on</h3>
+<ul class="main-navigation">
+  <li><a href="http://ubuntu.com/server">Ubuntu Server</a></li>
+  <li><a href="http://jujucharms.com">Juju</a></li>
+  <li><a href="http://jujucharms.com/store">Juju Charms</a></li>
+  <li><a href="http://askubuntu.com/users/235/jorge-castro">Ask Ubuntu</a></li>
+</ul>
+<br/>
+<h3>Projects that inspire me</h3>
+<ul class="main-navigation">
+<li><a href="http://openstack.org">OpenStack</a></li>
+<li><a href="http://discourse.org">Discourse</a></li>
+<li><a href="http://usfirst.org">FIRST Robotics Competition</a></li>
+<li><a href="http://www.littlekidsrock.org">Little Kids Rock</a></li>
+</ul>
+</br>
+
+
+<section class="aboutme">
+  <p>
+    I work on the Juju Ecosystem Team at Canonical Ltd. on Ubuntu Cloud and Server, find me at jorge at ubuntu dot com.
+  </p>
+</section>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		<a class="google" href="https://plus.google.com/116015965439782966698" rel="author" title="Google+">Google+</a>
+		
+		
+		<a class="twitter" href="http://twitter.com/castrojo" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/castrojo" title="GitHub">GitHub</a>
+		
+		
+		
+		  <a class="stackoverflow" href="http://askubuntu.com/users/235/jorge-castro" title="Ask Ubuntu"></a>
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://twitter.com/castrojo">castrojo</a> @ <a href="http://twitter.com">Twitter</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/twitter.js"></script>
+<script type="text/javascript">
+	(function($){
+		$('#banner').getTwitterFeed('castrojo', 4, false);
+	})(jQuery);
+</script>
+
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Redeploying OMG!Ubuntu Onto the Cloud With Juju</h1>
+	<div class="entry-content" itemprop="articleBody"><p>On St. Patrick’s day <a href="http://marcoceppi.com/">Marco Ceppi</a> and I were chatting about SPDY. I was wondering if we could make an option on the WordPress charm to try the experimental SPDY support in either Apache or some other web server. It’d be a cool trick. In general the WordPress charm is boring and generic, it needs to be <a href="http://www.jorgecastro.org/2012/02/09/shipping-best-practice-with-juju-charms/">hotrodded</a>.</p>
+
+<p>Then we noticed OMG!Ubuntu was still down. He had moved his server and all it was returning was a “It Works!” page. As we talked about the charm I kept following the gnashing of teeth from Ubuntu fans aching for their news. Moving a server. Takes a weekend? Over 3 days of downtime? Then it just started to really bother me. </p>
+
+<p>This is 2012, we’re smarter than this! So I asked Joey if we could help. Some standalone server being set up in some rack on only one box? What happens when the site gets busy? What if the facility goes down? So we’re not only going to move him to AWS, we were going to do it with juju so we can show people how easy this is. </p>
+
+<p>Challenge Accepted.</p>
+
+<h2 id="step-one---think-about-how-you-want-to-be">Step One - Think about how you want to be.</h2>
+
+<p>Let’s get started then. I know we’re going to use juju, so:</p>
+
+<pre><code>juju bootstrap
+</code></pre>
+
+<p>And a node fires up on AWS and starts configuring itself with Ubuntu Server. I know we will want a three tier system. One MySQL, one for WordPress, and one for a load balancer so we can add more WordPress later.</p>
+
+<pre><code>juju deploy wordpress
+juju deploy haproxy
+juju deploy mysql
+</code></pre>
+
+<p>Three more instances fire up, with Ubuntu Server, and start installing all those things. Ok, now let’s introduce them. HAProxy needs to know where WordPress is, and WordPress needs to talk to MySQL. </p>
+
+<pre><code>juju add-relation haproxy wordpress
+juju add-relation wordpress mysql
+</code></pre>
+
+<p>This is where the magic comes in. The hooks know what WordPress should do when it talks to haproxy, and what to do when talking to MySQL. Ok, we’re done, we have Wordpress ready to go. Not bad, 7 commands to a brand new OMG!</p>
+
+<p>I then did a <code>juju expose haproxy</code> and told Marco “Ready”. I had shared my juju environment with him and put both of our ssh keys in it. Because of this I was able to type these commands and Marco could run <code>juju status</code> and check on them. After about 9 minutes or so for the instances to fire up he was ready to go and we had WordPress up. </p>
+
+<h2 id="step-two---getting-your-old-stuff">Step Two - Getting your old stuff</h2>
+
+<p>Joey provided Marco with access to his server with the wonderful <code>ssh-import-id</code> tool. All he needed to do was <code>ssh-import-id marcoceppi</code> and the tool went to launchpad, grabbed his ssh keys, and added them to the server. Then Marco was able to ssh in and copy the data.</p>
+
+<p>The first set was the MySQL dump. He can get to the MySQL node by just doing <code>juju ssh mysql/0</code> and to the WordPress node with <code>juju ssh wordpress/0</code>. This copy took a bit, the MySQL database was only about 750MB compressed, but there were like 3GB worth of images.</p>
+
+<p>Since this was a WordPress install the only directory that need to be moved was <code>wp-content</code>, this made updating simple with the exisiting charm and WordPress infrastructure.</p>
+
+<h2 id="step-three---getting-it-all-ready-to-go">Step Three - Getting it all ready to go.</h2>
+
+<p>Marco copied all the WordPress files in the right spot while I refreshed. And … it worked! Almost. Some images were missing. They were still on the old server, just in a spot we weren’t expecting. Easy fix to copy them over.</p>
+
+<p>We banged on it a bit and we were good to go!</p>
+
+<h2 id="step-four---lets-do-it">Step Four - Let’s do it.</h2>
+
+<p>Right around here I realized I had made a mistake. We had initially started with 4 small Amazon instances. Redirecting the traffic from the old server just for a few seconds crushed the instances. The load on WordPress was 90 alone. Ah nuts I said, should have gone large. I specified extra large in the juju config and reran those commands. When the new environment was up Marco was able to copy the data over to them. Since we were already on AWS instance to instance copy was at LAN speed.</p>
+
+<p>Then we pointed traffic at it again. Instances got smoked again. This time the load was around 40. How? How can one blog smoke these instances like that? </p>
+
+<h2 id="step-five---expertise-there-is-no-replacement">Step Five - Expertise, there is no replacement.</h2>
+
+<p>I texted Ubuntu Server Engineer and MySQL ninja <a href="http://fewbar.com/">Clint Byrum</a> and explained the situation. He checked it out and had it humming in about 5 minutes. So much so that he finished with “Hey you could have just run this on an m1.small, did you guys try that?” Thanks Clint. Now all that was left to do was getting the WordPress node under control. </p>
+
+<p>Marco did this a few ways, he turned on Caching in WordPress, and added Opcode caching in php with APC. Eventually the load on the WordPress instance went down to .01. There were some additional issues with the sheer amount of WordPress plugins OMG! is using, which makes it hard to debug what was going on.</p>
+
+<p>By now Joey was long asleep, we were about 5 hours in, but it was FAST on AWS. So we sent him a mail with the elastic IP so he could move DNS and went to bed.</p>
+
+<h2 id="and-where-the-big-work-begins">And where the big work begins.</h2>
+
+<p>Right now the site is running on 4 extra large AWS instances. This comes out at about $3.56 an hour + bandwidth. Not ideal, especially since we know we can move back to m1.smalls. We learned a bunch, in fact, it brought to light some things we can fix in Ubuntu: </p>
+
+<ul>
+  <li>The first trick will be to move the images to S3 buckets. Right now the WordPress EC2 instance is serving the images via Apache. This is expensive. We can move these all into S3 buckets and <s>save way more money</s> pay the same amount of money but take the load off the WordPress instance so won’t even have to be so busy, we can move that to an m1.small. (Update: I was wrong on EC2 and S3 pricing for outgoing data, current 12 cents a gig for either one.)</li>
+  <li>We can also move MySQL to an m1.small.</li>
+  <li>haproxy just points people around, we can move that to an m1.small.</li>
+  <li>And lastly we can move the juju bootstrap node to an m1.small. </li>
+  <li>The WordPress and MySQL charms need work. They basically just apt-get install stuff and connect them to each other, they don’t do what people need for them to do to deploy a real site. This helps us a bunch, but it would be wicked to have experts collaborating around this work. It wouldn’t hurt to make the MySQL package more scaleable out of the box either. </li>
+</ul>
+
+<p>Doing this will make OMG! run on 4 m1.smalls, .32 cents an hour instead of $3.56; plus bandwidth costs. We can cut down a node soon when juju supports putting the bootstrap node on another one instead of running on it’s own, that’ll take us down to 3 nodes. </p>
+
+<p>Marco is making an OMG! charm that is a the WordPress charm but with everything we learned today. When it’s ready the sysadmin at OMG! will do all those commands I just showed you, and then he’ll be done, except he’ll be running on AWS, with proper S3 integration, backup snapshots to S3, and all the goodies and running smooth as butter. </p>
+
+<p>Now that Marco is <em>capturing everything he’s learned</em> in to a charm, we don’t have to do this by hand anymore. It will be trivial to deploy OMG. Joey can redeploy it onto another zone for redundancy and backup, along with all the data, probably in less than an hour, depending on how long the data copy takes from zone to zone. In fact, I think I’m going to try it just to see how long it takes. Things learned tonight we’ll put back in the MySQL and WordPress charms, so that any one who wants to run WordPress on Ubuntu can have a sweet rig. </p>
+
+<h2 id="conclusion-and-scale-o-rama">Conclusion and Scale-o-rama</h2>
+
+<p>We showed you how deploying can become easier, and basically scripted. That’s not even the nice part about juju. Every 6 months when Ubuntu releases OMG!Ubuntu gets nearly overrun with traffic. One server, you can’t scale. Unless you buy or rent another server, but he doesn’t need another server except for those few times he’s hurtin’. Want to know how easy it is to scale with juju? About a week before release Joey will go:</p>
+
+<pre><code>juju add-unit wordpress-omg
+</code></pre>
+
+<p>And another WordPress instance will come up. Since haproxy and WordPress already know each other it will just work. He’ll have a 2 node WordPress instance. He can run this commands for as many nodes as he wants depending on how much traffic is coming in. After the traffic surge is over, he can <code>juju remove-unit wordpress-omg</code> back to one node. for normal operations. Pay for exactly what you need and be able to grow at a moment’s notice, that’s how we roll. </p>
+
+<p>And this is just with WordPress and MySQL, a simple example, you should see how we do Hadoop! We can do this for any <a href="http://charms.kapilt.com/charms">service we have a charm for</a>. Interested in getting your stuff on the cloud? Here’s how you can <a href="https://juju.ubuntu.com/Charms">write your own charm</a>, and don’t forget to enter the <a href="http://cloud.ubuntu.com/2012/02/juju-charm-contest-help-bring-free-software-into-the-cloud/">charm contest</a>, where we’re giving away $500 in Amazon Gift cards for submitted charms!</p>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+
+</div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2016 - Jorge O. Castro -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			
+
+<script type="text/javascript">
+      var disqus_shortname = 'stompbox';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.jorgecastro.org/2012/03/18/redeploying-omg-ubuntu-onto-the-cloud-with-juju/';
+        var disqus_url = 'http://www.jorgecastro.org/2012/03/18/redeploying-omg-ubuntu-onto-the-cloud-with-juju/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>

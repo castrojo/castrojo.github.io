@@ -1,0 +1,282 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Node.js, Django, and Rails updates for cloud users - Jorge's Stompbox</title>
+	<meta name="author" content="Jorge O. Castro">
+
+	
+	<meta name="description" content="Node.js, Django, and Rails Updates for Cloud Users We’ve had a breakneck pace of Juju progress over the past few months, I’m going to attempt to &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Jorge's Stompbox" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://www.jorgecastro.org/2013/03/13/juju-charm-updates-for-march/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("jorge@ubuntu.com") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+		});
+	</script>
+</div>
+<hgroup>
+  <h1><a href="/">Jorge's Stompbox</a></h1>
+  
+    <h2>Plug in, crank it to Eleven.</h2>
+  
+</hgroup>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29102971-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="http://about.me/jorge.castro">About Jorge</a></li>
+  <li><a href="http://www.jorgecastro.org/about.html">Bio</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="https://keybase.io/castrojo/key.asc">Public Key</a></li>
+  <li><a href="http://drjillcastro.org/">My Wife, Jill</a></li>
+  <li><a href="http://packdog.com/oscar-castro">My beagle, Oscar</a><li>
+  <li><a href="http://packdog.com/luna-330">My bagel, Luna</a><li>
+</ul>
+<br/>
+<h3>Projects I work on</h3>
+<ul class="main-navigation">
+  <li><a href="http://ubuntu.com/server">Ubuntu Server</a></li>
+  <li><a href="http://jujucharms.com">Juju</a></li>
+  <li><a href="http://jujucharms.com/store">Juju Charms</a></li>
+  <li><a href="http://askubuntu.com/users/235/jorge-castro">Ask Ubuntu</a></li>
+</ul>
+<br/>
+<h3>Projects that inspire me</h3>
+<ul class="main-navigation">
+<li><a href="http://openstack.org">OpenStack</a></li>
+<li><a href="http://discourse.org">Discourse</a></li>
+<li><a href="http://usfirst.org">FIRST Robotics Competition</a></li>
+<li><a href="http://www.littlekidsrock.org">Little Kids Rock</a></li>
+</ul>
+</br>
+
+
+<section class="aboutme">
+  <p>
+    I work on the Juju Ecosystem Team at Canonical Ltd. on Ubuntu Cloud and Server, find me at jorge at ubuntu dot com.
+  </p>
+</section>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		<a class="google" href="https://plus.google.com/116015965439782966698" rel="author" title="Google+">Google+</a>
+		
+		
+		<a class="twitter" href="http://twitter.com/castrojo" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/castrojo" title="GitHub">GitHub</a>
+		
+		
+		
+		  <a class="stackoverflow" href="http://askubuntu.com/users/235/jorge-castro" title="Ask Ubuntu"></a>
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://twitter.com/castrojo">castrojo</a> @ <a href="http://twitter.com">Twitter</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/twitter.js"></script>
+<script type="text/javascript">
+	(function($){
+		$('#banner').getTwitterFeed('castrojo', 4, false);
+	})(jQuery);
+</script>
+
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Node.js, Django, and Rails Updates for Cloud Users</h1>
+	<div class="entry-content" itemprop="articleBody"><p>We’ve had a <a href="http://jujucharms.com/recently-changed">breakneck pace</a> of Juju progress over the past few months, I’m going to attempt to summarize all the fabulous work the Ubuntu community has been working on to make deploying applications in the cloud a rockin’ experience.</p>
+
+<p>The Node.js, Django, and Rails charms are what we call “platform charms”. The idea here is to whip up a quick config telling juju where your application lives (github, etc.), then you just pass that along to juju and it’ll deploy your app in the cloud. Check <a href="http://www.jorgecastro.org/2012/11/16/deploying-your-rails-application-in-the-cloud-via-juju/">this out</a> for an example. Ideally with these charms we can make <em>any</em> applications written in these stacks to be instantly deployable with little to no work by the user. </p>
+
+<h3 id="nodejs">Node.js</h3>
+
+<ul>
+  <li>Marius B. Kotsbak has been working on our Node.js charm. His first is to add <a href="https://code.launchpad.net/~mariusko/charms/precise/node-app/trunk">support for updating</a> the user application.</li>
+  <li>Marius has a <a href="https://blueprints.launchpad.net/juju/+spec/juju-charm-app-git-deployment">blueprint</a> with how he expects the node charm’s behavior will be fleshed out. </li>
+  <li>Feel free to ping Marius or myself if you’re a node.js developer and interested in helping out. </li>
+</ul>
+
+<h3 id="django">Django</h3>
+
+<ul>
+  <li>Patrick Hetu and Bruno Girin have been on a roll lately, check out <a href="https://groups.google.com/d/msg/django-users/979lJojyxs0/KK9fWfkK0FYJ">this post</a> to the django-user’s mailing list asking for feedback on their Django work. </li>
+</ul>
+
+<h3 id="rails">Rails</h3>
+
+<p>Lots of activity in Rails this week, thanks to Pavel Pachkovskij from <a href="http://altoros.com/">Altoros Inc.</a></p>
+
+<ul>
+  <li>A <a href="http://jujucharms.com/charms/precise/rack">Rack charm</a> that let’s you deploy a rack application.</li>
+  <li>And you have your choice of which webserver you want to deploy with it, either <a href="http://jujucharms.com/charms/precise/apache2-passenger">apache2-passanger</a>, or <a href="http://jujucharms.com/charms/precise/nginx-passenger">nginx-passenger</a>.</li>
+  <li>And lastly (not in the store yet), there’s an addition of the <a href="http://jujucharms.com/~pavel-pachkovskij/precise/god">God monitoring framework</a>, which you can use as a subordinate charm to monitor your deployed stack. </li>
+</ul>
+
+<p>Not a bad set of updates for Rails, we’re hoping that by 14.04 we’ll have a fully instrumented Rack stack that will be tested and scalable for everyone.</p>
+
+<h3 id="databases">Databases</h3>
+
+<ul>
+  <li>Stuart Bishop has added master/slave replication to the Postgres charm. You can find out how to use it in <a href="http://jujucharms.com/charms/precise/postgresql">the README</a>. </li>
+  <li>Antonio Rosales demoed setting up replicasets with the <a href="http://jujucharms.com/charms/precise/mongodb">MongoDB charm</a> at MongoDB Austin. </li>
+</ul>
+
+<h3 id="other-updates">Other updates</h3>
+
+<p>And those are just the highlights, a ton of work continues to go into one of our most important set of charms, OpenStack, too many to list here, we’ll just show you at ODS, heh. </p>
+
+<ul>
+  <li>What will become Juju 2.0 has now released version <a href="https://lists.ubuntu.com/archives/juju/2013-March/002156.html">1.9.11</a> for your testing pleasure, this is the first time the 2.0 series can run on HP Cloud, so we could use some testing there. </li>
+</ul>
+
+<p>Come check us out at <a href="http://juju.ubuntu.com/Events">any one of these events in 2013</a> if you’re interested in learning more.</p>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+
+</div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2016 - Jorge O. Castro -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			
+
+<script type="text/javascript">
+      var disqus_shortname = 'stompbox';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.jorgecastro.org/2013/03/13/juju-charm-updates-for-march/';
+        var disqus_url = 'http://www.jorgecastro.org/2013/03/13/juju-charm-updates-for-march/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>

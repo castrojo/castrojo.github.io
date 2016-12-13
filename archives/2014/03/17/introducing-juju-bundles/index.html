@@ -1,0 +1,304 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Introducing Juju Bundles - Jorge's Stompbox</title>
+	<meta name="author" content="Jorge O. Castro">
+
+	
+	<meta name="description" content="Introducing Juju Bundles “Rick, I want you to fire up an empty cloud deployment”, said no boss ever. The various teams who make up “The Ubuntu &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Jorge's Stompbox" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://www.jorgecastro.org/2014/03/17/introducing-juju-bundles/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("jorge@ubuntu.com") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+		});
+	</script>
+</div>
+<hgroup>
+  <h1><a href="/">Jorge's Stompbox</a></h1>
+  
+    <h2>Plug in, crank it to Eleven.</h2>
+  
+</hgroup>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29102971-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="http://about.me/jorge.castro">About Jorge</a></li>
+  <li><a href="http://www.jorgecastro.org/about.html">Bio</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="https://keybase.io/castrojo/key.asc">Public Key</a></li>
+  <li><a href="http://drjillcastro.org/">My Wife, Jill</a></li>
+  <li><a href="http://packdog.com/oscar-castro">My beagle, Oscar</a><li>
+  <li><a href="http://packdog.com/luna-330">My bagel, Luna</a><li>
+</ul>
+<br/>
+<h3>Projects I work on</h3>
+<ul class="main-navigation">
+  <li><a href="http://ubuntu.com/server">Ubuntu Server</a></li>
+  <li><a href="http://jujucharms.com">Juju</a></li>
+  <li><a href="http://jujucharms.com/store">Juju Charms</a></li>
+  <li><a href="http://askubuntu.com/users/235/jorge-castro">Ask Ubuntu</a></li>
+</ul>
+<br/>
+<h3>Projects that inspire me</h3>
+<ul class="main-navigation">
+<li><a href="http://openstack.org">OpenStack</a></li>
+<li><a href="http://discourse.org">Discourse</a></li>
+<li><a href="http://usfirst.org">FIRST Robotics Competition</a></li>
+<li><a href="http://www.littlekidsrock.org">Little Kids Rock</a></li>
+</ul>
+</br>
+
+
+<section class="aboutme">
+  <p>
+    I work on the Juju Ecosystem Team at Canonical Ltd. on Ubuntu Cloud and Server, find me at jorge at ubuntu dot com.
+  </p>
+</section>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		<a class="google" href="https://plus.google.com/116015965439782966698" rel="author" title="Google+">Google+</a>
+		
+		
+		<a class="twitter" href="http://twitter.com/castrojo" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/castrojo" title="GitHub">GitHub</a>
+		
+		
+		
+		  <a class="stackoverflow" href="http://askubuntu.com/users/235/jorge-castro" title="Ask Ubuntu"></a>
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://twitter.com/castrojo">castrojo</a> @ <a href="http://twitter.com">Twitter</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/twitter.js"></script>
+<script type="text/javascript">
+	(function($){
+		$('#banner').getTwitterFeed('castrojo', 4, false);
+	})(jQuery);
+</script>
+
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Introducing Juju Bundles</h1>
+	<div class="entry-content" itemprop="articleBody"><p>“Rick, I want you to fire up an empty cloud deployment”, said no boss ever. </p>
+
+<p>The various teams who make up “The Ubuntu Server Team” work on various bits. Some work to make OpenStack easy to deploy,
+some work on packaging, some work on building images for all the public clouds we support. All this is fine and
+dandy, but at the end of the day, our users deploy things on top of Ubuntu Server, and these workloads are really
+what it’s all about. </p>
+
+<p>Over the past two years it’s been increasingly obvious to us that orchestrating workloads is becoming one of the
+most important things we can help users with. What’s the point of an easy to use OpenStack installer if people can’t
+plop Hadoop, or Cassandra, or their Rails app right on top easily? </p>
+
+<p>One part of this solution is our work on <a href="http://juju.ubuntu.com">Juju</a>, which makes orchestration simple; we can just
+manage deployments at the service level while not caring (too much) about individial instances. Some people wanted
+and needed things to be even highter level. “Look, I’ve got a pile of machines over here, I need a MongoDB cluster” 
+and you don’t have the time! Or more increasingly, you know how to do all these steps, but need a way to make it 
+portable so everyone else in your organization can benefit from your hard work. </p>
+
+<p>So today we <a href="http://insights.ubuntu.com/news/juju-bundles-and-quickstart-create-an-entire-cloud-environment-in-seconds/">announced Juju Bundles</a>. Technically, they’re very simple, it’s a yaml file that describes charms and their relationships to other charms. 
+It can contain machine constraints, or any of the parameters you’d ship in a charm. That means deploying large swaths
+of services are now <em>one command</em>. </p>
+
+<pre><code>juju quickstart bundle:~charmers/mongodb/cluster
+juju quickstart bundle:~charmers/hadoop/cluster
+juju quickstart bundle:~charmers/mediawiki/scalable
+</code></pre>
+
+<p>There’s a 13 node 3 shard MongoDB cluster, a 7 node starter Hadoop cluster, and a 5 node Mediwiki. All of them can be
+horizontally scaled out of the box. <code>juju add-unit -n10 hadoop-slavecluster</code> and go to town. Not Bad!</p>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<p>If you’re on Ubuntu <a href="http://blog.mitechie.com/2014/03/17/juju-quickstart-and-the-power-of-bundles/">Rick has the info</a> 
+in his blog post, you basically: </p>
+
+<pre><code>sudo add-apt-repository ppa:juju/stable
+sudo apt-get update
+sudo apt-get install juju-quickstart
+</code></pre>
+
+<p>Then run one of the commands I mentioned:</p>
+
+<pre><code>juju quickstart bundle:~charmers/mongodb/cluster
+</code></pre>
+
+<p>Juju will then walk you through setting up an environment. Pick one. AWS, Microsoft Windows Azure, Joyent, HP Cloud,
+or your own OpenStack or laptop via LXC, then fill out your creds:</p>
+
+<p><img src="http://www.jorgecastro.org/images/quickstart2.png" /></p>
+
+<p>Now get a cup of coffee, or watch the console for the magic, maybe read the 
+<a href="https://jujucharms.com/precise/mongodb/#readme">README</a>.</p>
+
+<p><img src="http://www.jorgecastro.org/images/mongo-cluster-bundle.png" /></p>
+
+<p>Now go put that bad boy to work. </p>
+
+<p>Quickstart is not yet available for OSX or Windows (we’re working on it), but if you want to play with it we’ve
+made a <a href="https://juju.ubuntu.com/docs/config-vagrant.html">Vagrant box available</a> for you to play with. </p>
+
+<h2 id="the-future">The Future</h2>
+
+<p>Over the course of the next few weeks as we ramp up to 14.04 we’ll be doing a few things. We’ll be tightening up the
+URLs to be easier to remember, so something like <code>juju quickstart bundle:mongodb/cluster</code>. Obviously we’d love to 
+see more bundles from the community being submitted. </p>
+
+<p>Check out <a href="https://juju.ubuntu.com/docs/charms-bundles.html">the documentation</a> for more, and for a more technical 
+description of how bundles work check out <a href="http://blog.mitechie.com/2014/03/17/juju-quickstart-and-the-power-of-bundles/">Rick’s blog post</a>.
+We also made a <a href="https://www.youtube.com/watch?v=eYpnQI6GZTA">tutorial video</a> on how to make and share your own bundles. </p>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+
+</div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2016 - Jorge O. Castro -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			
+
+<script type="text/javascript">
+      var disqus_shortname = 'stompbox';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.jorgecastro.org/2014/03/17/introducing-juju-bundles/';
+        var disqus_url = 'http://www.jorgecastro.org/2014/03/17/introducing-juju-bundles/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>

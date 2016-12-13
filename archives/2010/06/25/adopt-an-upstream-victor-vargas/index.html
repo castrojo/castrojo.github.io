@@ -1,0 +1,287 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Adopt an Upstream: Victor Vargas - Jorge's Stompbox</title>
+	<meta name="author" content="Jorge O. Castro">
+
+	
+	<meta name="description" content="Adopt an Upstream: Victor Vargas We’ve been banging on about adopting upstream packages as a great way to take care of a certain class of bugs with &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Jorge's Stompbox" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://www.jorgecastro.org/2010/06/25/adopt-an-upstream-victor-vargas/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("jorge@ubuntu.com") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+		});
+	</script>
+</div>
+<hgroup>
+  <h1><a href="/">Jorge's Stompbox</a></h1>
+  
+    <h2>Plug in, crank it to Eleven.</h2>
+  
+</hgroup>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29102971-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="http://about.me/jorge.castro">About Jorge</a></li>
+  <li><a href="http://www.jorgecastro.org/about.html">Bio</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="https://keybase.io/castrojo/key.asc">Public Key</a></li>
+  <li><a href="http://drjillcastro.org/">My Wife, Jill</a></li>
+  <li><a href="http://packdog.com/oscar-castro">My beagle, Oscar</a><li>
+  <li><a href="http://packdog.com/luna-330">My bagel, Luna</a><li>
+</ul>
+<br/>
+<h3>Projects I work on</h3>
+<ul class="main-navigation">
+  <li><a href="http://ubuntu.com/server">Ubuntu Server</a></li>
+  <li><a href="http://jujucharms.com">Juju</a></li>
+  <li><a href="http://jujucharms.com/store">Juju Charms</a></li>
+  <li><a href="http://askubuntu.com/users/235/jorge-castro">Ask Ubuntu</a></li>
+</ul>
+<br/>
+<h3>Projects that inspire me</h3>
+<ul class="main-navigation">
+<li><a href="http://openstack.org">OpenStack</a></li>
+<li><a href="http://discourse.org">Discourse</a></li>
+<li><a href="http://usfirst.org">FIRST Robotics Competition</a></li>
+<li><a href="http://www.littlekidsrock.org">Little Kids Rock</a></li>
+</ul>
+</br>
+
+
+<section class="aboutme">
+  <p>
+    I work on the Juju Ecosystem Team at Canonical Ltd. on Ubuntu Cloud and Server, find me at jorge at ubuntu dot com.
+  </p>
+</section>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		<a class="google" href="https://plus.google.com/116015965439782966698" rel="author" title="Google+">Google+</a>
+		
+		
+		<a class="twitter" href="http://twitter.com/castrojo" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/castrojo" title="GitHub">GitHub</a>
+		
+		
+		
+		  <a class="stackoverflow" href="http://askubuntu.com/users/235/jorge-castro" title="Ask Ubuntu"></a>
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://twitter.com/castrojo">castrojo</a> @ <a href="http://twitter.com">Twitter</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/twitter.js"></script>
+<script type="text/javascript">
+	(function($){
+		$('#banner').getTwitterFeed('castrojo', 4, false);
+	})(jQuery);
+</script>
+
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Adopt an Upstream: Victor Vargas</h1>
+	<div class="entry-content" itemprop="articleBody"><p>We’ve been banging on about <a href="https://wiki.ubuntu.com/BugSquad/AdoptPackage">adopting upstream packages</a> as a great way to take care of a certain class of bugs with Launchpad. </p>
+
+<p><a href="http://picasaweb.google.com/lh/photo/d5kIs7T0Mmckit1G-Y8TPi-l3z-BjM6dLNoML06aFOU?feat=embedwebsite"><img src="http://lh3.ggpht.com/_1Thkya8n93k/TCSXzk8AfII/AAAAAAAAbK8/H4NNFWdFWEE/s800/4056427201_674867ba47.jpg" alt="" /></a></p>
+
+<p>Victor Vargas (aka Kamusin) has been working on multiple packages on the GNOME side, he recently adopted the rhythmbox package and he’s doing great work so far, doing Triage work on the Ubuntu side and also reporting those bugs to the Upstream Bug Tracker providing the right logs and always trying to keep those updated with the latest information and helping to build a better relationship with the upstream maintainers.</p>
+
+<p>He’s not only working on rhythmbox though, Victor is also triaging a lot of bugs on nautilus and Evolution. Victor is also involved on Bug days and doing amazing work organizing those and triaging bugs on those days. Here’s a bit of the work he’s doing:</p>
+
+<ul>
+  <li>
+    <p>Bugs reported upstream: 41</p>
+  </li>
+  <li>
+    <p>Bugs reported on rhythmbox: 11</p>
+  </li>
+  <li>
+    <p>Bugs reported on nautilus: 14</p>
+  </li>
+</ul>
+
+<p>Check out his profile on the upstream bugzilla <a href="https://bugzilla.gnome.org/page.cgi?id=describeuser.html&amp;login=kamusin%%2040gmail.com">here</a>. I asked Victor how he got started and to give me some tips to pass along to people who might be interested in this, here’s what he has to say:</p>
+
+<blockquote>
+
+</blockquote>
+
+<blockquote>
+
+  <ul>
+    <li>In some parts of the day I go to <a href="http://status.qa.ubuntu.com/">http://status.qa.ubuntu.com/</a> and take a look at statistics for gwibber and rhythmbox for seeing what it’s going on today ..</li>
+  </ul>
+
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>Depending how much is growing our curve in graphs for new reports, is the priority that I should see first (I try to maintain as low as I can new reports for get nice stats and feel that things are better)</li>
+  </ul>
+
+</blockquote>
+
+<blockquote>
+
+  <p>Sometimes you can’t be able to reproduce all problems or thinks goes fine for you, so I try to find help with some folks for reproduce this events, get Backtraces or stuffs for elaborate a more complete report (or ask in #ubuntu-bugs channel). Personally I feel very lucky because I have near some good people like Pedro Villavicencio (Canonical) and Fabio Durán (Gnome BugSquad) as friends so they told me if I did something wrong or indeed if was already reported in Bugzilla.</p>
+
+</blockquote>
+
+<blockquote>
+
+  <p>In some cases you feel such your brain is walking slow or don’t have enough motivation .. so what I do? I search all these reports that don’t have a package associated (is the most easy tasks when you are starting in Ubuntu Bug Squad) or if these is not enough you should try to find all the old ones and check if are still reproducible in latest Ubuntu release.</p>
+
+</blockquote>
+
+<blockquote>
+
+  <p>Probably I forgot to mention lot of details about triaging and stuff but I am still a new member in this land, but everyday I am learning more and more, in this boat you will get a nice trip and full of challenges but in the end of the day you will feel the satisfaction to be part of this revolution.</p>
+
+</blockquote>
+
+<p>Rock on Victor! Wanna be like Victor? <a href="https://wiki.ubuntu.com/BugSquad/AdoptPackage">Get started here</a> or go participate in the next <a href="https://wiki.ubuntu.com/UbuntuBugDay">Hug Day</a>.</p>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+
+</div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2016 - Jorge O. Castro -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			
+
+<script type="text/javascript">
+      var disqus_shortname = 'stompbox';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>

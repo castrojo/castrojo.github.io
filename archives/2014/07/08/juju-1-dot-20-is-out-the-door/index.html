@@ -1,0 +1,533 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Juju 1.20 is out the door! - Jorge's Stompbox</title>
+	<meta name="author" content="Jorge O. Castro">
+
+	
+	<meta name="description" content="Juju 1.20 Is Out the Door! The following is a guest post from Curtis Hovey, the Juju release manager. You
+can find the original announcement on the &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Jorge's Stompbox" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://www.jorgecastro.org/2014/07/08/juju-1-dot-20-is-out-the-door/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("jorge@ubuntu.com") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+		});
+	</script>
+</div>
+<hgroup>
+  <h1><a href="/">Jorge's Stompbox</a></h1>
+  
+    <h2>Plug in, crank it to Eleven.</h2>
+  
+</hgroup>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29102971-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="http://about.me/jorge.castro">About Jorge</a></li>
+  <li><a href="http://www.jorgecastro.org/about.html">Bio</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="https://keybase.io/castrojo/key.asc">Public Key</a></li>
+  <li><a href="http://drjillcastro.org/">My Wife, Jill</a></li>
+  <li><a href="http://packdog.com/oscar-castro">My beagle, Oscar</a><li>
+  <li><a href="http://packdog.com/luna-330">My bagel, Luna</a><li>
+</ul>
+<br/>
+<h3>Projects I work on</h3>
+<ul class="main-navigation">
+  <li><a href="http://ubuntu.com/server">Ubuntu Server</a></li>
+  <li><a href="http://jujucharms.com">Juju</a></li>
+  <li><a href="http://jujucharms.com/store">Juju Charms</a></li>
+  <li><a href="http://askubuntu.com/users/235/jorge-castro">Ask Ubuntu</a></li>
+</ul>
+<br/>
+<h3>Projects that inspire me</h3>
+<ul class="main-navigation">
+<li><a href="http://openstack.org">OpenStack</a></li>
+<li><a href="http://discourse.org">Discourse</a></li>
+<li><a href="http://usfirst.org">FIRST Robotics Competition</a></li>
+<li><a href="http://www.littlekidsrock.org">Little Kids Rock</a></li>
+</ul>
+</br>
+
+
+<section class="aboutme">
+  <p>
+    I work on the Juju Ecosystem Team at Canonical Ltd. on Ubuntu Cloud and Server, find me at jorge at ubuntu dot com.
+  </p>
+</section>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		<a class="google" href="https://plus.google.com/116015965439782966698" rel="author" title="Google+">Google+</a>
+		
+		
+		<a class="twitter" href="http://twitter.com/castrojo" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/castrojo" title="GitHub">GitHub</a>
+		
+		
+		
+		  <a class="stackoverflow" href="http://askubuntu.com/users/235/jorge-castro" title="Ask Ubuntu"></a>
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://twitter.com/castrojo">castrojo</a> @ <a href="http://twitter.com">Twitter</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/twitter.js"></script>
+<script type="text/javascript">
+	(function($){
+		$('#banner').getTwitterFeed('castrojo', 4, false);
+	})(jQuery);
+</script>
+
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Juju 1.20 Is Out the Door!</h1>
+	<div class="entry-content" itemprop="articleBody"><p>The following is a guest post from Curtis Hovey, the Juju release manager. You
+can find the original announcement on the <a href="https://lists.ubuntu.com/archives/juju/2014-July/003995.html">Juju mailing list</a>.</p>
+
+<p>A new stable release of Juju, juju-core 1.20.0, is now available.</p>
+
+<h2 id="getting-juju">Getting Juju</h2>
+
+<p>juju-core 1.20.0 is available for utopic and backported to earlier
+series in the following PPA:</p>
+
+<ul>
+  <li><a href="https://launchpad.net/~juju/+archive/stable">https://launchpad.net/~juju/+archive/stable</a></li>
+</ul>
+
+<h2 id="new-and-notable">New and Notable</h2>
+
+<ul>
+  <li>High Availability</li>
+  <li>Availability Zone Placement</li>
+  <li>Azure Availability Sets</li>
+  <li>Juju debug-log Command Supports Filtering and Works with LXC</li>
+  <li>Constraints Support instance-type</li>
+  <li>The lxc-use-clone Option Makes LXC Faster for Non-Local Providers</li>
+  <li>Support for Multiple NICs with the Same MAC</li>
+  <li>MAAS Network Constraints and Deploy Argument</li>
+  <li>MAAS Provider Supports Placement and add-machine</li>
+  <li>Server-Side API Versioning</li>
+</ul>
+
+<h2 id="high-availability">High Availability</h2>
+
+<p>The juju state-server (bootstrap node) can be placed into high
+availability mode. Juju will automatically recover when one or more the
+state-servers fail. You can use the ‘ensure-availability’ command to
+create the additional state-servers:</p>
+
+<pre><code>juju ensure-availability
+</code></pre>
+
+<p>The ‘ensure-availability’ command creates 3 state servers by default,
+but you may use the ‘-n’ option to specify a larger number. The number
+of state servers must be odd. The command supports the ‘series’ and
+‘constraints’ options like the ‘bootstrap’ command. You can learn more
+details by running ‘juju ensure-availability –help’</p>
+
+<h2 id="availability-zone-placement">Availability Zone Placement</h2>
+
+<p>Juju supports explicit placement of machines to availability zones
+(AZs), and implicitly spreads units across the available zones.</p>
+
+<p>When bootstrapping or adding a machine, you can specify the availability
+zone explicitly as a placement directive. e.g.</p>
+
+<pre><code>juju bootstrap --to zone=us-east-1b
+juju add-machine zone=us-east-1c
+</code></pre>
+
+<p>If you don’t specify a zone explicitly, Juju will automatically and
+uniformly distribute units across the available zones within the region.
+Assuming the charm and the charm’s service are well written, you can
+rest assured that IaaS downtime will not affect your application.
+Commands you already use will ensure your services are always available.
+e.g.</p>
+
+<pre><code>juju deploy -n 10 &lt;service&gt;
+</code></pre>
+
+<p>When adding machines without an AZ explicitly specified, or when adding
+units to a service, the ec2 and openstack providers will now
+automatically spread instances across all available AZs in the region.
+The spread is based on density of instance “distribution groups”.</p>
+
+<p>State servers compose a distribution group: when running ‘juju
+ensure-availability’, state servers will be spread across AZs. Each
+deployed service (e.g. mysql, redis, whatever) composes a separate
+distribution group; the AZ spread of one service does not affect the AZ
+spread of another service.</p>
+
+<p>Amazon’s EC2 and OpenStack Havana-based clouds and newer are supported.
+This includes HP Cloud. Older versions of OpenStack are not supported.</p>
+
+<h2 id="azure-availability-sets">Azure availability sets</h2>
+
+<p>Azure environments can be configured to use availability sets. This
+feature ensures services are distributed for high availability; as long
+as at least two units are deployed, Azure guarantees 99.95% availability
+of the service overall. Exposed ports will be automatically load
+balanced across all units within the service.</p>
+
+<p>New Azure environments will have support for availability sets by
+default. To revert to the previous behaviour, the
+‘availability-sets-enabled’ option must be set in environments.yaml like
+so:</p>
+
+<pre><code>availability-sets-enabled: false
+</code></pre>
+
+<p>Placement is disabled when ‘availability-sets-enabled’ is true. The
+option cannot be disabled after the environment is bootstrapped.</p>
+
+<h2 id="juju-debug-log-command-supports-filtering-and-works-with-lxc">Juju debug-log Command Supports Filtering and Works with LXC</h2>
+
+<p>The ‘debug-log’ command shows the consolidate logs of all juju agents
+running on all machines in the environment. The command operates like
+‘tail -f’ to stream the logs to the your terminal. The feature now
+support local-provider LXC environments. Several options are available
+to select which log lines to display.</p>
+
+<p>The ‘lines’ and ‘limit’ options allow you to select the starting log
+line and how many additional lines to display. The default behaviour is
+to show the last 10 lines of the log. The ‘lines’ option selects the
+starting line from the end of the log. The ‘limit’ option restricts the
+number of lines to show. For example, you can see just 20 lines from
+last 100 lines of the log like this:</p>
+
+<pre><code>juju debug-log --lines 100 --limit 20
+</code></pre>
+
+<p>There are many ways to filter the juju log to see just the pertinent
+information. A juju log line is written in this format:</p>
+
+<pre><code>&lt;entity&gt; &lt;timestamp&gt; &lt;log-level&gt; &lt;module&gt;:&lt;line-no&gt; &lt;message&gt;
+</code></pre>
+
+<p>The ‘include’ and ‘exclude’ options select the entity that logged the
+message. An entity is a juju machine or unit agent. The entity names are
+similar to the names shown by ‘juju status’. You can exclude all the log
+messages from the bootstrap machine that hosts the state-server like
+this:</p>
+
+<pre><code>juju debug-log --exclude machine-0
+</code></pre>
+
+<p>The options can be used multiple times to select the log messages. This
+example selects all the message from a unit and its machine as reported
+by status:</p>
+
+<pre><code>juju debug-log --include unit-mysql-0 --include machine-1
+</code></pre>
+
+<p>The ‘level’ option restricts messages to the specified log-level or
+greater. The levels from lowest to highest are TRACE, DEBUG, INFO,
+WARNING, and ERROR. The WARNING and ERROR messages from the log can seen
+thusly:</p>
+
+<pre><code>juju debug-log --level WARNING
+</code></pre>
+
+<p>The ‘include-module’ and ‘exclude-module’ are used to select the kind of
+message displayed. The module name is dotted. You can specify all or
+some of a module name to include or exclude messages from the log. This
+example progressively excludes more content from the logs</p>
+
+<pre><code>juju debug-log --exclude-module juju.state.apiserver
+juju debug-log --exclude-module juju.state
+juju debug-log --exclude-module juju
+</code></pre>
+
+<p>The ‘include-module’ and ‘exclude-module’ options can be used multiple
+times to select the modules you are interested in. For example, you can
+see the juju.cmd and juju.worker messages like this:</p>
+
+<pre><code>juju debug-log --include-module juju.cmd --include-module juju.worker
+</code></pre>
+
+<p>The ‘debug-log’ command output can be piped to grep to filter the
+message like this:</p>
+
+<pre><code>juju debug-log --lines 500 | grep amd64
+</code></pre>
+
+<p>You can learn more by running ‘juju debug-log –help’ and ‘juju help
+logging’</p>
+
+<h2 id="constraints-support-instance-type">Constraints Support instance-type</h2>
+
+<p>You can specify ‘instance-type’ with the ‘constraints’ option to
+select a specific image defined by the cloud provider. The
+‘instance-type’ constraint can be used with Azure, EC2, HP Cloud, and
+all OpenStack-based clouds. For example, when creating an EC2
+environment, you can specify ‘m1.small’:</p>
+
+<pre><code>juju bootstrap --constraints instance-type=m1.small
+</code></pre>
+
+<p>Constraints are validated by all providers to ensure values conflicts
+and unsupported options are rejected. Previously, juju would reconcile
+such problems and select an image, possibly one that didn’t meet the
+needs of the service.</p>
+
+<h2 id="the-lxc-use-clone-option-makes-lxc-faster-for-non-local-providers">The lxc-use-clone Option Makes LXC Faster for Non-Local Providers</h2>
+
+<p>When ‘lxc-use-clone’ is set to true, the LXC provisioner will be
+configured to use cloning regardless of provider type. This option
+cannot be changed once it is set. You can set the option to true in
+environments.yaml like this:</p>
+
+<pre><code>lxc-use-clone: true
+</code></pre>
+
+<p>This speeds up LXC provisioning when using placement with any provider.
+For example, deploying mysql to a new LXC container on machine 0 will
+start faster:</p>
+
+<pre><code>juju deploy --to lxc:0 mysql
+</code></pre>
+
+<h2 id="support-for-multiple-nics-with-the-same-mac">Support for Multiple NICs with the Same MAC</h2>
+
+<p>Juju now supports multiple physical and virtual network interfaces with
+the same MAC address on the same machine. Juju takes care of this
+automatically, there is nothing you need to do.</p>
+
+<p>Caution, network settings are not upgraded from 1.18.x to 1.20.x. If you
+used juju 1.18.x to deploy an environment with specified networks, you
+must redeploy your environment instead of upgrading to 1.20.0.</p>
+
+<p>The output of ‘juju status’  will include information about networks
+when there is more than one. The networks will be presented in this
+manner:</p>
+
+<pre><code>machines: ...
+services: ...
+networks:
+  net1:
+    provider-id: foo
+    cidr: 0.1.2.0/24
+    vlan-tag: 42
+</code></pre>
+
+<h2 id="maas-network-constraints-and-deploy-argument">MaaS Network Constraints and Deploy Argument</h2>
+
+<p>You can specify which networks to include or exclude as a constraint to
+the deploy command. The constraint is used to select a machine to deploy
+the service’s units too. The value of ‘networks’ is a comma-delimited
+list of juju network names (provided by MaaS). Excluded networks are
+prefixed with a “^”. For example, this command specify the service
+requires the “logging” and “storage” networks and conflicts with the
+“db” and “dmz” networks.</p>
+
+<pre><code>juju deploy mongodb --constraints networks=logging,storage,^db,^dmz
+</code></pre>
+
+<p>The network constraint does not enable the network for the service. It
+only defines what machine to pick.</p>
+
+<p>Use the ‘deploy’ command’s ‘networks’ option to specify service-specific
+network requirements. The ‘networks’ option takes a comma-delimited list
+of juju-specific network names. Juju will enable the networks on the
+machines that host service units.</p>
+
+<p>Juju networking support is still experimental and under development,
+currently only supported with the MaaS provider.</p>
+
+<pre><code>juju deploy mongodb --networks=logging,storage
+</code></pre>
+
+<p>The ‘exclude-network’ option was removed from the deploy command as it
+is superseded by the constraint option.</p>
+
+<p>There are plans to add support for network constraint and argument with
+Amazon EC2, Azure, and OpenStack Havana-based clouds like HP Cloud in
+the future.</p>
+
+<h2 id="maas-provider-supports-placement-and-add-machine">MAAS Provider Supports Placement and add-machine</h2>
+
+<p>You can specify which MAAS host to place the juju state-server on with
+the ‘to’ option. To bootstrap on a host named ‘fnord’, run this:</p>
+
+<pre><code>juju bootstrap --to fnord
+</code></pre>
+
+<p>The MAAS provider support the add-machine command now. You can provision
+an existing host in the MAAS-based Juju environment. For example, you
+can  add running machine named fnord like this:</p>
+
+<pre><code>juju add-machine fnord
+</code></pre>
+
+<h2 id="server-side-api-versioning">Server Side API Versioning</h2>
+
+<p>The Juju API server now has support for a Version field in requests that
+are made. For this release, there are no RPC calls that require anything
+other than ‘version=0’ which is the default when no Version is supplied.
+This should have limited impact on existing CLI or API users, since it
+allows us to maintain exact compatibility with existing requests. New
+features and APIs should be exposed under versioned requests.</p>
+
+<p>For details on the internals (for people writing API clients), see <a href="https://docs.google.com/document/d/1fPOSUu7Dc_23pil1HGNTSpdFRhkMHGxe4o6jBghZZ1A/edit?usp=sharing">this document</a>.</p>
+
+<h2 id="finally">Finally</h2>
+
+<p>We encourage everyone to subscribe the mailing list at
+juju-dev at lists.canonical.com, or join us on #juju-dev on freenode.</p>
+
+<p>PS. Juju just got 20% more amazing.</p>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+
+</div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2016 - Jorge O. Castro -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			
+
+<script type="text/javascript">
+      var disqus_shortname = 'stompbox';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.jorgecastro.org/2014/07/08/juju-1-dot-20-is-out-the-door/';
+        var disqus_url = 'http://www.jorgecastro.org/2014/07/08/juju-1-dot-20-is-out-the-door/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>

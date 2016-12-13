@@ -1,0 +1,282 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>On roads, ways, and packaging. - Jorge's Stompbox</title>
+	<meta name="author" content="Jorge O. Castro">
+
+	
+	<meta name="description" content="On Roads, Ways, and Packaging. Matt posted his thoughts on how the model of packaging software in OSS can change to adapt to new user needs. LWN &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Jorge's Stompbox" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://www.jorgecastro.org/2010/07/07/on-roads-ways-and-packaging/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("jorge@ubuntu.com") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+		});
+	</script>
+</div>
+<hgroup>
+  <h1><a href="/">Jorge's Stompbox</a></h1>
+  
+    <h2>Plug in, crank it to Eleven.</h2>
+  
+</hgroup>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29102971-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="http://about.me/jorge.castro">About Jorge</a></li>
+  <li><a href="http://www.jorgecastro.org/about.html">Bio</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="https://keybase.io/castrojo/key.asc">Public Key</a></li>
+  <li><a href="http://drjillcastro.org/">My Wife, Jill</a></li>
+  <li><a href="http://packdog.com/oscar-castro">My beagle, Oscar</a><li>
+  <li><a href="http://packdog.com/luna-330">My bagel, Luna</a><li>
+</ul>
+<br/>
+<h3>Projects I work on</h3>
+<ul class="main-navigation">
+  <li><a href="http://ubuntu.com/server">Ubuntu Server</a></li>
+  <li><a href="http://jujucharms.com">Juju</a></li>
+  <li><a href="http://jujucharms.com/store">Juju Charms</a></li>
+  <li><a href="http://askubuntu.com/users/235/jorge-castro">Ask Ubuntu</a></li>
+</ul>
+<br/>
+<h3>Projects that inspire me</h3>
+<ul class="main-navigation">
+<li><a href="http://openstack.org">OpenStack</a></li>
+<li><a href="http://discourse.org">Discourse</a></li>
+<li><a href="http://usfirst.org">FIRST Robotics Competition</a></li>
+<li><a href="http://www.littlekidsrock.org">Little Kids Rock</a></li>
+</ul>
+</br>
+
+
+<section class="aboutme">
+  <p>
+    I work on the Juju Ecosystem Team at Canonical Ltd. on Ubuntu Cloud and Server, find me at jorge at ubuntu dot com.
+  </p>
+</section>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		<a class="google" href="https://plus.google.com/116015965439782966698" rel="author" title="Google+">Google+</a>
+		
+		
+		<a class="twitter" href="http://twitter.com/castrojo" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/castrojo" title="GitHub">GitHub</a>
+		
+		
+		
+		  <a class="stackoverflow" href="http://askubuntu.com/users/235/jorge-castro" title="Ask Ubuntu"></a>
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://twitter.com/castrojo">castrojo</a> @ <a href="http://twitter.com">Twitter</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/twitter.js"></script>
+<script type="text/javascript">
+	(function($){
+		$('#banner').getTwitterFeed('castrojo', 4, false);
+	})(jQuery);
+</script>
+
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">On Roads, Ways, and Packaging.</h1>
+	<div class="entry-content" itemprop="articleBody"><p>Matt posted <a href="http://mdzlog.alcor.net/2010/07/06/weve-packaged-all-of-the-free-software-what-now">his thoughts</a> on how the model of packaging software in OSS can change to adapt to new user needs. LWN also <a href="http://lwn.net/Articles/395092/">picked this up</a>. Some of the comments are heading down into details, so I thought I would explain from a more general perspective on how I see the packaging landscape instead of talking about tools. I don’t think it’s about tools, it’s about the mindset.</p>
+
+<p>To me there are two mindsets here. The first is the Windows way. The idea that the OS comes bare, and you allow people to download and install whatever they want from wherever they want. In the old days this was floppies and CDs, and gradually evolved to the internet (downloading .exe’s). Admins in controlled environments have .msi files, which they can deploy via active directory.</p>
+
+<p>And then there’s what in my circle of friends has always been known as “The Debian Way”. This is a part of our culture that most new users have the hardest time with. Why “hunt and peck” over the internet to find what you need when the OS can provide that for you? Why update individual apps when you can just update them all at once with one system? And don’t forget the built in quality control, this way we lower the risk of Bad Things(tm) being installed on people’s computers. Surely people will totally get this!</p>
+
+<p>So for years this was misunderstood, and people still wanted to go download random files from the internet, and people who didn’t know how it worked claimed that installing software in Linux is like the hardest part ever, when really it was totally awesome. For those of us on The Debian Way, things were pretty ideal. There were issues though:</p>
+
+<ul>
+  <li>
+    <p>Not everything was packaged. But then again this can be a “quality filter”. My friend Kyle Rankin has a saying “If it’s not in apt it doesn’t exist”. If something was more than a flash-in-the-pan it would get packaged.</p>
+  </li>
+  <li>
+    <p>If there is a long time between releases this means users get stuck with really old software, and miss out on the “buzz”.</p>
+  </li>
+  <li>
+    <p>If you were an upstream project and you did a stable release it might be a long time before that get to users. This can be infuriating if you’re fixing bugs but can’t them into user’s hands.</p>
+  </li>
+  <li>
+    <p>To this day people still want to go to websites and click on stuff and get software. And admit it, you’ve drank from the forbidden cup of random .deb on the web at one point or another!</p>
+  </li>
+</ul>
+
+<p>The Ubuntu path, which inherits from The Debian Way(tm) kind of sort of helped mitigate this, by doing time based releases, so upgrades can’t be so old, and with PPAs users can wedge in a solution if they were impatient.</p>
+
+<p>Fast forward a few years and the iPhone’s app store is basically “apt” with shiny and a quality assurance process on top. (The way Apple handles the app process is a different topic). On this device you have applications from one “repository”, there’s NO concept of installing third party applications. Every one loves it. I talked about this when I ran for GNOME board <a href="http://www.mail-archive.com/foundation-list@gnome.org/msg03690.html">a while back</a> and I think it still applies.</p>
+
+<p>And here’s the crux:</p>
+
+<p>People who complain that applications are hard to install have no problems using the “package systems” on mobile phones because they never had to hunt and peck for apps on their brand new smart phones, even though the locked down app stores on phones are just as “limited” as the “limited” apps that are packaged in repositories. Why? Because modern mobile phones never really let you install random applications from the internet, so there was no expectation that this would work. Your PC, however, did, and if you didn’t wrap your head around the model then you just didn’t get it, and that’s how people end up on openoffice.org downloading 146 meg tarballs which contain a bunch of .debs that you had to manually install. And yeah, mobile stores let you update the apps independently of the OS. On top of that, people thought that it was totally ok to just throw random .debs, RPMs, whatever, and source tarballs on the internet and that that was OK.</p>
+
+<p>So as far as users were concerned … <strong>FAIL</strong>. No wonder people hate it!</p>
+
+<p>As it ends up, it’s <strong>all about presentation. </strong>No one complains about how hard it is to install random APKs from the web because that’s a niche thing. App developers KNOW they need to get in the Android Market and that that was the primary avenue to get applications to users. AT&amp;T is even <a href="http://www.mobilecrunch.com/2010/06/15/lesson-not-learned-att-locks-down-the-htc-arias-app-selection/">blocking</a> third party apps, and no one will care. We collectively fail at linking packagers with upstream developers, which is why when normal users go searching for applications they end up with tarballs they can’t use.</p>
+
+<p>Things like this is what we want to fix with the Software Center, we want to narrow the gap between upstream software developers and users. A buddy of mine who criticized the Debian way put it bluntly: “You guys add artificial barriers between me and my users, and that sucks.” I personally like to think as the Software Center as the refined “middle ground” where we can totally continue to innovate as a Free Software Whole:</p>
+
+<ul>
+  <li>
+    <p>No one in Ubuntu wants to keep users away from awesome apps, we want them just as badly as you do. We hurt when we see new apps and can’t get to them too.</p>
+  </li>
+  <li>
+    <p>We totally want to enable upstream app developers to get their stuff out there so people can use it.</p>
+  </li>
+  <li>
+    <p>We all want something easy, simple, but also secure. We don’t want hunt and peck randomness like one OS, but no one wants an arbitrary random rules (that change but no one tells you) of what goes in and what doesn’t like the other guys. We need to find Balance.</p>
+  </li>
+  <li>
+    <p>The old “distro model” needs to change, we need to be more agile to developer and user needs. This will take time.</p>
+  </li>
+</ul>
+
+<p>So here we are. On one hand we have us old school people who like how the system has worked. You tell new people to use the Center and we’re good. I don’t have to worry that my wife will end up with a broken computer because I trust the Ubuntu developers who upload to the repository. At the same time more advanced users might want a little bit-o-bling from the latest upstream applications, but at the same time no one wants to upgrade to a -dev release of the distro to get new software. Upstreams don’t want to deal with the mess so they just put tarballs up on websites and move on.</p>
+
+<p>It’s really nice how Google’s Chrome repository gives people what they want when they want it. They provide stable releases all the way back to Hardy, people don’t need to care about backports, updates, regression testing etc. You get it right when they announce it. They have stable, beta, and dev releases, and you can upgrade AND downgrade (something you can’t do with Windows Chrome without reinstalling the whole thing!) Google also have lots of resources. I am not sure that would scale for everyone. Users adding 50 PPAs will also end in pain, so that doesn’t scale either so I am not sure what the solution is but at the end of the day the packaging spice must flow and it’s in our collective best interest to solve it.</p>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+
+</div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2016 - Jorge O. Castro -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			
+
+<script type="text/javascript">
+      var disqus_shortname = 'stompbox';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,317 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Real World Juju Troubleshooting - Jorge's Stompbox</title>
+	<meta name="author" content="Jorge O. Castro">
+
+	
+	<meta name="description" content="Real World Juju Troubleshooting The following is a guest post by Ian Booth: Juju has the ability to set up and change logging levels at a package &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Jorge's Stompbox" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://www.jorgecastro.org/2014/05/29/real-world-juju-troubleshooting/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("jorge@ubuntu.com") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+		});
+	</script>
+</div>
+<hgroup>
+  <h1><a href="/">Jorge's Stompbox</a></h1>
+  
+    <h2>Plug in, crank it to Eleven.</h2>
+  
+</hgroup>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29102971-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="http://about.me/jorge.castro">About Jorge</a></li>
+  <li><a href="http://www.jorgecastro.org/about.html">Bio</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="https://keybase.io/castrojo/key.asc">Public Key</a></li>
+  <li><a href="http://drjillcastro.org/">My Wife, Jill</a></li>
+  <li><a href="http://packdog.com/oscar-castro">My beagle, Oscar</a><li>
+  <li><a href="http://packdog.com/luna-330">My bagel, Luna</a><li>
+</ul>
+<br/>
+<h3>Projects I work on</h3>
+<ul class="main-navigation">
+  <li><a href="http://ubuntu.com/server">Ubuntu Server</a></li>
+  <li><a href="http://jujucharms.com">Juju</a></li>
+  <li><a href="http://jujucharms.com/store">Juju Charms</a></li>
+  <li><a href="http://askubuntu.com/users/235/jorge-castro">Ask Ubuntu</a></li>
+</ul>
+<br/>
+<h3>Projects that inspire me</h3>
+<ul class="main-navigation">
+<li><a href="http://openstack.org">OpenStack</a></li>
+<li><a href="http://discourse.org">Discourse</a></li>
+<li><a href="http://usfirst.org">FIRST Robotics Competition</a></li>
+<li><a href="http://www.littlekidsrock.org">Little Kids Rock</a></li>
+</ul>
+</br>
+
+
+<section class="aboutme">
+  <p>
+    I work on the Juju Ecosystem Team at Canonical Ltd. on Ubuntu Cloud and Server, find me at jorge at ubuntu dot com.
+  </p>
+</section>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		<a class="google" href="https://plus.google.com/116015965439782966698" rel="author" title="Google+">Google+</a>
+		
+		
+		<a class="twitter" href="http://twitter.com/castrojo" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/castrojo" title="GitHub">GitHub</a>
+		
+		
+		
+		  <a class="stackoverflow" href="http://askubuntu.com/users/235/jorge-castro" title="Ask Ubuntu"></a>
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://twitter.com/castrojo">castrojo</a> @ <a href="http://twitter.com">Twitter</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/twitter.js"></script>
+<script type="text/javascript">
+	(function($){
+		$('#banner').getTwitterFeed('castrojo', 4, false);
+	})(jQuery);
+</script>
+
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Real World Juju Troubleshooting</h1>
+	<div class="entry-content" itemprop="articleBody"><p>The following is a guest post by Ian Booth:</p>
+
+<p>Juju has the ability to set up and change logging levels at a package level so
+that problems within a particular area can be better diagnosed. Recently there
+were some issues with containers (both kvm and lxc) started by the local
+provider transitioning from pending to started. We wanted to be able to inspect
+the sequence of commands Juju uses to start a container. Fortunately, the Juju
+code which starts lxc and kvm containers does log out the actual commands used
+to download the requisite image and start the container et al. The logging level
+used for this information is TRACE. By default, Juju machine agents log at the
+debug level, and this information can be seen when running ‘juju debug-log’. So
+unfortunately, this means the information we are interested in is not visible by
+default in the machine logs.</p>
+
+<p>Luckily we can change the logging level used for particular packages so that the
+information is logged. This is done using the ‘logging-config’ attribute and can
+either be done at bootstrap:</p>
+
+<pre><code>juju bootstrap --logging-config=golxc=TRACE
+</code></pre>
+
+<p>or on a running system:</p>
+
+<pre><code>juju set-env logging-config=golxc=TRACE
+</code></pre>
+
+<p>As an aside, you can use:</p>
+
+<pre><code>juju get-env logging-config
+</code></pre>
+
+<p>to see what the current logging-config value is.</p>
+
+<p>The logging-config value above turns on TRACE level dubugging for the golxc
+package, which is responsible for starting and managing lxc containers on behalf
+of Juju. For kvm containers, the package name is ‘kvm’.</p>
+
+<p>We can use debug-log to look at the logging we have just enabled. As of 1.19
+onwards, filtering can be used to just show what we are interested in. Run this
+command in a separate terminal:</p>
+
+<pre><code>juju debug-log --include-module=golxc
+</code></pre>
+
+<p>Now we can deploy a charm or use add-machine to initiate a new container. We can
+see the commands Juju issues to download the image and start the container. This
+allows us to see what parameters are passed in to the various lxc commands, and
+we could even manually run the commands if we wish, in order to reproduce and
+examine in more detail how the commands behave. An example of the logging
+information when adding TRACE level debugging to lxc startup looks like:</p>
+
+<pre><code>machine-0: 2014-05-27 04:28:39 TRACE golxc.run.lxc-start golxc.go:439 run: lxc-start [--daemon -n ian-local-machine-1 -c /var/lib/juju/containers/ian-local-machine-1/console.log -o
+/var/lib/juju/containers/ian-local-machine-1/container.log -l DEBUG]
+machine-0: 2014-05-27 04:28:40 TRACE golxc.run.lxc-ls golxc.go:439 run: lxc-ls [-1]
+machine-0: 2014-05-27 04:28:41 TRACE golxc.run.lxc-ls golxc.go:451 run
+successful output: ian-local-machine-1
+machine-0: 2014-05-27 04:28:41 TRACE golxc.run.lxc-info golxc.go:439 run:
+lxc-info [-n ian-local-machine-1]
+machine-0: 2014-05-27 04:28:41 TRACE golxc.run.lxc-info golxc.go:451 run
+successful output: Name: ian-local-machine-1
+machine-0: 2014-05-27 04:28:45 TRACE golxc.run.lxc-start golxc.go:448 run failed
+output: lxc-start: command get_cgroup failed to receive response
+machine-0: 2014-05-27 04:29:45 TRACE golxc.run.lxc-ls golxc.go:439 run: lxc-ls [-1]
+machine-0: 2014-05-27 04:29:45 TRACE golxc.run.lxc-ls golxc.go:451 run
+successful output: ian-local-machine-1
+machine-0: 2014-05-27 04:29:45 TRACE golxc.run.lxc-info golxc.go:439 run:
+lxc-info [-n ian-local-machine-1]
+machine-0: 2014-05-27 04:29:45 TRACE golxc.run.lxc-info golxc.go:451 run
+successful output: Name: ian-local-machine-1
+</code></pre>
+
+<p>You can see that when logging the various commands execute, the format is <code>cmd
+[arg arg arg]</code>. So to run these manually leave out the []. You can also see that
+there was a problem starting the lxc container due to a cgroups issue. This
+error is shown in juju status, but often it’s useful to see what happens leading
+up to the error occurring.</p>
+
+<p>In summary, Juju’s configurable logging output can be used to help diagnose
+issues and understand what Juju is doing under the covers. It offers the ability
+to turn on extra logging when required, and it can be turned off again when no
+longer required.</p>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+
+</div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2016 - Jorge O. Castro -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			
+
+<script type="text/javascript">
+      var disqus_shortname = 'stompbox';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.jorgecastro.org/2014/05/29/real-world-juju-troubleshooting/';
+        var disqus_url = 'http://www.jorgecastro.org/2014/05/29/real-world-juju-troubleshooting/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>

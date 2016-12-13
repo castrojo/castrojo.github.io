@@ -1,0 +1,278 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Progress Meters, quicklists, and number count for the Unity Launcher - Jorge's Stompbox</title>
+	<meta name="author" content="Jorge O. Castro">
+
+	
+	<meta name="description" content="Progress Meters, Quicklists, and Number Count for the Unity Launcher Here’s something I’ve been waiting for that I’m sure application authors will &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Jorge's Stompbox" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://www.jorgecastro.org/2011/02/09/progress-meters-quicklists-and-number-count-for-the/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("jorge@ubuntu.com") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+		});
+	</script>
+</div>
+<hgroup>
+  <h1><a href="/">Jorge's Stompbox</a></h1>
+  
+    <h2>Plug in, crank it to Eleven.</h2>
+  
+</hgroup>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29102971-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="http://about.me/jorge.castro">About Jorge</a></li>
+  <li><a href="http://www.jorgecastro.org/about.html">Bio</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="https://keybase.io/castrojo/key.asc">Public Key</a></li>
+  <li><a href="http://drjillcastro.org/">My Wife, Jill</a></li>
+  <li><a href="http://packdog.com/oscar-castro">My beagle, Oscar</a><li>
+  <li><a href="http://packdog.com/luna-330">My bagel, Luna</a><li>
+</ul>
+<br/>
+<h3>Projects I work on</h3>
+<ul class="main-navigation">
+  <li><a href="http://ubuntu.com/server">Ubuntu Server</a></li>
+  <li><a href="http://jujucharms.com">Juju</a></li>
+  <li><a href="http://jujucharms.com/store">Juju Charms</a></li>
+  <li><a href="http://askubuntu.com/users/235/jorge-castro">Ask Ubuntu</a></li>
+</ul>
+<br/>
+<h3>Projects that inspire me</h3>
+<ul class="main-navigation">
+<li><a href="http://openstack.org">OpenStack</a></li>
+<li><a href="http://discourse.org">Discourse</a></li>
+<li><a href="http://usfirst.org">FIRST Robotics Competition</a></li>
+<li><a href="http://www.littlekidsrock.org">Little Kids Rock</a></li>
+</ul>
+</br>
+
+
+<section class="aboutme">
+  <p>
+    I work on the Juju Ecosystem Team at Canonical Ltd. on Ubuntu Cloud and Server, find me at jorge at ubuntu dot com.
+  </p>
+</section>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		<a class="google" href="https://plus.google.com/116015965439782966698" rel="author" title="Google+">Google+</a>
+		
+		
+		<a class="twitter" href="http://twitter.com/castrojo" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/castrojo" title="GitHub">GitHub</a>
+		
+		
+		
+		  <a class="stackoverflow" href="http://askubuntu.com/users/235/jorge-castro" title="Ask Ubuntu"></a>
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://twitter.com/castrojo">castrojo</a> @ <a href="http://twitter.com">Twitter</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/twitter.js"></script>
+<script type="text/javascript">
+	(function($){
+		$('#banner').getTwitterFeed('castrojo', 4, false);
+	})(jQuery);
+</script>
+
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Progress Meters, Quicklists, and Number Count for the Unity Launcher</h1>
+	<div class="entry-content" itemprop="articleBody"><p>Here’s something I’ve been waiting for that I’m sure application authors will enjoy: </p>
+
+<p><img src="http://media.tumblr.com/tumblr_lgd5hzIjsv1qb5bmy.png" alt="" /></p>
+
+<p>We now have an <a href="https://wiki.ubuntu.com/Unity/LauncherAPI">API for applications</a> to leave a progress meter and/or a number on their launcher. The wiki page is a bit sparse so expect more detail there over the coming week.</p>
+
+<h2 id="what-we-need-to-do">What we need to do</h2>
+
+<p>Well, the first thing I’m working on is getting the <a href="https://wiki.ubuntu.com/Unity/LauncherAPI">wiki page up to shape</a>. We’re going to need examples for different languages, and basically make the page useful for application developers. I’m on that this week. I could use a hand here if someone wants to dig in.</p>
+
+<p>Next, we need people to think about where this is useful. So right away, you’re thinking mail apps, Transmission and Deluge, USC, update-manager, etc. </p>
+
+<p>The library is called <a href="https://launchpad.net/libunity">libunity</a>, which is the same library you’ll use for <a href="https://wiki.ubuntu.com/Unity/Places">Places</a> and stuff, and you can use it in one of two ways:</p>
+
+<ul>
+  <li> Directly in your application, just link up to libunity, you’ll notice the the API is similar to app indicators. This is on purpose, so if you’ve already got libindicator support in your app, this should just be additive and straightforward.</li>
+</ul>
+
+<p>For example, right now your application might put a “new message” counter in the messaging menu, this is designed so that you can also just plop the same number right on the launcher icon too.</p>
+
+<ul>
+  <li>Or standalone, like the example on the wiki page - this is for you people who want to write little wrapper scripts to monitor something (like say, your mutt instance on a remote server, <em>hint hint</em>) (think of the things we could get from byobu running on your server!)</li>
+</ul>
+
+<p>Application developers, we’re looking for feedback for <a href="https://launchpad.net/libunity">libunity</a>, feel free to file bugs.</p>
+
+<h3 id="how-you-can-help">How You Can Help</h3>
+
+<p>Feel free to start filing bugs in Launchpad for applications to support this. Make sure you tag em “bitesize”, as these will be easy for people to dig into and make work.</p>
+
+<p>Got a favorite application? Link the up to our resources or they can <a href="http://unity.ubuntu.com/contact-us/">contact us directly</a> if they want help with linking these up.</p>
+
+<h3 id="other-unity-improvements-that-just-landed">Other Unity Improvements that Just Landed</h3>
+
+<p>Part 2 of the things that landed today are much more user visible, mainly, drag and drop for the Launcher:</p>
+
+<ul>
+  <li>
+    <p>Drag stuff into the trash</p>
+  </li>
+  <li>
+    <p>Being able to drag files onto apps, for example select 4 text files and drag all of them onto the text editor and it will open them all up at once.</p>
+  </li>
+  <li>
+    <p>Drag any .desktop files right into the launcher, but you can’t drag from the Dash yet, but you will be able to soon. For an example of this drag and drop applications from /usr/share/applications to get an idea.</p>
+  </li>
+  <li>
+    <p>Drag anything from a GNOME menu, GNOME Panel, and any dock that does xdnd into the launcher (for those of you with frankendesktops) - remember that we already import those launchers on first run.</p>
+  </li>
+</ul>
+
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+
+</div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2016 - Jorge O. Castro -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			
+
+<script type="text/javascript">
+      var disqus_shortname = 'stompbox';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>

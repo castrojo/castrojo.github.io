@@ -1,0 +1,349 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Introducing the Upstream Report - Jorge's Stompbox</title>
+	<meta name="author" content="Jorge O. Castro">
+
+	
+	<meta name="description" content="Introducing the Upstream Report After months of tweaking and gathering feedback, I am happy to announce the beta of the Ubuntu Upstream Report. The &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Jorge's Stompbox" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://www.jorgecastro.org/2008/09/24/introducing-the-upstream-report/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("jorge@ubuntu.com") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+		});
+	</script>
+</div>
+<hgroup>
+  <h1><a href="/">Jorge's Stompbox</a></h1>
+  
+    <h2>Plug in, crank it to Eleven.</h2>
+  
+</hgroup>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29102971-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="http://about.me/jorge.castro">About Jorge</a></li>
+  <li><a href="http://www.jorgecastro.org/about.html">Bio</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="https://keybase.io/castrojo/key.asc">Public Key</a></li>
+  <li><a href="http://drjillcastro.org/">My Wife, Jill</a></li>
+  <li><a href="http://packdog.com/oscar-castro">My beagle, Oscar</a><li>
+  <li><a href="http://packdog.com/luna-330">My bagel, Luna</a><li>
+</ul>
+<br/>
+<h3>Projects I work on</h3>
+<ul class="main-navigation">
+  <li><a href="http://ubuntu.com/server">Ubuntu Server</a></li>
+  <li><a href="http://jujucharms.com">Juju</a></li>
+  <li><a href="http://jujucharms.com/store">Juju Charms</a></li>
+  <li><a href="http://askubuntu.com/users/235/jorge-castro">Ask Ubuntu</a></li>
+</ul>
+<br/>
+<h3>Projects that inspire me</h3>
+<ul class="main-navigation">
+<li><a href="http://openstack.org">OpenStack</a></li>
+<li><a href="http://discourse.org">Discourse</a></li>
+<li><a href="http://usfirst.org">FIRST Robotics Competition</a></li>
+<li><a href="http://www.littlekidsrock.org">Little Kids Rock</a></li>
+</ul>
+</br>
+
+
+<section class="aboutme">
+  <p>
+    I work on the Juju Ecosystem Team at Canonical Ltd. on Ubuntu Cloud and Server, find me at jorge at ubuntu dot com.
+  </p>
+</section>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		<a class="google" href="https://plus.google.com/116015965439782966698" rel="author" title="Google+">Google+</a>
+		
+		
+		<a class="twitter" href="http://twitter.com/castrojo" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/castrojo" title="GitHub">GitHub</a>
+		
+		
+		
+		  <a class="stackoverflow" href="http://askubuntu.com/users/235/jorge-castro" title="Ask Ubuntu"></a>
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://twitter.com/castrojo">castrojo</a> @ <a href="http://twitter.com">Twitter</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/twitter.js"></script>
+<script type="text/javascript">
+	(function($){
+		$('#banner').getTwitterFeed('castrojo', 4, false);
+	})(jQuery);
+</script>
+
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Introducing the Upstream Report</h1>
+	<div class="entry-content" itemprop="articleBody"><p>After months of tweaking and gathering feedback, I am happy to announce the beta of the <a href="https://edge.launchpad.net/ubuntu/+upstreamreport">Ubuntu Upstream Report</a>. The upstream report is a real-time page that lists the Top 100 projects in Ubuntu sorted by open bugs, and also shows us how many of those bugs are “upstreamable”, and how many of those have an actual link to an upstream bug tracker. </p>
+
+<p>The intent of this page is to be used as a tool by Ubuntu Developers to track how well their linkages to upstream bug trackers are, and provide a list of bugs that are possible “targets” for them to push upstream. </p>
+
+<p>When you first see it it’s quite overwhelming, so let’s look at how we got to this report.</p>
+
+<h3 id="understanding-the-problem">Understanding the Problem</h3>
+
+<p>When I talk to bugmasters for large projects usually a generic term I hear is “So and so is doing a good job with package foo” or “I’ve not gotten a single bug report for my package bar, I had to go hunt someone down”. While generally these comments are useful, nothing beats having numbers. It would be nice to be able to talk to a maintainer and say “We’ve been able to forward to you 90% of the bugs that we’ve Triaged.” or in the worst case, be able to pinpoint which packages have poor linkages so that we can put QA resources on that package to get better linkages.</p>
+
+<p>It’s also a problem for developers. There’s no “30,000 foot view” of how well your bugs are being linked upstream, and you don’t really have a “hit list” of possible bugs to upstream, you really just handle your specific pile and do the best you can. </p>
+
+<p>We wanted to provide a tool that not only shows upstreams how well we’re linking and forwarding bugs, but a day-to-day tool for maintainers to see where there are targets of opportunity to forward to upstream. And lastly, for triagers we wanted to provide real-time working “bug lists” that you can work through if you want to help be the bridge that connects the downstream Ubuntu Package to the upstream project.</p>
+
+<h3 id="reading-the-report">Reading the Report</h3>
+
+<p>Let’s pick an example, I will use rhythmbox since it’s a package we ship by default and most people are familiar with it:</p>
+
+<p>[<img src="http://stompbox.typepad.com/photos/uncategorized/2008/09/24/report_headers_2.png" alt="Report_headers_2](http://stompbox.typepad.com/photos/uncategorized/2008/09/24/report_headers_2.png)" />
+[<img src="http://stompbox.typepad.com/photos/uncategorized/2008/09/24/rhythmbox_2.png" alt="Rhythmbox_2](http://stompbox.typepad.com/photos/uncategorized/2008/09/24/rhythmbox_2.png)" /></p>
+
+<p>The first column tells you the source package name, pretty simple. The next column is a check to see if there is a corresponding project in Launchpad. By the time a project makes it to this list that should be filled out. The little bzr icon is there if there is a code import of the project in bzr. The next column is the bug tracker field. It is absolutely critical that this field is filled and correct, you can’t forward bugs to an upstream if you have no idea where they’re supposed to go. :)</p>
+
+<p>The next field, which you will notice is very red is the “upstream contact” field. Ideally this is a person who is willing to be that bridge between us and the upstream project. For a bunch of these there are teams that handle this, in the case of Rhythmbox it is handled by the desktop team. I’m going to leave these alone for now and address them in a later blog post, I want to get to the meat. :)</p>
+
+<h4 id="the-triage-column">The Triage Column</h4>
+
+<p>The first number in rhythmbox is 306. This means that right now there are 306 open bugs against rhythmbox in the Ubuntu Bug Tracker. Of those, 191 are in the “Triaged State”, for a difference of 115, 62.42%. Note how you can click on the number to get the list of bugs!</p>
+
+<h4 id="the-upstream-column">The Upstream Column</h4>
+
+<p>Ok, here’s the meat of the report. Of the 306 open bugs 227 have an open upstream task. What is an upstream task? It looks like this:</p>
+
+<p><a href="http://stompbox.typepad.com/photos/uncategorized/2008/09/24/upstreamtask.png"><img src="http://stompbox.typepad.com/photos/uncategorized/2008/09/24/upstreamtask.png" alt="Upstreamtask" /></a></p>
+
+<p>Sometimes, we can’t find an upstream bug report for the bug, so people open a blank upstream task, this is PERFECTLY OK! Sometimes all that is needed is a developer to acknowledge that it is indeed an upstream bug; for example Jonathan Thomas did this for <a href="https://bugs.edge.launchpad.net/ubuntu/+source/kdebase/+bug/132375">bug 132375</a>. (I’ll come back to this bug in a bit)</p>
+
+<p>So ideally when someone determines this someone involved in the bug report should do the due diligance of filing the bug upstream. Sometimes this doesn’t happen, people are busy with real life, or they might just be triaging a few bugs and can make the determination that it’s upstream but not have the time to go through the steps of filing it upstream. That is perfectly OK because when someone marks something upstream and leaves it blank, it shows up in the next column:</p>
+
+<h4 id="the-watch-column---aka-low-hanging-fruit">The Watch Column - aka. Low Hanging Fruit</h4>
+
+<p>Any bug that has an open upstream task … but is NOT linked to an upstream bug tracker shows up in this column. These are bugs that we have determined should be upstreamable but haven’t been linked yet. As you can see, out of 227 upstreamable bugs Rhythmbox has 227 bug watches to the GNOME Bugzilla. That is a pretty impressive number. Nautilus, 311 linked out 313 marked upstreamable. <a href="https://bugs.edge.launchpad.net/ubuntu/+source/kdebase/+bug/132375">Bug 132375</a> would show up on this list under kdebase.</p>
+
+<h3 id="workflow">Workflow</h3>
+
+<p>So let’s look at an example on how to improve a project’s linkages. kdebase has 76 out of 83 possible bugs linked upstream; 91.57% which is quite excellent. The very last column, the delta, shows us those 9 bugs that haven’t quite made it, so let’s take a look. Clicking on the 9 takes us to <a href="https://bugs.edge.launchpad.net/ubuntu/+source/kdebase/+bugs?search=Search&amp;field.status_upstream=pending_bugwatch&gt;this list&lt;/a&gt;. These are bugs that someone has determined to be upstreamable, but HAVEN'T been linked yet. On that list is our &lt;a href=">bug 132375</a>.</p>
+
+<p>This my friends, is an awesome candidate to be upstreamed. The report is an easy way to find upstreamable bugs! What should happen now is someone files this bug in the upstream KDE bugzilla, and (don’t forget) to link the launchpad bug to that new report. Instructions for linking are found <a href="https://wiki.ubuntu.com/Bugs/Watches">here</a>. As soon as the launchpad watch kicks off, this bug moves out of the delta column and into the watched column. </p>
+
+<p>You’ll notice that both kdebase and rhythmbox are marked “green”. Any project with a 90% or above link rate shows up as green. This number is pretty obvious and non-negotiable - if a bug is determined to be upstream and is NOT forwarded upstream then it is in a FAIL state. ;) The 10% breathing room is there for bugs that are determined to be upstream but you’re waiting on more information or data or something before you send it up.</p>
+
+<h3 id="what-happens-next">What happens next</h3>
+
+<p>Launchpad watches are awesome for one simple reason: When a bug is fixed upstream we know about it. When we know about it we can target them with resources. Launchpad watches feed the <a href="http://daniel.holba.ch/harvest/handler.py?pkg=rhythmbox">Harvest</a> machine - which is useful because developers can find these low hanging fruit and fix them. </p>
+
+<h3 id="why-you-should-care">Why you should care</h3>
+
+<p>We have a ton of users, as a result of this, we get a ton of bugs. Many of these users are new to linux, this leads to many bug reports that are incomplete or just not good enough to send upstream. What we DON’T want is people blindingly forwarding bad bugs upstream, we want our most detailed, complete bugs sent up. This report gives us targets that we should look at as candidates for sending bugs upstream. The kdebase example I showed is “only” a wishlist bug, but still, upstream should know about it. Bugs that show up in the “Triaged” state have been set that way by the Ubuntu Bugcontrol team, those should be scrutinized as candidates and sent upstream.</p>
+
+<p>The real simple question to “why?” is because it’s the right thing to do. We ship rhythmbox to millions of users, it’s our duty to ensure that every one of those 227 bugs is sent upstream. If our users report bugs and they don’t get to the authors, then chances are they won’t receive a fix, and that isn’t very user-oriented. :D</p>
+
+<h3 id="tips-on-how-to-proceed">Tips on How to Proceed</h3>
+
+<ul>
+  <li>
+    <p>Ubuntu Developers - If the Upstream column has a low percentage, then you’re probably not opening upstream tasks to your bugs. virt-manager has 0 out of 75 bugs marked as possibly upstream. Either we introduced 75 bugs to virt-manager or we’re not marking the upstreamable bugs with an upstream task.</p>
+  </li>
+  <li>
+    <p>Triagers - Use the last column to look for bugs where a developer has opened an upstream task - search the upstream bugzilla to see if it has been reported, if it has, link it! If it hasn’t been reported, you can follow <a href="https://wiki.ubuntu.com/Bugs/Upstream">these instructions</a> to create a new bug in the upstream bugzilla to link it. If you get confused on how exactly to do this ask someone for help.</p>
+  </li>
+  <li>
+    <p>Upstream Developers - You can use the last column and use it as a list to check out bugs that we haven’t sent to you yet. If you have an Ubuntu user that pops into your IRC channel asking how they can help you can point them to this list.</p>
+  </li>
+  <li>
+    <p>Users - You can help “become that bridge” between Ubuntu and upstream by following these bugs and forwarding upstream as appropriate. If you find the same bug in the upstream bug tracker then make that link!</p>
+  </li>
+</ul>
+
+<h3 id="caveats">Caveats</h3>
+
+<p>This report is still a beta but we consider it in good enough shape to get it out there and get people working with it so we can fix it and make it more useful for everyone. Currently there are the following caveats:</p>
+
+<ul>
+  <li>
+    <p>Currently there are ubuntu-specific projects on there that don’t really have an upstream or where Ubuntu is the upstream, like software-properties, these will be removed.</p>
+  </li>
+  <li>
+    <p>Sorting is kind of wonky, you might need to refresh if you’re sorting columns a bunch of times (Graham is working on this as we speak!)</p>
+  </li>
+  <li>
+    <p>Right now we’re only showing the top100 projects according to open bugs - we should have a method of querying any package in the archive.</p>
+  </li>
+  <li>
+    <p>Some of the target bugs in the last column might be old or inappropriate - remember this column shows open upstream tasks with no links, clean these out and marking upstreamable bugs with an open task and this list will become useful to you!</p>
+  </li>
+  <li>
+    <p>The upstream report targets are not an excuse to NOT work with an existing team! Don’t just go in there and start forwarding bugs, work with the existing teams. Sometimes Ubuntu developers do NOT forward a bug until they have more information - if you just go and forward something when it is not ready you’re just creating more work for everyone, so if you want to work on something, let someone know! The desktop team doesn’t bite, I promise!</p>
+  </li>
+</ul>
+
+<p>… and last but not least:</p>
+
+<h3 id="the-upstream-report-is-chuck-norris">The Upstream Report is Chuck Norris</h3>
+
+<p>a) He has no emotion - he just reports numbers. Use it as a tool to gauge where you are, and where you need to improve. </p>
+
+<p>b) Let me reiterate - having a “green” doesn’t get you off the hook! It just shows how well your linkages are doing - low upstreamable bugs stick out like a sore thumb - if a project you work on has 100 open bugs, but only something like 3 are marked as upstreamable and you think you’re doing awesome because you’ve linked those 3 and you get “100%” in the linkages then you’re doing it wrong! </p>
+
+<p>c) If your numbers are bad, don’t panic! - the report was <em>designed</em> to show you were things are bad, and give you a list of targets so you can triage/forward appropriately. There will be instances where a bug might show up that is inappropriate to send upstream. That’s fine, don’t forward it. Use the list of targets as a short list of <em>possibles</em> to look for candidates. </p>
+
+<p>d) If your numbers are awesome then congratulations, you’re doing the right thing.</p>
+
+<h3 id="the-bottom-line">The Bottom Line</h3>
+
+<p>At the bottom under totals we find that when we do find a bug we do a good job (92%) of linking it upstream. The bad news is that only 17% of our current bugs are marked as upstreamable. I look forward to seeing how we grow this number and increase our linkages!</p>
+
+<h4 id="the-future">The Future</h4>
+
+<p>This is just a rough start - if you follow a bug workflow in your head to it’s logical conclusion you can think up of many ways we can expand this report - Do we have nice method for undoing a bad upstream link? Apport crashes are pretty unique, is there a way we can automate that to get that to upstreams in a nicer way? What can we do to improve bugs.launchpad.net to make linking easier and less error prone? How can Launchpad talk to upstream bug trackers to make this even more useful?</p>
+
+<p>These are questions that we’ll be addressing as time goes on, in the meantime I hope that this initial cut is useful for everyone. As always, feel free to contact me, jorge at ubuntu.com with feedback - you can report bugs here: <a href="https://bugs.launchpad.net/malone">https://bugs.launchpad.net/malone</a>, please tag them with “ubuntu-upstream-relations”. I’ve added this blog post example to the <a href="https://wiki.ubuntu.com/Bugs/Upstream/UpstreamReport">Ubuntu wiki</a> - updates and changes will happen there.</p>
+
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+
+</div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2016 - Jorge O. Castro -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			
+
+<script type="text/javascript">
+      var disqus_shortname = 'stompbox';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>
