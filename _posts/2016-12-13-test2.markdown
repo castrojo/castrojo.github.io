@@ -1,0 +1,13 @@
+---
+published: true
+title: test2
+layout: post
+---
+Test 2
+
+
+![image](http://i.stack.imgur.com/VbUsS.jpg)
+
+
+
+
