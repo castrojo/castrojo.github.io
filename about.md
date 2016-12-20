@@ -11,7 +11,7 @@ Jorge O. Castro currently works on the Juju Ecosystem Team as Cloud Community Li
 
 Jorge works with some of the coolest people in the world building Free Software:
 
-{% img http://www.jorgecastro.org/images/uds.jpg %}
+![](http://www.jorgecastro.org/images/uds.jpg)
 
 Having graduated with a degree in Telecommunications from [Michigan State University](http://msu.edu) and riding with the [11th Armored Cavalry Regiment](https://en.wikipedia.org/wiki/11th_Armored_Cavalry_Regiment_(United_States)) for four years, got into technology at [SAIC](http://www.saic.com/) and then moved to system administration at the [School of Engineering and Computer Science](http://www.oakland.edu/secs) at Oakland University in Rochester Hills, Michigan.
 
