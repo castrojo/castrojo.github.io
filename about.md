@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "About Jorge"
+title: "about jorge"
 date: 2013-08-21 17:07
 comments: false
 sharing: true
