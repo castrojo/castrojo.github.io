@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "about"
+title: "About Jorge"
 date: 2013-08-21 17:07
 comments: false
 sharing: true
@@ -40,8 +40,8 @@ I love to talk and interact with different communities! I have presented at the 
 
 I am a member of the [Michigan!/usr/group](http://www.mug.org/) and try to attend regularly. You can also sometimes find me at [Lugwash](http://www.washlug.org/). I get to work with these fabulous people:
 
-![](img http://www.jorgecastro.org/images/eco.jpg)
+![](http://www.jorgecastro.org/images/eco.jpg)
 
 .. and used to work with these fabulous people:
 
-![](img http://www.jorgecastro.org/images/horsemen.jpg)
+![](http://www.jorgecastro.org/images/horsemen.jpg)
