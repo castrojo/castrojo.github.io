@@ -34,7 +34,7 @@ This will deploy the bundle with default constraints. This is great for testing 
 
 We can watch the cluster coming up with a `watch juju status`, this will give us a near-realtime view of the cluster as it comes up:
 
-![kubes](http://www.jorgecastro.org/images/kubes.png)
+![kubes](/images/kubes.png)
 
 ## Making sure your cluster works 
 
