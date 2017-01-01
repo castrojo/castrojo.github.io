@@ -23,3 +23,5 @@ And it gets better, they've done a US-24 and US-48 as well. I put a US-24 in my 
 ![unifi2](/images/unifi/unifi2.png)
 
 I'm in the process of still setting up the homelab VLAN, so I don't have much to report on that, but having everything managed in one system is a really great feature. I didn't really need SFP plugs or lots of PoE power for my use, so this new low-end line is perfect for me, if you find yourself wanting cheap-but-good equipment with decent software, then I recommend you check them out, and of course drop by [/r/ubiquiti](https://www.reddit.com/r/Ubiquiti/) if you need anything. 
+
+See also Troy Hunt's [more indepth blog post](https://www.troyhunt.com/ubiquiti-all-the-things-how-i-finally-fixed-my-dodgy-wifi/) for more information.
