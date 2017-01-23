@@ -11,7 +11,7 @@ Here’s the simplest way to get a Kubernetes 1.5.2 cluster up and running on an
 
 ```
 sudo apt-add-repository ppa:juju/stable
-sudo apt-add-repository ppa:conjure-up/next</span>
+sudo apt-add-repository ppa:conjure-up/next
 sudo apt update
 sudo apt install conjure-up
 conjure-up kubernetes
