@@ -11,10 +11,7 @@ We’re proud to announce support for Kubernetes 1.5.3 in the Canonical Distribu
 Here’s the simplest way to get a Kubernetes 1.5.3 cluster up and running on an Ubuntu 16.04 system:
 
 ```
-sudo apt-add-repository ppa:juju/stable
-sudo apt-add-repository ppa:conjure-up/next
-sudo apt update
-sudo apt install conjure-up
+sudo snap install conjure-up --classic
 conjure-up kubernetes
 ```
 
