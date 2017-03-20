@@ -14,14 +14,12 @@ Kubernetes is divided into a bunch of Special Interest Groups(SIGs). You can [fi
 - k8s moves fast, and if there's an area you care about, you can miss important information about a feature you care about.
 - It's high bandwidth since SIGs meet regularly, you won't find long drawn out technical discussions on the mailing lists like you would on a project that only uses lists, these discussions move much faster when people talk face to face.
 - You get to meet people and put faces to names. 
-- People get to see you and recognize your name (and optionally, youre face). This will help you later on if you're stuck and need help or if you want to start participating more.
+- People get to see you and recognize your name (and optionally, your face). This will help you later on if you're stuck and need help or if you want to start participating more.
 - Each team has a slack channel and google group (mailing list), so I prefer to sit in those channels as well as they usually have important information announced there, meeting reminders, and links to the important documents for that SIG. 
 
 ### There's a SIG just for contributor experience
 
-[SIG-contribex](https://github.com/kubernetes/community/blob/master/sig-contribx/README.md)
-
-As it ends up there's an entire SIG who work on improving contributor experience. I found this SIG relatively late when we started, you'll find that asking quetions here will save you time in the long run. Even if you're not asking questions yourself you can learn about how the mechanics of project works just by listening in on the conversation.
+[SIG-contribex](https://github.com/kubernetes/community/blob/master/sig-contribx/README.md) - As it ends up there's an entire SIG who work on improving contributor experience. I found this SIG relatively late when we started, you'll find that asking quetions here will save you time in the long run. Even if you're not asking questions yourself you can learn about how the mechanics of project works just by listening in on the conversation.
 
 ### So many things in /community
 
