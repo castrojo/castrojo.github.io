@@ -3,13 +3,9 @@ title: Lessons Learned from joining the Kubernetes community
 layout: post
 date: '2017-03-20T10:16:26+00:00'
 ---
-
-
 Software can be complex and daunting, even more so in distributed systems. So when you or your company decide you're going to give it a shot, it's easy to get enamored with the technology and not think about the other things you and your team are going to need to learn to make participating rewarding for everyone.
 
-When we first launched the
-
-<a href="http://ubuntu.com/containers/kubernetes">Canonical Distribution of Kubernetes</a>, our team was new, and while we knew how Kubernetes worked, and what ops expertise we were going to start to bring to market right away, we found the initial huge size of the Kubernetes community to be outright intimidating. Not the people of course, they're great, it's the learning curve that can really seem large. So we decided to just dive in head first, and then write about our experiences. While some of the things I mention here work great for individuals, if you have a team on individuals working on Kubernetes at your company then I hope some of these tips will be useful to you. This is by no means an exhaustive list, I'm still finding new things everyday.
+When we first launched the <a href="http://ubuntu.com/containers/kubernetes">Canonical Distribution of Kubernetes</a>, our team was new, and while we knew how Kubernetes worked, and what ops expertise we were going to start to bring to market right away, we found the initial huge size of the Kubernetes community to be outright intimidating. Not the people of course, they're great, it's the learning curve that can really seem large. So we decided to just dive in head first, and then write about our experiences. While some of the things I mention here work great for individuals, if you have a team on individuals working on Kubernetes at your company then I hope some of these tips will be useful to you. This is by no means an exhaustive list, I'm still finding new things everyday.
 
 ### Find your SIGs
 
