@@ -30,15 +30,11 @@ Kubernetes is divided into a bunch of Special Interest Groups(SIGs). You can
 
 <a href="https://www.youtube.com/c/KubernetesCommunity">https://www.youtube.com/c/KubernetesCommunity</a> - I found this channel to be very useful for "catching up". Many SIGs publish their meetings relatively quickly, and tossing in the channel in the background can help you keep track of what's going on.
 
-If you don't have the time do dig into all the SIG meetings, you can concentrate on the
-
-<a href="https://www.youtube.com/playlist?list=PL69nYSiGNLP1pkHsbPjzAewvMgGUpkCnJ">weekly community meeting</a>, which is held weekly and a summary of many of things happening around the different SIGs. The community meetings also have demos, so it's interesting to see how the ecosystem is building tools around k8s; if you can only make one meeting a week, this is probably the one to go to.
+If you don't have the time do dig into all the SIG meetings, you can concentrate on the <a href="https://www.youtube.com/playlist?list=PL69nYSiGNLP1pkHsbPjzAewvMgGUpkCnJ">weekly community meeting</a>, which is held weekly and a summary of many of things happening around the different SIGs. The community meetings also have demos, so it's interesting to see how the ecosystem is building tools around k8s; if you can only make one meeting a week, this is probably the one to go to.
 
 ### The Community Calendar and meetings
 
-This sounds like advanced common sense but there's a
-
-<a href="https://calendar.google.com/calendar/embed?src=nt2tcnbtbied3l6gi2h29slvc0%40group.calendar.google.com">community calendar</a> of events.
+This sounds like advanced common sense but there's a <a href="https://calendar.google.com/calendar/embed?src=nt2tcnbtbied3l6gi2h29slvc0%40group.calendar.google.com">community calendar</a> of events.
 
 Additionally, I found that adding the SIG meetings to our team calendar helps. We like to rotate people around meetings so that they can get experience in what is happening around the project and to ensure that worst case if someone can't make a meeting someone is there to take notes. If you're getting started, do yourself a favor *volunteer to take notes at a SIG meeting*, you will find that you'll need to pay closer attention to the material and for me it helps me understand concepts better when I have to write it down in a way that makes sense for others.
 
