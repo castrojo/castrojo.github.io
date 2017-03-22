@@ -7,12 +7,14 @@ date: '2017-03-20T10:16:26+00:00'
 
 Software can be complex and daunting, even more so in distributed systems. So when you or your company decide you're going to give it a shot, it's easy to get enamored with the technology and not think about the other things you and your team are going to need to learn to make participating rewarding for everyone.
 
-When we first launched the 
-<a href="http://ubuntu.com/containers/kubernetes">Canonical Distribution of Kubernetes</a>, our team was new, and while we knew how Kubernetes worked, and what ops expertise we were going to start to bring to market right away, we found the initial huge size of the Kubernetes community to be ouright intimidating. Not the people of course, they're great, it's the learning curve that can really seem large. So we decided to just dive in head first, and then write about our experiences. While some of the things I mention here work great for individuals, if you have a team on individuals working on Kubernetes at your company then I hope some of these tips will be useful to you. This is by no means an exhaustive list, I'm still finding new things everyday.
+When we first launched the
+
+<a href="http://ubuntu.com/containers/kubernetes">Canonical Distribution of Kubernetes</a>, our team was new, and while we knew how Kubernetes worked, and what ops expertise we were going to start to bring to market right away, we found the initial huge size of the Kubernetes community to be outright intimidating. Not the people of course, they're great, it's the learning curve that can really seem large. So we decided to just dive in head first, and then write about our experiences. While some of the things I mention here work great for individuals, if you have a team on individuals working on Kubernetes at your company then I hope some of these tips will be useful to you. This is by no means an exhaustive list, I'm still finding new things everyday.
 
 ### Find your SIGs
 
-Kubernetes is divided into a bunch of Special Interest Groups(SIGs). You can 
+Kubernetes is divided into a bunch of Special Interest Groups(SIGs). You can
+
 <a href="https://github.com/kubernetes/community/blob/master/sig-list.md">find a list here</a>. Don't be alarmed! Bookmark this page, I use this as my starting off point anytime we needed to find something out in more detail that we could find in the docs or public list. On this page, you'll find contact information for the leads, and more importantly, when those SIGs meet. Meetings are open to public and (usually) recorded. Find someone on your team to attend these meetings regularly. This is important for a few reasons:
 * k8s moves fast, and if there's an area you care about, you can miss important information about a feature you care about.
 * It's high bandwidth since SIGs meet regularly, you won't find long drawn out technical discussions on the mailing lists like you would on a project that only uses lists, these discussions move much faster when people talk face to face.
@@ -32,12 +34,14 @@ Kubernetes is divided into a bunch of Special Interest Groups(SIGs). You can
 
 <a href="https://www.youtube.com/c/KubernetesCommunity">https://www.youtube.com/c/KubernetesCommunity</a> - I found this channel to be very useful for "catching up". Many SIGs publish their meetings relatively quickly, and tossing in the channel in the background can help you keep track of what's going on.
 
-If you don't have the time do dig into all the SIG meetings, you can concentrate on the 
-<a href="https://www.youtube.com/playlist?list=PL69nYSiGNLP1pkHsbPjzAewvMgGUpkCnJ">weekly community meeting</a>, which is held weekly and a summary of many of things happening around the different SIGs. The community meetings also have demos, so it's intereting to ee how the ecosytem is building tools around k8s; if you can only make one meeting a week, this is probably the one to go to.
+If you don't have the time do dig into all the SIG meetings, you can concentrate on the
+
+<a href="https://www.youtube.com/playlist?list=PL69nYSiGNLP1pkHsbPjzAewvMgGUpkCnJ">weekly community meeting</a>, which is held weekly and a summary of many of things happening around the different SIGs. The community meetings also have demos, so it's interesting to see how the ecosystem is building tools around k8s; if you can only make one meeting a week, this is probably the one to go to.
 
 ### The Community Calendar and meetings
 
-This sounds like advanced common sense but there's a 
+This sounds like advanced common sense but there's a
+
 <a href="https://calendar.google.com/calendar/embed?src=nt2tcnbtbied3l6gi2h29slvc0%40group.calendar.google.com">community calendar</a> of events.
 
 Additionally, I found that adding the SIG meetings to our team calendar helps. We like to rotate people around meetings so that they can get experience in what is happening around the project and to ensure that worst case if someone can't make a meeting someone is there to take notes. If you're getting started, do yourself a favor *volunteer to take notes at a SIG meeting*, you will find that you'll need to pay closer attention to the material and for me it helps me understand concepts better when I have to write it down in a way that makes sense for others.
@@ -46,11 +50,11 @@ We also found it useful to not flood one meeting with multiple people. If it's s
 
 ## OWNERS
 
-Whatever area you're working on, go up the tree and eventually you'll find an OWNERS file that list who owns/reviews that section of the code or docs or whatever. I use this as a little checklist when I join the SIG meetings to keep track of who is who. When I eventually went to a SIG meeting at Kubecon, it was nice to meet people who will be reviewing your work or you'll be having a working relationhip with.
+Whatever area you're working on, go up the tree and eventually you'll find an OWNERS file that list who owns/reviews that section of the code or docs or whatever. I use this as a little checklist when I join the SIG meetings to keep track of who is who. When I eventually went to a SIG meeting at Kubecon, it was nice to meet people who will be reviewing your work or you'll be having a working relationship with.
 
 ## Find a buddy
 
-At some point you'll be sitting in slack and you'll see some poor peron who is asking the same sorts of questions you were. That's one of the first places you can start to help, just find someone and start talking to them. For me it wa "Hey I noticed you sit in SIG-onprem too, you doing bare metal? How's it going for you?"
+At some point you'll be sitting in slack and you'll see some poor person who is asking the same sorts of questions you were. That's one of the first places you can start to help, just find someone and start talking to them. For me it wa "Hey I noticed you sit in SIG-onprem too, you doing bare metal? How's it going for you?"
 
 ## It's too big!
 
