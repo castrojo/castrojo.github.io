@@ -30,7 +30,7 @@ Kubernetes is divided into a bunch of Special Interest Groups(SIGs). You can
 
 ### There's a YouTube Channel
 
-<a href="https://www.youtube.com/c/KubernetesCommunity">https://www.youtube.com/c/KubernetesCommunity</a> - I found this channel to be very useful for "catching up". Many SIGs publish their meetings relatively quickly, and tossing in the channel in the background can help you keep track of what's going.
+<a href="https://www.youtube.com/c/KubernetesCommunity">https://www.youtube.com/c/KubernetesCommunity</a> - I found this channel to be very useful for "catching up". Many SIGs publish their meetings relatively quickly, and tossing in the channel in the background can help you keep track of what's going on.
 
 If you don't have the time do dig into all the SIG meetings, you can concentrate on the 
 <a href="https://www.youtube.com/playlist?list=PL69nYSiGNLP1pkHsbPjzAewvMgGUpkCnJ">weekly community meeting</a>, which is held weekly and a summary of many of things happening around the different SIGs. The community meetings also have demos, so it's intereting to ee how the ecosytem is building tools around k8s; if you can only make one meeting a week, this is probably the one to go to.
@@ -42,7 +42,7 @@ This sounds like advanced common sense but there's a
 
 Additionally, I found that adding the SIG meetings to our team calendar helps. We like to rotate people around meetings so that they can get experience in what is happening around the project and to ensure that worst case if someone can't make a meeting someone is there to take notes. If you're getting started, do yourself a favor *volunteer to take notes at a SIG meeting*, you will find that you'll need to pay closer attention to the material and for me it helps me understand concepts better when I have to write it down in a way that makes sense for others.
 
-We also found it useful to not flood one meeting with multiple people. If it's something important, sure, but if you just want to keep an eye on what's going on there you can only send one person and then have that person give people a summary at your team standup or whatever. There are so many meetings that you don't want to fall into the trap of having people sitting in meetings all day instead of doing what you need.
+We also found it useful to not flood one meeting with multiple people. If it's something important, sure, but if you just want to keep an eye on what's going on there you can only send one person and then have that person give people a summary at your team standup or whatever. There are so many meetings that you don't want to fall into the trap of having people sitting in meetings all day instead of getting things done.
 
 ## OWNERS
 
@@ -50,7 +50,7 @@ Whatever area you're working on, go up the tree and eventually you'll find an OW
 
 ## Find a buddy
 
-At some point you'll be sitting in slack and you'll see some poor peron who is aking the same sorts of quetions you were. That's one of the firt places you can start to help, just find someone and start talking to them. For me it wa "Hey I noticed you sit in SIG-onprem too, you doing bare metal? How's it going for you?"
+At some point you'll be sitting in slack and you'll see some poor peron who is asking the same sorts of questions you were. That's one of the first places you can start to help, just find someone and start talking to them. For me it wa "Hey I noticed you sit in SIG-onprem too, you doing bare metal? How's it going for you?"
 
 ## It's too big!
 
