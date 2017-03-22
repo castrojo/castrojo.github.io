@@ -9,9 +9,7 @@ When we first launched the <a href="http://ubuntu.com/containers/kubernetes">Can
 
 ### Find your SIGs
 
-Kubernetes is divided into a bunch of Special Interest Groups(SIGs). You can
-
-<a href="https://github.com/kubernetes/community/blob/master/sig-list.md">find a list here</a>. Don't be alarmed! Bookmark this page, I use this as my starting off point anytime we needed to find something out in more detail that we could find in the docs or public list. On this page, you'll find contact information for the leads, and more importantly, when those SIGs meet. Meetings are open to public and (usually) recorded. Find someone on your team to attend these meetings regularly. This is important for a few reasons:
+Kubernetes is divided into a bunch of Special Interest Groups(SIGs). You can <a href="https://github.com/kubernetes/community/blob/master/sig-list.md">find a list here</a>. Don't be alarmed! Bookmark this page, I use this as my starting off point anytime we needed to find something out in more detail that we could find in the docs or public list. On this page, you'll find contact information for the leads, and more importantly, when those SIGs meet. Meetings are open to public and (usually) recorded. Find someone on your team to attend these meetings regularly. This is important for a few reasons:
 * k8s moves fast, and if there's an area you care about, you can miss important information about a feature you care about.
 * It's high bandwidth since SIGs meet regularly, you won't find long drawn out technical discussions on the mailing lists like you would on a project that only uses lists, these discussions move much faster when people talk face to face.
 * You get to meet people and put faces to names.
