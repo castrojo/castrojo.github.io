@@ -54,7 +54,7 @@ Whatever area you're working on, go up the tree and eventually you'll find an OW
 
 ## Find a buddy
 
-At some point you'll be sitting in slack and you'll see some poor person who is asking the same sorts of questions you were. That's one of the first places you can start to help, just find someone and start talking to them. For me it wa "Hey I noticed you sit in SIG-onprem too, you doing bare metal? How's it going for you?"
+At some point you'll be sitting in slack and you'll see some poor person who is asking the same sorts of questions you were. That's one of the first places you can start to help, just find someone and start talking to them. For me it was "Hey I noticed you sit in SIG-onprem too, you doing bare metal? How's it going for you?"
 
 ## It's too big!
 
