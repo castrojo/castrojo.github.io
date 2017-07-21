@@ -76,7 +76,7 @@ It shouldn't take long for the nodes to come online, just check em out:
     
  Ok you're cluster is rocking, now
  
- ## Set up your laptop
+## Set up your laptop
  
  I don't like to be ssh'ed into my cluster unless I'm doing maintenance, so now that we know stuff is working let's copy the kubernetes config from the master node to our local workstation. You should know how to copy files around systems already, but here's mine for reference: 
  
@@ -88,7 +88,7 @@ It shouldn't take long for the nodes to come online, just check em out:
       kubectl get nodes
       kubectl cluster-info
       
-   ## Deploy your first application
+## Deploy your first application
    
    Let's deploy the Kubernetes dashboard: 
    
@@ -97,4 +97,4 @@ It shouldn't take long for the nodes to come online, just check em out:
       
    Then hit up [http://localhost:8001/ui](http://localhost:8001/ui).
    
-   That's it, enjoy your new cluster! 
+   That's it, enjoy your new cluster!
