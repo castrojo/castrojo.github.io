@@ -3,9 +3,9 @@ title: TLDRing your way to a Kubernetes Bare Metal cluster
 layout: post
 date: '2017-07-21T11:00:50+00:00'
 ---
-Alex Ellis has an [excellent tutorial](https://blog.alexellis.io/kubernetes-in-10-minutes/) on how to install Kubernetes in 10 minutes. It is a summarized version of what you can find in the [official documentation](https://kubernetes.io/docs/setup/independent/install-kubeadm/). Read those first, this is a summarized version with my choices mixed in. 
+Alex Ellis has an [excellent tutorial](https://blog.alexellis.io/kubernetes-in-10-minutes/) on how to install Kubernetes in 10 minutes. It is a summarized version of what you can find in the [official documentation](https://kubernetes.io/docs/setup/independent/install-kubeadm/). Read those first, this is a an even shorter version with my choices mixed in. 
 
-We'll install 16.04 on some machines, I'm using three. I just chose to use Weave instead of sending you to a choose your-own-network page. You have other stuff to learn before you dive into an opinion on a networking overlay. We're also in a lab environment so we assume some things like your machines are on the same network. 
+We'll install 16.04 on some machines, I'm using three. I just chose to use Weave instead of sending you to a choose your-own-network page as you have other stuff to learn before you dive into an opinion on a networking overlay. We're also in a lab environment so we assume some things like your machines are on the same network. 
 
 ### Prep the Operating System
 
@@ -95,6 +95,4 @@ It shouldn't take long for the nodes to come online, just check em out:
       
    Then hit up [http://localhost:8001/ui](http://localhost:8001/ui).
    
-   That's it, 
-   
-   
+   That's it,
