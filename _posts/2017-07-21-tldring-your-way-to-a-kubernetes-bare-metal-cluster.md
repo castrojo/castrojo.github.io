@@ -98,3 +98,8 @@ It shouldn't take long for the nodes to come online, just check em out:
    Then hit up [http://localhost:8001/ui](http://localhost:8001/ui).
    
    That's it, enjoy your new cluster!
+   
+   
+## Joining the Community
+
+`kubeadm` is brought to you by SIG Cluster Lifecycle, they have [regular meetings](https://docs.google.com/document/d/1deJYPIF4LmhGjDVaqrswErIrV7mtwJgovtLnPCDxP7U/edit#heading=h.rnqzadju87co) that anyone can attend, and you can give feedback on [the mailing list](https://groups.google.com/forum/#!forum/kubernetes-sig-cluster-lifecycle). I'll see you there! 
