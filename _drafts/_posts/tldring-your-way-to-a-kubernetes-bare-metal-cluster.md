@@ -9,10 +9,9 @@ We'll install 16.04 on some machines, I'm using three. I just chose to use Weave
 
 ### Prep the Operating System
 
-First let's take care of the OS. I like to import my ssh keys from github so I can get to these boxes, set up automatic updates, ensure the latest kernel is installed, and then ensure we're all up to date, whatever works for you: 
+First let's take care of the OS. I set up automatic updates, ensure the latest kernel is installed, and then ensure we're all up to date, whatever works for you: 
     
     sudo -s
-    ssh-import-id gh:castrojo
     dpkg-reconfigure unattended-upgrades
     apt install linux-generic-hwe-16.04
     apt update
@@ -21,7 +20,7 @@ First let's take care of the OS. I like to import my ssh keys from github so I c
 
 ### Prep each node for Kubernetes: 
 
-This is just installing docker and adding the kubernetes repo: 
+This is just installing docker and adding the kubernetes repo, we'll be root for these steps: 
 
     sudo -s
     curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
@@ -43,6 +42,9 @@ And then follow the directions to copy your config file to your user account, we
     mkdir -p $HOME/.kube
     sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
     sudo chown $(id -u):$(id -g) $HOME/.kube/config
+    
+Let's install the network, and then allow workloads to be scheduled on the master (for a lab we want to use all our hardware for workloads!): 
+
     kubectl apply -f https://git.io/weave-kube-1.6
     kubectl taint nodes --all node-role.kubernetes.io/master-
 
@@ -95,4 +97,4 @@ It shouldn't take long for the nodes to come online, just check em out:
       
    Then hit up [http://localhost:8001/ui](http://localhost:8001/ui).
    
-   That's it,
+   That's it, enjoy your new cluster! 
