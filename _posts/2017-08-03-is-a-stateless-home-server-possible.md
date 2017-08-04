@@ -1,5 +1,5 @@
 ---
-title: 'Is a "cloud-native" home server for me? Why not?  '
+title: Can "cloud-native" concepts apply to home servers?
 layout: post
 date: '2017-08-03T00:00:00-04:00'
 ---
@@ -24,13 +24,13 @@ With this varied set of apps, we shall begin!
 
 ## Old Reliable, traditional Ubuntu 16.04 with .debs
 
-This has been working for me up to this point. As with anything involving third party packaging, this is a hot mess. 
+This has been working for me for years up to this point. As with anything involving third party packaging, maintenance can tend to get annoying.  
 
 For Unifi you need either an external Mongo repo(!) and/or a OpenJDK PPA(!) to get it to work.
 
 Pi hole wants me to pipe a script to bash, and Plex just publishes one off debs with no repository, making that update a hassle. 
 
-There are some benefits here, once I configure `unattended-upgrades` things generally run fine. It's a well understood system, and having the large repository of software is always good. Over time it tends to accumulate crap though. 
+There are some benefits here, once I configure `unattended-upgrades` things generally run fine. It's a well understood system, and having the large repository of software is always good. Over time it tends to accumulate crap though.
 
 ## Ubuntu 16.04 with Docker containers
 
