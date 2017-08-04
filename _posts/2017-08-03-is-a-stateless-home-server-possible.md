@@ -52,15 +52,15 @@ This gives me some nice features over the mutable-buntu. First off, atomic upgra
 
 This has a few teething issues. First off, if there's a kernel update it's just going to reboot, you can't really control that. Another is, it really is small, so it's missing tools. It can only install snaps, so no rsync, no git, no curl, no wget. I'm not going to run git out of a docker container. Also I couldn't figure out how to run docker as the non-root user and I can't seem to find the documentation on how to do that anywhere. 
 
-## ContainerOS with Docker containers
+## Container Linux with Docker containers
 
 A slim OS designed to only run containers. This one definately has a more "work related" slant to it. There's no normal installer, the installer basically takes a cloud-init-like yaml file and then dd's the disk. Or just fire up your home PXE server. :) Most of the docs don't even talk about how to configure the OS, the entire "state" is kept in this yaml file in git, it is expected that I can blow it away at any time and drop containers on it.
 
 This comes with git, rsync, and curl/wget out of the box, so it's nice to be able to have these core tools in there instead of totally missing. There's also a `toolbox` command that will automagically fetch a traditional distro container (defaults to fedora) and then mounts the filesystem inside, so you can `nano` to your heart's content. 
 
-This works really well. ContainerOS lets me dictate the update policy as part of the config file, and if I have multiple servers I can cluster them together so that they will take turns rebooting without having a service go down. But as you can see, we quickly venture out of the "home server" use case with this one. 
+This works really well. Container Linux lets me dictate the update policy as part of the config file, and if I have multiple servers I can cluster them together so that they will take turns rebooting without having a service go down. But as you can see, we quickly venture out of the "home server" use case with this one. 
 
-## ContainerOS with rkt/systemd
+## Container Linux with rkt/systemd
 
 This is the setup I am enjoying the most. So instead of using the docker daemon, I create a systemd service file, like say `/etc/systemd/system/unifi.service`:
 
