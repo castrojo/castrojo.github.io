@@ -110,5 +110,4 @@ I don't know what to say here, some combination of great OS and container mainta
 
 The obvious hole here is the Project Atomic stack, which will be next on the list. 
 
-And of course, it's only a matter of time until one of these reboots breaks something or a container has a bad day. Chuck and I will be [delving into Kubernetes](https://gist.github.com/chuckbutler/92164d09fba51b2219b8bb8d4450761f) for this much later on. 
-
+And of course, it's only a matter of time until one of these reboots breaks something or a container has a bad day. If you think this blog post isn't crazy enough Chuck and I will be [delving into Kubernetes](https://gist.github.com/chuckbutler/92164d09fba51b2219b8bb8d4450761f) for this later on.
