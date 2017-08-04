@@ -1,5 +1,5 @@
 ---
-title: 'Is a "cloud-native" home server? Why not?  '
+title: 'Is a "cloud-native" home server for me? Why not?  '
 layout: post
 date: '2017-08-03T00:00:00-04:00'
 ---
@@ -30,15 +30,15 @@ For Unifi you need either an external Mongo repo(!) and/or a OpenJDK PPA(!) to g
 
 Pi hole wants me to pipe a script to bash, and Plex just publishes one off debs with no repository, making that update a hassle. 
 
-There are some benefits here, once I configure 'unattended-upgrades' things generally run fine. It's a well understood system, and having the large repository of software is always good. Over time it tends to accumulate crap though. 
+There are some benefits here, once I configure `unattended-upgrades` things generally run fine. It's a well understood system, and having the large repository of software is always good. Over time it tends to accumulate crap though. 
 
 ## Ubuntu 16.04 with Docker containers
 
-I ran this setup for about 6 months with great results. The main advantage to this setup is I can crowdsource the maintenance of these apps to people who do a real good job, like the awesome guys at [linuxserver.io](http://tools.linuxserver.io/dockers). I can keep a _lean_ and mostly stock host, toss away broken containers if need be, and keep everything nice and isolated. 
+The main advantage to this setup is I can crowdsource the maintenance of these apps to people who do a real good job, like the awesome guys at [linuxserver.io](http://tools.linuxserver.io/dockers). I can keep a _lean_ and mostly stock host, toss away broken containers if need be, and keep everything nice and isolated. 
 
 What ppa do I need for unifi? Is my plex up to date? What java symlink do I need to fix? I don't need to care anymore! 
 
-'docker-compose' was really good for this and relatively simple to grok, especially by stealing other people's configs from github and modifying them to my needs. 
+`docker-compose` was really good for this and relatively simple to grok, especially by stealing other people's configs from github and modifying them to my needs. 
 
 ### Why not LXD containers?
 
@@ -46,13 +46,11 @@ I ran with this config for a while, but it had one major issue for me. LXD conta
 
 ## Ubuntu Core 16.04 with Docker containers
 
-Finally, something totally different. I am pretty sure "home server" doesn't rank high on the use case here, but I figured I would give it a shot. I took the same 'docker-compose' files from before, except this time I deploy on top of ubuntu-core. 
+Finally, something totally different. I am pretty sure "home server" doesn't rank high on the use case here, but I figured I would give it a shot. I took the same `docker-compose` files from before, except this time I deploy on top of ubuntu-core. 
 
-This gives me some nice features over the mutable Ubuntu. First off, atomic upgrades. Everytime it gets a new kernel it just reboots, and then on boot all the containers update and come back up.
+This gives me some nice features over the mutable-buntu. First off, atomic upgrades. Everytime it gets a new kernel it just reboots, and then on boot all the containers update and come back up.
 
 This has a few teething issues. First off, if there's a kernel update it's just going to reboot, you can't really control that. Another is, it really is small, so it's missing tools. It can only install snaps, so no rsync, no git, no curl, no wget. I'm not going to run git out of a docker container. Also I couldn't figure out how to run docker as the non-root user and I can't seem to find the documentation on how to do that anywhere. 
-
-I have this setup still running on a spare box so I can keep track of it. 
 
 ## ContainerOS with Docker containers
 
@@ -60,11 +58,11 @@ A slim OS designed to only run containers. This one definately has a more "work 
 
 This comes with git, rsync, and curl/wget out of the box, so it's nice to be able to have these core tools in there instead of totally missing. There's also a 'toolbox' command that will automagically fetch a traditional distro container (defaults to fedora) and then mounts the filesystem inside, so you can 'nano' to your heart's content. 
 
-This works really well. CoreOS lets me dictate the update policy as part of the config file, and if I have multiple servers I can cluster them together so that they will take turns rebooting without having a service go down. But as you can see, we quickly venture out of the "home server" use case with this one. 
+This works really well. ContainerOS lets me dictate the update policy as part of the config file, and if I have multiple servers I can cluster them together so that they will take turns rebooting without having a service go down. But as you can see, we quickly venture out of the "home server" use case with this one. 
 
 ## ContainerOS with rkt/systemd
 
-This is the setup I am running today. So instead of using the docker daemon, I create a systemd service file, like say '/etc/systemd/system/unifi.service'
+This is the setup I am enjoying the most. So instead of using the docker daemon, I create a systemd service file, like say '/etc/systemd/system/unifi.service'
 
     [Unit]
     Description=Unifi
@@ -86,7 +84,7 @@ This one "feels" like the most future proof, as the [OCI spec](https://www.openc
 
 # What about state? 
 
-So far I've only really talked about the "installation problem", I've continually left out the hard part, the state of the applications themselves! Reinstalling coreos will get me all the apps back but no data, that doesn't sound very cloud native! 
+So far I've only really talked about the "installation problem", I've continually left out the hard part, the state of the applications themselves. Reinstalling coreos will get me all the apps back but no data, that doesn't sound very cloud native! 
 
 If you look at the systemd service file above, you see I keep the state in '/home/jorge/config/plex'. I do this for each of the services. I need to find a way to make sure that that is saved somewhere else than just local disk. 
 
@@ -108,4 +106,6 @@ I don't know what to say here, some combination of great OS and container mainta
 
 The obvious hole here is the Project Atomic stack, which will be next on the list. 
 
-And of course, it's only a matter of time until one of these reboots breaks something or a container has a bad day. If you think this blog post isn't crazy enough Chuck and I will be [delving into Kubernetes](https://gist.github.com/chuckbutler/92164d09fba51b2219b8bb8d4450761f) for this later on.
+And of course, it's only a matter of time until one of these reboots breaks something or a container has a bad day. 
+
+If you think this blog post isn't crazy enough Chuck and I will be [delving into Kubernetes](https://gist.github.com/chuckbutler/92164d09fba51b2219b8bb8d4450761f) for this later on as this is all just a warm up. 
