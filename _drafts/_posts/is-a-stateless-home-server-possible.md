@@ -1,5 +1,5 @@
 ---
-title: 'Is a stateless "cloud native" home server for me? '
+title: 'Is a "cloud-native" home server? Why not?  '
 layout: post
 date: '2017-08-03T00:00:00-04:00'
 ---
@@ -7,7 +7,7 @@ I've recently embarked on a journey of trying new things in my homelab. I've bee
 
 Now that I am more familiar with the cloud native landscape, I was wondering if I could wean myself off the most stateful snowflake in my life, the trusty home server. 
 
-I've been collecting old hardware recently and decided to go out of my comfort zone and run some home services via different combinations. Let's see what I found out. 
+I've been collecting hardware recently and decided to go out of my comfort zone and run some home services via different combinations. Let's see what I found out. 
 
 # What do I need to run?
 
@@ -18,7 +18,7 @@ I have a few things I run in house that I need to host:
 - [Pi-hole](https://pi-hole.net/) for network wide privacy and ad blocking
 - A [Plex Media Server](https://www.plex.tv/) for my videos.
 
-The Unifi stuff depends on Java and MongoDB, and access hardware on the network. Pi-hole expects to basically be my DNS server, and Plex is the textbook definition of a stateful app; depending on the size of your video collection it can grow a substantial database that's all on disk, so moving around means bringing gigs of stuff with it.
+The Unifi stuff depends on Java and MongoDB, and accesses hardware on the network. Pi-hole expects to basically be my DNS server, and Plex is the textbook definition of a stateful app; depending on the size of your video collection it can grow a substantial database that's all on disk, so moving around means bringing gigs of stuff with it.
 
 With this varied set of apps, we shall begin!
 
@@ -66,19 +66,17 @@ This works really well. CoreOS lets me dictate the update policy as part of the 
 
 This is the setup I am running today. So instead of using the docker daemon, I create a systemd service file, like say '/etc/systemd/system/unifi.service'
 
-'''
-[Unit]
-Description=Unifi
-After=network.target
-[Service]
-Slice=machine.slice
-Type=simple
-ExecStart=/usr/bin/rkt --insecure-options=image run docker://linuxserver/unifi --volume config,kind=host,source=/home/jorge/config/unifi --mount volume=config,target=/config --net=host --dns=8.8.8.8
-KillMode=mixed
-Restart=always
-[Install]
-WantedBy=multi-user.target
-'''
+    [Unit]
+    Description=Unifi
+    After=network.target
+    [Service]
+    Slice=machine.slice
+    Type=simple
+    ExecStart=/usr/bin/rkt --insecure-options=image run docker://linuxserver/unifi --volume config,kind=host,source=/home/jorge/config/unifi --mount volume=config,target=/config --net=host --dns=8.8.8.8
+    KillMode=mixed
+    Restart=always
+    [Install]
+    WantedBy=multi-user.target
 
 Then I 'systemctl start unifi' to start it, and 'systemctl enable unifi' to enable it on boot. ContainerOS is set to reboot on Thursdays at 4am, containers update on boot. I can use 'journalctl' and 'machinectl' like I can with "normal" services. 
 
