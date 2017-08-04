@@ -7,16 +7,16 @@ I've recently embarked on a journey of trying new things in my homelab. I've bee
 
 Now that I am more familiar with the cloud native landscape, I was wondering if I could wean myself off the most stateful snowflake in my life, the trusty home server. 
 
-I've been collecting hardware recently and decided to go out of my comfort zone and run some home services via different combinations. Let's see what I found out. 
+I've been collecting hardware recently and decided to go out of my comfort zone and run some home services via different combinations. Here's what I found out. 
 
 # What do I need to run?
 
 I have a few things I run in house that I need to host:
 
-- A Ubiquiti Unifi controller, which controls my [network gear](https://blog.jorgecastro.org/2016/12/29/unifis-new-cheaper-switches-are-great/).
-- A Ubiquiti Unifi Video controller, an entirely [different piece of software](https://www.ubnt.com/download/unifi-video/unifi-nvr) for recording video from their line of IP cameras.
+- A Ubiquiti Unifi controller, which controls my [network gear](https://blog.jorgecastro.org/2016/12/29/unifis-new-cheaper-switches-are-great/)
+- A Ubiquiti Unifi Video controller, an entirely [different piece of software](https://www.ubnt.com/download/unifi-video/unifi-nvr) for recording video from their line of IP cameras
 - [Pi-hole](https://pi-hole.net/) for network wide privacy and ad blocking
-- A [Plex Media Server](https://www.plex.tv/) for my videos.
+- A [Plex Media Server](https://www.plex.tv/) for my videos
 
 The Unifi stuff depends on Java and MongoDB, and accesses hardware on the network. Pi-hole expects to basically be my DNS server, and Plex is the textbook definition of a stateful app; depending on the size of your video collection it can grow a substantial database that's all on disk, so moving around means bringing gigs of stuff with it.
 
@@ -56,13 +56,13 @@ This has a few teething issues. First off, if there's a kernel update it's just 
 
 A slim OS designed to only run containers. This one definately has a more "work related" slant to it. There's no normal installer, the installer basically takes a cloud-init-like yaml file and then dd's the disk. Or just fire up your home PXE server. :) Most of the docs don't even talk about how to configure the OS, the entire "state" is kept in this yaml file in git, it is expected that I can blow it away at any time and drop containers on it.
 
-This comes with git, rsync, and curl/wget out of the box, so it's nice to be able to have these core tools in there instead of totally missing. There's also a 'toolbox' command that will automagically fetch a traditional distro container (defaults to fedora) and then mounts the filesystem inside, so you can 'nano' to your heart's content. 
+This comes with git, rsync, and curl/wget out of the box, so it's nice to be able to have these core tools in there instead of totally missing. There's also a `toolbox` command that will automagically fetch a traditional distro container (defaults to fedora) and then mounts the filesystem inside, so you can `nano` to your heart's content. 
 
 This works really well. ContainerOS lets me dictate the update policy as part of the config file, and if I have multiple servers I can cluster them together so that they will take turns rebooting without having a service go down. But as you can see, we quickly venture out of the "home server" use case with this one. 
 
 ## ContainerOS with rkt/systemd
 
-This is the setup I am enjoying the most. So instead of using the docker daemon, I create a systemd service file, like say '/etc/systemd/system/unifi.service'
+This is the setup I am enjoying the most. So instead of using the docker daemon, I create a systemd service file, like say `/etc/systemd/system/unifi.service`:
 
     [Unit]
     Description=Unifi
@@ -76,7 +76,7 @@ This is the setup I am enjoying the most. So instead of using the docker daemon,
     [Install]
     WantedBy=multi-user.target
 
-Then I 'systemctl start unifi' to start it, and 'systemctl enable unifi' to enable it on boot. ContainerOS is set to reboot on Thursdays at 4am, containers update on boot. I can use 'journalctl' and 'machinectl' like I can with "normal" services. 
+Then I `systemctl start unifi` to start it, and `systemctl enable unifi` to enable it on boot. ContainerOS is set to reboot on Thursdays at 4am, containers update on boot. I can use `journalctl` and `machinectl` like I can with "normal" services. 
 
 Note that you can use this config on any OS that has systemd and rkt. Since ContainerOS has a section in it's yaml file for writing systemd services, I can have one well maintained file that will just enable me to spit out and entire configured server in one shot. Yeah!
 
@@ -86,7 +86,7 @@ This one "feels" like the most future proof, as the [OCI spec](https://www.openc
 
 So far I've only really talked about the "installation problem", I've continually left out the hard part, the state of the applications themselves. Reinstalling coreos will get me all the apps back but no data, that doesn't sound very cloud native! 
 
-If you look at the systemd service file above, you see I keep the state in '/home/jorge/config/plex'. I do this for each of the services. I need to find a way to make sure that that is saved somewhere else than just local disk. 
+If you look at the systemd service file above, you see I keep the state in `/home/jorge/config/plex`. I do this for each of the services. I need to find a way to make sure that that is saved somewhere else than just local disk. 
 
 Saving this onto an NFS share earned overwhelming NOPE NOPE NOPE from the straw poll I took (and one even threatened to come over  and fight me). And that's kind of cheating by moving the problem. 
 
@@ -108,4 +108,4 @@ The obvious hole here is the Project Atomic stack, which will be next on the lis
 
 And of course, it's only a matter of time until one of these reboots breaks something or a container has a bad day. 
 
-If you think this blog post isn't crazy enough Chuck and I will be [delving into Kubernetes](https://gist.github.com/chuckbutler/92164d09fba51b2219b8bb8d4450761f) for this later on as this is all just a warm up. 
+If you think this blog post isn't crazy enough, Chuck and I will be [delving into Kubernetes](https://gist.github.com/chuckbutler/92164d09fba51b2219b8bb8d4450761f) for this later on as this is all just a warm up.
