@@ -26,7 +26,7 @@ With this varied set of apps, we shall begin!
 
 This has been working for me up to this point. As with anything involving third party packaging, this is a hot mess. 
 
-For Unifi you need either an external Mongo repo(!) and/or a OpenJDK PPA(!) to get it to work, and even then, [ouch](https://community.ubnt.com/t5/UniFi-Video/Latest-kernel-update-for-Debian-8-9-and-Ubuntu-16-04-breaking/td-p/1968120).
+For Unifi you need either an external Mongo repo(!) and/or a OpenJDK PPA(!) to get it to work.
 
 Pi hole wants me to pipe a script to bash, and Plex just publishes one off debs with no repository, making that update a hassle. 
 
@@ -96,9 +96,9 @@ Really don't want to add a ceph cluster to my home administration tasks. Suggest
 
 # How have they been running?
 
-I know what you're thinking. Self rebooting servers and auto updating containers? You're high.
+I know what you're thinking. Self rebooting servers and auto updating containers? You're high. 
 
-Surprisingly in the last three months I have been running all five of these things side by side and they've all been rock solid.
+Surprisingly in the last three months I have been running all five of these things side by side and they've all been rock solid. 
 
 I don't know what to say here, some combination of great OS and container maintainers, or maybe not so much churn. I am going to try to keep these up and running as long as possible just to see what happens. 
 
