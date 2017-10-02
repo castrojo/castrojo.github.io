@@ -9,9 +9,7 @@ footer: true
 
 Jorge O. Castro currently works at [Heptio](http://heptio.com) where he helps to support and advance the open [Kubernetes](http://kubernetes.io) ecosystem. 
 
-Jorge has also worked on Ubuntu at Canonical Ltd.:
-
-![](http://www.jorgecastro.org/images/uds.jpg)
+![](http://www.jorgecastro.org/images/heptio.jpg)
 
 Having graduated with a degree in Telecommunications from [Michigan State University](http://msu.edu) and riding with the [11th Armored Cavalry Regiment](https://en.wikipedia.org/wiki/11th_Armored_Cavalry_Regiment_(United_States)) for four years, got into technology at [SAIC](http://www.saic.com/) and then moved to system administration at the [School of Engineering and Computer Science](http://www.oakland.edu/secs) at Oakland University in Rochester Hills, Michigan.
 
@@ -33,9 +31,13 @@ I love to talk and interact with different communities! I have presented at the 
 - [Ohio Linuxfest](http://www.ohiolinux.org/)
 - [WordCamp Detroit](http://2012.detroit.wordcamp.org/)
 
-## User Groups
+## Other Stuff
 
-I am a member of the [Michigan!/usr/group](http://www.mug.org/) and try to attend regularly. You can also sometimes find me at [Lugwash](http://www.washlug.org/). I get to work with these fabulous people:
+I've been fortunate enough to work with many incredible open source people over the years, I spent about 10 years on Ubuntu!
+
+![](http://www.jorgecastro.org/images/uds.jpg)
+
+And got to work with this rag tag band of heroes: 
 
 ![](http://www.jorgecastro.org/images/eco.jpg)
 
