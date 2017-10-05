@@ -1,0 +1,9 @@
+---
+upload_path: "/images"
+frontmatter_file_url_template: "/images"
+body_file_url_template: "{{ site.baseurl }}/images"
+new_page_extension: md
+auto_deploy: false
+admin_path: "/admin"
+webhook_url: 
+collections: 
