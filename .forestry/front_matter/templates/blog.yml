@@ -1,5 +1,6 @@
 ---
 pages:
+- goodbye-mutable-operating-system.md
 - _posts/2017-10-17-using-kubeadm-to-upgrade-kubernetes.md
 - _posts/2017-10-05-lessons-learned-from-the-first-kubernetes-steering-election.md
 - _posts/2017-08-03-is-a-stateless-home-server-possible.md
