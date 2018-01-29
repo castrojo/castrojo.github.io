@@ -16,7 +16,7 @@ There is a [huge text file](https://github.com/cncf/gitdm/blob/master/developers
 Whoa? What? This is what a corrected entry looks like, as you can see it takes into account where you used to work for correctness:
 
     Jorge O. Castro*: jorge!heptio.com, jorge!ubuntu.com, jorge.castro!gmail.com
- 	Heptio
- 	Canonical until 2017-03-31
+    Heptio
+    Canonical until 2017-03-31
 
 As an aside this also really makes a nice rolodex for looking up people. :D 
