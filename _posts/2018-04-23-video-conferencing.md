@@ -16,11 +16,11 @@ There are some things that are just plain out of your control, but there are som
 
 - A decent set of headphones - Personal preference. I like open back ones for the home but pack a noise cancelling set for when I am on the road. 
 
-What about an integrated headset and microphone? This totally depends on the type. I tend to prefer the full sound of a real microphone but the boom mics on some of these headsets are quite good. If you have awesome heaphones already you can [add a modmic](https://antlionaudio.com/) to turn them into headsets. I find that even the most garbage dedicated headsets sound better than earbud microphones. 
+What about an integrated headset and microphone? This totally depends on the type. I tend to prefer the full sound of a real microphone but the boom mics on some of these headsets are quite good. If you have awesome heaphones already you can [add a modmic](https://antlionaudio.com/) to turn them into headsets. I find that even the most budget dedicated headsets sound better than earbud microphones.
 
 ### Stuff to get rid of
 
-- Your shitty earbuds - Seriously. If you're going to be a remote worker _invest in respecting your coworker's time_. A full hour long design session with you holding up a garbage earbud microphone up to your face is not awesome for anybody. They're fine if you want to use them for listening, but don't use the mic. 
+- Your shitty earbuds - Seriously. If you're going to be a remote worker _invest in respecting your coworker's time_. A full hour long design session with you holding up a junky earbud microphone up to your face is not awesome for anybody. They're fine if you want to use them for listening, but don't use the mic. 
 
 - "But this iPhone was $1000, my earbud mic is fine." Nope. You sound like crap.  
 
