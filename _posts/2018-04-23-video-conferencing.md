@@ -44,6 +44,6 @@ If you're just dialing in to listen then most of these won't apply to you, howev
 
 ## Treat video conferencing like you do everything else at work
 
-We invest in our computers and our developer tools, think seriously about putting your video conferencing footprint in that namespace. There is a good chance no one will notice that you always sound good, but it's one of those background quality things that just makes everyone more productive. 
+We invest in our computers and our developer tools, think seriously about putting your video conferencing footprint in that namespace. There is a good chance no one will notice that you always sound good, but it's one of those background quality things that just makes everyone more productive. Besides, think of the money you've spent on your laptop and everything else to make you better at work, better audio gear is a _good investment_. 
 
 In the real world, sometimes you just have to travel and you find yourself stuck on a laptop on hotel wireless in a corner trying to your job, but I strive to make that situation the exception!  
