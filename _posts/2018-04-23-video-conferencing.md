@@ -21,6 +21,7 @@ What about an integrated headset and microphone? This totally depends on the typ
 ### Stuff to get rid of
 
 - Your shitty earbuds - Seriously. If you're going to be a remote worker _invest in respecting your coworker's time_. A full hour long design session with you holding up a garbage earbud microphone up to your face is not awesome for anybody. They're fine if you want to use them for listening, but don't use the mic. 
+
 - "But this iPhone was $1000, my earbud mic is fine." Nope. You sound like crap.  
 
 ### Garbage Habits we all hate
@@ -28,11 +29,17 @@ What about an integrated headset and microphone? This totally depends on the typ
 If you're just dialing in to listen then most of these won't apply to you, however ...
 
 - Always join on muted audio. If the platform you use doesn't do this by default find this setting and enable it.
+
 - If you don't have anything to say at that moment, MUTE. Even if you are just sitting there you're adding ambient noise to the meeting, and when it gets over 10 people this really, really, sucks. This is why I love having a physical mute button, you can always be sure at a glance without digging into settings. I've also used a USB switch pedal for mute with limited success.
+
 - Jumping in from a coffee shop, your work's cafeteria, or any other place where there's noise is not cool. And if you work in an open office all you're doing is broadcasting to everyone else in the room that your place of employment doesn't take developer productivity seriously. 
+
 - "Oh I will use my external speakers and built in microphone and adjust the levels and it will sound fine." - No, it won't, you sound like a hot mess, put on your headset and use the microphone.
+
 - If you use your built-in microphone on your laptop and you start typing while you are talking EVERYBODY WILL HATE YOU.
+
 - If you're going to dial in from the back on an Uber or from a bus, and you have to talk or present, just don't come. Ask someone to run the meeting for you or reschedule. You're just wasting everyone's time if you think we want to hear you sprinting down a terminal to catch your flight. 
+
 - And if you're that person sitting on the plane in the meeting and people have to hear whatever thing you're working on, they will hate you for the entire flight. 
 
 ## Treat video conferencing like you do everything else at work
