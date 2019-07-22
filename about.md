@@ -7,13 +7,13 @@ sharing: true
 footer: true
 ---
 
-Jorge O. Castro currently works at [Heptio](http://heptio.com) where he helps to support and advance the open [Kubernetes](http://kubernetes.io) ecosystem. 
+Jorge O. Castro currently works at [VMware](http://vmware.com) where he helps to support and advance the open [Kubernetes](http://kubernetes.io) ecosystem. 
 
 Jorge graduated with a degree in Telecommunications from [Michigan State University](http://msu.edu) and rode with the [11th Armored Cavalry Regiment](https://en.wikipedia.org/wiki/11th_Armored_Cavalry_Regiment_(United_States)) for four years. 
 He first entered the technology field at [SAIC](http://www.saic.com/) and then moved to system administration at the [School of Engineering and Computer Science](http://www.oakland.edu/secs) at Oakland University in Rochester Hills, Michigan. 
-Jorge then joined [Canonical](http://www.canonical.com) to work on [Ubuntu](http://www.ubuntu.com) for about 10 years before moving to [Heptio](http://www.heptio.com) to work on [Kubernetes](http://kubernetes.io).
+Jorge then joined [Canonical](http://www.canonical.com) to work on [Ubuntu](http://www.ubuntu.com) for about 10 years before moving to [Heptio](http://www.heptio.com) to work on [Kubernetes](http://kubernetes.io). Heptio was then [acquired by VMware](https://techcrunch.com/2018/11/06/vmware-acquires-heptio-the-startup-founded-by-2-co-founders-of-kubernetes/) in December 2018. 
 
-He now resides in Ann Arbor, Michigan with his lovely wife [Jill], their son Rafael, and their two beagles, [Oscar](http://packdog.com/oscar-castro and [Luna](http://packdog.com/luna-330). 
+He now resides in Ann Arbor, Michigan with his lovely wife Jill, their son Rafael, and their two beagles, Oscar and Luna. 
 
 Hobbies and interests include heavy metal, paleontology, gaming, helping run the [Orchestructure](https://www.meetup.com/orchestructure) meetup, technology, and scouting out the best beers in the world.
 
@@ -34,7 +34,7 @@ I love to talk and interact with different communities! I have presented at the 
 
 ## Other Stuff
 
-I've been fortunate enough to work with many incredible open source people over the years, I spent about 10 years on Ubuntu!
+I've been fortunate enough to work with many incredible open source people over the years:
 
 ![](http://www.jorgecastro.org/images/uds.jpg)
 
