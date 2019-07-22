@@ -36,10 +36,13 @@ I love to talk and interact with different communities! I have presented at the 
 
 I've been fortunate enough to work with many incredible open source people over the years:
 
+Heptiles: 
+![](http://www.jorgecastro.org/images/heptio.jpg)
+
+Ubunteros:
 ![](http://www.jorgecastro.org/images/uds.jpg)
 
-And got to work with this rag tag band of heroes: 
-
+Jujufolk:
 ![](http://www.jorgecastro.org/images/eco.jpg)
 
 .. and used to work with these fabulous people:
